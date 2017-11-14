@@ -15,7 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".sort.BisearchActivity"></activity>
+        <activity android:name=".sort.BisearchActivity" />
+        <activity android:name=".sort.EasyLinkListActivity" />
+        <activity android:name=".sort.EasyLinkListReverseActivity"></activity>
     </application>
 
 </manifest>

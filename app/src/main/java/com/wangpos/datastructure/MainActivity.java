@@ -8,6 +8,8 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.wangpos.datastructure.sort.BisearchActivity;
+import com.wangpos.datastructure.sort.EasyLinkListActivity;
+import com.wangpos.datastructure.sort.EasyLinkListReverseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +17,10 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     public static final int Bisearch = 1;
+
+    public static final int EasyLinkList = 2;
+
+    public static final int ReverseEasyLinkList = 3;
 
 
     @Override
@@ -45,11 +51,21 @@ public class MainActivity extends AppCompatActivity {
             case Bisearch:
                 startActivity(new Intent(this, BisearchActivity.class));
                 break;
+            case EasyLinkList:
+                startActivity(new Intent(this, EasyLinkListActivity.class));
+                break;
+            case ReverseEasyLinkList:
+                startActivity(new Intent(this, EasyLinkListReverseActivity.class));
+                break;
+            default:
+                break;
         }
 
     }
 
     private void initData(List<DataBean> list) {
         list.add(new DataBean(Bisearch,"折半查找／二分法查找"));
+        list.add(new DataBean(EasyLinkList,"Java链表实现"));
+        list.add(new DataBean(ReverseEasyLinkList,"反转一个链表"));
     }
 }
