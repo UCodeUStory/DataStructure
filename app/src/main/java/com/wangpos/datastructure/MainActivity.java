@@ -8,8 +8,11 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.wangpos.datastructure.sort.BisearchActivity;
+import com.wangpos.datastructure.sort.DirectInsertSortActivity;
 import com.wangpos.datastructure.sort.EasyLinkListActivity;
 import com.wangpos.datastructure.sort.EasyLinkListReverseActivity;
+import com.wangpos.datastructure.sort.SpaceComplexityActivity;
+import com.wangpos.datastructure.sort.TimeComplexityActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +24,12 @@ public class MainActivity extends AppCompatActivity {
     public static final int EasyLinkList = 2;
 
     public static final int ReverseEasyLinkList = 3;
+
+    public static final int DirectInsertSort = 4;
+
+    public static final int TimeComplexity = 5;
+
+    public static final int SpaceComplexity = 6;
 
 
     @Override
@@ -46,8 +55,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void onClickItem(DataBean data) {
-
         switch (data.type){
+            case TimeComplexity:
+                startActivity(new Intent(this,TimeComplexityActivity.class));
+                break;
+            case SpaceComplexity:
+                startActivity(new Intent(this,SpaceComplexityActivity.class));
+                break;
             case Bisearch:
                 startActivity(new Intent(this, BisearchActivity.class));
                 break;
@@ -57,6 +71,9 @@ public class MainActivity extends AppCompatActivity {
             case ReverseEasyLinkList:
                 startActivity(new Intent(this, EasyLinkListReverseActivity.class));
                 break;
+            case DirectInsertSort:
+                startActivity(new Intent(this, DirectInsertSortActivity.class));
+                break;
             default:
                 break;
         }
@@ -64,8 +81,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initData(List<DataBean> list) {
+        list.add(new DataBean(TimeComplexity,"时间复杂度介绍"));
+        list.add(new DataBean(SpaceComplexity,"空间复杂度介绍"));
         list.add(new DataBean(Bisearch,"折半查找／二分法查找"));
         list.add(new DataBean(EasyLinkList,"Java链表实现"));
         list.add(new DataBean(ReverseEasyLinkList,"反转一个链表"));
+        list.add(new DataBean(DirectInsertSort,"直接插入排序"));
     }
 }

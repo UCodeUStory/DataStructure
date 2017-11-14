@@ -1,17 +1,24 @@
 package com.wangpos.datastructure.sort;
 
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 import com.wangpos.datastructure.R;
 
 import thereisnospon.codeview.CodeView;
 import thereisnospon.codeview.CodeViewTheme;
 
-public class EasyLinkListReverseActivity extends AppCompatActivity {
+public class EasyLinkListReverseActivity extends AppCompatActivity implements View.OnClickListener{
 
     private CodeView codeView;
+    private Button btnRun;
+    private EasyLinkList<Integer> header;
+    private TextView tvResult;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +27,12 @@ public class EasyLinkListReverseActivity extends AppCompatActivity {
 
         codeView = (CodeView) findViewById(R.id.codeView);
 
+        btnRun = (Button)findViewById(R.id.btnRun);
+        btnRun.setOnClickListener(this);
         codeView.setTheme(CodeViewTheme.DARK);
+        tvResult = (TextView) findViewById(R.id.result);
+
+
         codeView.showCode(" public EasyLinkList reverstList(EasyLinkList header) {\n" +
                 "\n" +
                 "        /**\n" +
@@ -61,19 +73,27 @@ public class EasyLinkListReverseActivity extends AppCompatActivity {
                 "//        return current;\n" +
                 "    }");
 
-        EasyLinkList<Integer> header = new EasyLinkList<>(1);
+        this.header = new EasyLinkList<>(1);
         EasyLinkList<Integer> second = new EasyLinkList<>(2);
         EasyLinkList<Integer> three = new EasyLinkList<>(3);
+        EasyLinkList<Integer> four = new EasyLinkList<>(4);
+        EasyLinkList<Integer> five = new EasyLinkList<>(5);
+        EasyLinkList<Integer> six = new EasyLinkList<>(6);
+        EasyLinkList<Integer> seven = new EasyLinkList<>(7);
+        EasyLinkList<Integer> eight = new EasyLinkList<>(8);
+        EasyLinkList<Integer> nine = new EasyLinkList<>(9);
+        EasyLinkList<Integer> ten = new EasyLinkList<>(10);
 
         header.setNext(second);
         second.setNext(three);
+        three.setNext(four);
+        four.setNext(five);
+        five.setNext(six);
+        six.setNext(seven);
+        seven.setNext(eight);
+        eight.setNext(nine);
+        nine.setNext(ten);
 
-        header = reverstList(header);
-
-        while (header != null) {
-            Log.i("info", String.valueOf(header.data));
-            header = header.getNext();
-        }
 
 
     }
@@ -117,6 +137,36 @@ public class EasyLinkListReverseActivity extends AppCompatActivity {
          */
         return pre;
 //        return current;
+    }
+
+    @Override
+    public void onClick(View view) {
+        header = reverstList(header);
+
+        StringBuilder sb = printString(header);
+
+        tvResult.setText(sb.toString());
+
+
+    }
+
+    @NonNull
+    private StringBuilder printString(EasyLinkList<Integer> param) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+
+        EasyLinkList<Integer> header = param;
+
+        while (header != null) {
+            sb.append(String.valueOf(header.data));
+            if (header.getNext()!=null) {
+                sb.append(",");
+            }
+            header = header.getNext();
+        }
+
+        sb.append("]");
+        return sb;
     }
 
 

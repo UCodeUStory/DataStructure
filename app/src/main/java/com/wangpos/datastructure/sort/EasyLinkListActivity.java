@@ -21,7 +21,8 @@ public class EasyLinkListActivity extends AppCompatActivity {
         codeView = (CodeView) findViewById(R.id.codeView);
 
         codeView.setTheme(CodeViewTheme.DARK);
-        codeView.showCode("EasyLinkList<Integer> header = new EasyLinkList<>(1);\n" +
+        codeView.showCode("" +
+                "        EasyLinkList<Integer> header = new EasyLinkList<>(1);\n" +
                 "        EasyLinkList<Integer> second = new EasyLinkList<>(2);\n" +
                 "        EasyLinkList<Integer> three = new EasyLinkList<>(3);\n" +
                 "\n" +
