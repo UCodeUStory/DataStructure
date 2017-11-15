@@ -7,27 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c36b3d7-82fb-4da1-98f5-8345655eb5e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/sort/DirectInsertSortActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/sort/SpaceComplexityActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/sort/TimeComplexityActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_direct_insert_sort.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_space_complexity.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_time_complexity.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/sort/BisearchActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/sort/BisearchActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/sort/EasyLinkListActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/sort/EasyLinkListActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/sort/EasyLinkListReverseActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/sort/EasyLinkListReverseActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_easy_link_list_reverse.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_easy_link_list_reverse.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,12 +36,9 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
+            <state relative-caret-position="1035">
               <caret line="84" column="58" lean-forward="false" selection-start-line="84" selection-start-column="58" selection-end-line="84" selection-end-column="58" />
-              <folding>
-                <element signature="e#1494#1772#0" expanded="true" />
-                <element signature="e#1771#1772#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -77,7 +56,7 @@
       <file leaf-file-name="EasyLinkListReverseActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/sort/EasyLinkListReverseActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
+            <state relative-caret-position="1695">
               <caret line="124" column="26" lean-forward="false" selection-start-line="124" selection-start-column="26" selection-end-line="124" selection-end-column="26" />
               <folding />
             </state>
@@ -87,7 +66,7 @@
       <file leaf-file-name="DirectInsertSortActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/sort/DirectInsertSortActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
+            <state relative-caret-position="315">
               <caret line="33" column="51" lean-forward="false" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
               <folding>
                 <element signature="e#4178#4179#0" expanded="true" />
@@ -97,14 +76,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_direct_insert_sort.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="activity_direct_insert_sort.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_direct_insert_sort.xml">
           <provider editor-type-id="android-designer2">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="74" column="51" lean-forward="true" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="51" />
+            <state relative-caret-position="163">
+              <caret line="74" column="51" lean-forward="false" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -116,7 +105,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
+            <state relative-caret-position="675">
               <caret line="45" column="31" lean-forward="false" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="31" />
               <folding />
             </state>
@@ -126,7 +115,7 @@
       <file leaf-file-name="EasyLinkListActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/sort/EasyLinkListActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="225">
               <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
               <folding />
             </state>
@@ -138,19 +127,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_time_complexity.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_time_complexity.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="72" lean-forward="false" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -2888,7 +2864,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/DataBean.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_bisearch.xml" />
@@ -2905,6 +2880,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/sort/EasyLinkListReverseActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/sort/DirectInsertSortActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_direct_insert_sort.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -2928,20 +2904,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataStructure" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle Scripts" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidBuildScriptsGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -3100,9 +3062,23 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataStructure" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle Scripts" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidBuildScriptsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3205,7 +3181,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1510663025820" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1510708409233" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -3253,7 +3229,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1510663025820" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1510708409233" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -3285,27 +3261,6 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
@@ -3436,7 +3391,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1510663025821" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1510708409234" />
       </method>
     </configuration>
     <list size="1">
@@ -3478,15 +3433,14 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845187" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37029287" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -3507,6 +3461,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845187" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -3552,6 +3507,98 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/sort/SpaceComplexityActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="59" lean-forward="false" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/sort/EasyLinkListReverseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1695">
+          <caret line="124" column="26" lean-forward="false" selection-start-line="124" selection-start-column="26" selection-end-line="124" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/sort/DirectInsertSortActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="33" column="51" lean-forward="false" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
+          <folding>
+            <element signature="e#4178#4179#0" expanded="true" />
+            <element signature="e#4229#4230#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_direct_insert_sort.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="74" column="51" lean-forward="true" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_easy_link_list_reverse.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="31" lean-forward="false" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/sort/EasyLinkListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/DataBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_time_complexity.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="72" lean-forward="false" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/sort/TimeComplexityActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="37" column="58" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="37" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -3564,19 +3611,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#417#418#0" expanded="false" />
-            <element signature="e#452#453#0" expanded="false" />
-            <element signature="e#516#517#0" expanded="false" />
-            <element signature="e#564#565#0" expanded="false" />
-            <element signature="e#870#871#0" expanded="false" />
-            <element signature="e#912#913#0" expanded="false" />
-            <element signature="e#962#963#0" expanded="false" />
-            <element signature="e#1004#1005#0" expanded="false" />
-            <element signature="e#1054#1055#0" expanded="false" />
-            <element signature="e#1078#1079#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3600,19 +3635,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#417#418#0" expanded="false" />
-            <element signature="e#452#453#0" expanded="false" />
-            <element signature="e#516#517#0" expanded="false" />
-            <element signature="e#564#565#0" expanded="false" />
-            <element signature="e#870#871#0" expanded="false" />
-            <element signature="e#912#913#0" expanded="false" />
-            <element signature="e#962#963#0" expanded="false" />
-            <element signature="e#1004#1005#0" expanded="false" />
-            <element signature="e#1054#1055#0" expanded="false" />
-            <element signature="e#1078#1079#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3620,14 +3643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
           <caret line="16" column="47" lean-forward="true" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -3644,7 +3659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3652,7 +3666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-997">
           <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3660,7 +3673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="83">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3668,7 +3680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1047">
           <caret line="154" column="87" lean-forward="false" selection-start-line="154" selection-start-column="87" selection-end-line="154" selection-end-column="87" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3687,12 +3698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1104">
           <caret line="111" column="42" lean-forward="false" selection-start-line="111" selection-start-column="42" selection-end-line="111" selection-end-column="42" />
-          <folding>
-            <marker date="1510623097000" expanded="true" signature="558:836" ph="..." />
-            <marker date="1510623097000" expanded="true" signature="866:1123" ph="..." />
-            <marker date="1510623097000" expanded="true" signature="1152:1430" ph="..." />
-            <marker date="1510623097000" expanded="true" signature="1459:1718" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3711,14 +3716,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
           <caret line="59" column="35" lean-forward="false" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="60" lean-forward="false" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
@@ -3726,6 +3727,9 @@
             <marker date="1510648985000" expanded="true" signature="1021:1050" ph="..." />
           </folding>
         </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_space_complexity.xml">
@@ -3735,7 +3739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="73" lean-forward="false" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3768,7 +3771,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/sort/EasyLinkListActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="225">
           <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
           <folding />
         </state>
@@ -3787,7 +3790,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
+        <state relative-caret-position="675">
           <caret line="45" column="31" lean-forward="false" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="31" />
           <folding />
         </state>
@@ -3795,18 +3798,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
+        <state relative-caret-position="1035">
           <caret line="84" column="58" lean-forward="false" selection-start-line="84" selection-start-column="58" selection-end-line="84" selection-end-column="58" />
-          <folding>
-            <element signature="e#1494#1772#0" expanded="true" />
-            <element signature="e#1771#1772#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/sort/EasyLinkListReverseActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
+        <state relative-caret-position="1695">
           <caret line="124" column="26" lean-forward="false" selection-start-line="124" selection-start-column="26" selection-end-line="124" selection-end-column="26" />
           <folding />
         </state>
@@ -3814,7 +3814,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/sort/DirectInsertSortActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
+        <state relative-caret-position="315">
           <caret line="33" column="51" lean-forward="false" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
           <folding>
             <element signature="e#4178#4179#0" expanded="true" />
@@ -3828,8 +3828,16 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="74" column="51" lean-forward="true" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="51" />
+        <state relative-caret-position="163">
+          <caret line="74" column="51" lean-forward="false" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
