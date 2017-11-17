@@ -19,6 +19,7 @@ public class EasyLinkListReverseActivity extends AppCompatActivity implements Vi
     private Button btnRun;
     private EasyLinkList<Integer> header;
     private TextView tvResult;
+    private TextView tvWeidingxing;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +32,9 @@ public class EasyLinkListReverseActivity extends AppCompatActivity implements Vi
         btnRun.setOnClickListener(this);
         codeView.setTheme(CodeViewTheme.DARK);
         tvResult = (TextView) findViewById(R.id.result);
-
+//        tvWeidingxing = (TextView) findViewById(R.id.tvWendingXing);
+//
+//        tvWeidingxing.setText("");
 
         codeView.showCode(" public EasyLinkList reverstList(EasyLinkList header) {\n" +
                 "\n" +

@@ -112,7 +112,7 @@
         <TextView
             android:id="@+id/tvCodeLable"
             android:layout_width="wrap_content"
-            android:text="6.代码"
+            android:text="7.代码"
             android:textColor="#333"
             android:padding="10dp"
             android:textSize="16sp"

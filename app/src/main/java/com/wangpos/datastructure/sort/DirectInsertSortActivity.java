@@ -27,6 +27,7 @@ public class DirectInsertSortActivity extends AppCompatActivity implements View.
     private TextView tvStorage;
 
     private DataBean[]dataBeans;
+    private TextView tvWeidingXing;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,7 @@ public class DirectInsertSortActivity extends AppCompatActivity implements View.
         codeView.setTheme(CodeViewTheme.DARK);
         tvTime = (TextView) findViewById(R.id.time);
         tvStorage = (TextView) findViewById(R.id.tvStorage);
+        tvWeidingXing = (TextView) findViewById(R.id.tvWendingXing);
 
         tvResult.setText("");
 
@@ -49,6 +51,7 @@ public class DirectInsertSortActivity extends AppCompatActivity implements View.
         tvSummary.setText("首先在未排序序列中找到最小（大）元素，存放到排序序列的起始位置，直接选择排序然后，再从剩余未排序元素中继续寻找最小（大）元素，然后放到已排序序列的末尾。以此类推，直到所有元素均排序完毕");
         tvTime.setText("O(N^2)");
         tvStorage.setText("O(1)");
+        tvWeidingXing.setText("稳定");
         codeView.showCode(" /**\n" +
                 "     * 直接插入排序,从小到大\n" +
                 "     *\n" +

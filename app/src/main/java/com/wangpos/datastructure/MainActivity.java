@@ -31,6 +31,16 @@ public class MainActivity extends AppCompatActivity {
 
     public static final int SpaceComplexity = 6;
 
+    public static final int QuickSort = 7;
+
+    public static final int OptionSort = 8;
+
+    public static final int binaryTreeSort = 9;
+
+    public static final int BubbleSort = 10;
+
+    public static final int JavaThread = 11;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,5 +97,10 @@ public class MainActivity extends AppCompatActivity {
         list.add(new DataBean(EasyLinkList,"Java链表实现"));
         list.add(new DataBean(ReverseEasyLinkList,"反转一个链表"));
         list.add(new DataBean(DirectInsertSort,"直接插入排序"));
+        list.add(new DataBean(QuickSort,"快速排序"));
+        list.add(new DataBean(OptionSort,"选择排序"));
+        list.add(new DataBean(binaryTreeSort,"二叉树排序"));
+        list.add(new DataBean(BubbleSort,"冒泡排序"));
+        list.add(new DataBean(JavaThread,"Java线成通信"));
     }
 }
