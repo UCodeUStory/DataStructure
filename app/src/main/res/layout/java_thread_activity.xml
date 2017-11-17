@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.wangpos.datastructure.sort.BisearchActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="1.多线程通信方式有几种？"
+            android:textColor="#333"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="1，2，3，4，6，7，8，9，10" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="2.锁种类"
+            android:textColor="#333"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="1，2，3，4，6，7，8，9，10" />
+
+
+        <TextView
+            android:id="@+id/tvCodeLable"
+            android:layout_width="wrap_content"
+            android:text="7.类锁例子"
+            android:textColor="#333"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/printText"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                android:maxLines="15"
+                android:textSize="14sp"
+                android:textColor="#e90d0d"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <thereisnospon.codeview.CodeView
+            android:id="@+id/codeView"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content"
+            >
+        </thereisnospon.codeview.CodeView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="8.对象锁例子"
+            android:textColor="#333"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content" />
+
+        <thereisnospon.codeview.CodeView
+            android:id="@+id/codeView2"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content"
+            >
+        </thereisnospon.codeview.CodeView>
+
+
+
+        <thereisnospon.codeview.CodeView
+            android:id="@+id/codeView3"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content"
+            >
+        </thereisnospon.codeview.CodeView>
+
+    </LinearLayout>
+</ScrollView>
