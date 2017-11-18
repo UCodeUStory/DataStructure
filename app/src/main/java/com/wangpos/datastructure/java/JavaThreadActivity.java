@@ -222,7 +222,46 @@ public class JavaThreadActivity extends AppCompatActivity implements View.OnClic
                 "\n" +
                 "\n" +
                 "  运行发现同步失效，使用同一个Person 就会没问题"+
-                "\n");
+                "\n" +
+                "\n" +
+                "\n" +
+                "对象锁实现二\n" +
+                "  MyLock myLock = new MyLock();\n" +
+                "        TestObjectLock2Thread t5 = new TestObjectLock2Thread(myLock,1);\n" +
+                "        TestObjectLock2Thread t6 = new TestObjectLock2Thread(myLock,2);\n" +
+                "\n" +
+                "        t5.start();\n" +
+                "        t6.start();" +
+                " public class TestObjectLock2Thread extends Thread{\n" +
+                "\n" +
+                "        private MyLock myLock;\n" +
+                "        private int number;\n" +
+                "        public TestObjectLock2Thread(MyLock myLock,int number){\n" +
+                "            this.myLock = myLock;\n" +
+                "            this.number = number;\n" +
+                "\n" +
+                "        }\n" +
+                "        @Override\n" +
+                "        public void run() {\n" +
+                "            super.run();\n" +
+                "            synchronized (myLock){\n" +
+                "                for (int i = 0;i<1000;i++){\n" +
+                "                    Log.i(\"info\", \"number=\" + number + \"say=\" + i);\n" +
+                "                }\n" +
+                "            }\n" +
+                "\n" +
+                "        }\n" +
+                "    }");
+
+
+//
+//        MyLock myLock = new MyLock();
+//        TestObjectLock2Thread t5 = new TestObjectLock2Thread(myLock,1);
+//        TestObjectLock2Thread t6 = new TestObjectLock2Thread(myLock,2);
+//
+//        t5.start();
+//        t6.start();
+
 
 
     }
@@ -237,6 +276,27 @@ public class JavaThreadActivity extends AppCompatActivity implements View.OnClic
 
     }
 
+
+    public class TestObjectLock2Thread extends Thread{
+
+        private MyLock myLock;
+        private int number;
+        public TestObjectLock2Thread(MyLock myLock,int number){
+            this.myLock = myLock;
+            this.number = number;
+
+        }
+        @Override
+        public void run() {
+            super.run();
+            synchronized (myLock){
+                for (int i = 0;i<1000;i++){
+                    Log.i("info", "number=" + number + "say=" + i);
+                }
+            }
+
+        }
+    }
 
     public class TestObjectLockThread extends Thread{
 
@@ -280,6 +340,11 @@ public class JavaThreadActivity extends AppCompatActivity implements View.OnClic
                 }
             }
         }
+    }
+
+    public class MyLock{
+
+
     }
 
 

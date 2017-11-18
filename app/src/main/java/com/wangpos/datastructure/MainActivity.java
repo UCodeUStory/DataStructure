@@ -88,6 +88,8 @@ public class MainActivity extends AppCompatActivity {
             case JavaThread:
                 startActivity(new Intent(this, JavaThreadActivity.class));
                 break;
+            case QuickSort:
+                break;
             default:
                 break;
         }

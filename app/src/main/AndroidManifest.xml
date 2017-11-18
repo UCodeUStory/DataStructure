@@ -20,8 +20,9 @@
         <activity android:name=".sort.EasyLinkListReverseActivity" />
         <activity android:name=".sort.DirectInsertSortActivity" />
         <activity android:name=".sort.TimeComplexityActivity" />
-        <activity android:name=".sort.SpaceComplexityActivity"></activity>
-        <activity android:name=".java.JavaThreadActivity"></activity>
+        <activity android:name=".sort.SpaceComplexityActivity" />
+        <activity android:name=".java.JavaThreadActivity" />
+        <activity android:name=".sort.QuickSortActivity"></activity>
     </application>
 
 </manifest>
