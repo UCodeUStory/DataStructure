@@ -7,7 +7,9 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.wangpos.datastructure.core.DataBean;
 import com.wangpos.datastructure.java.JavaThreadActivity;
+import com.wangpos.datastructure.sort.BinaryTreeActivity;
 import com.wangpos.datastructure.sort.BisearchActivity;
 import com.wangpos.datastructure.sort.DirectInsertSortActivity;
 import com.wangpos.datastructure.sort.EasyLinkListActivity;
@@ -90,6 +92,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case QuickSort:
                 break;
+            case binaryTreeSort:
+                startActivity(new Intent(this, BinaryTreeActivity.class));
+                break;
             default:
                 break;
         }
@@ -108,5 +113,6 @@ public class MainActivity extends AppCompatActivity {
         list.add(new DataBean(binaryTreeSort,"二叉树排序"));
         list.add(new DataBean(BubbleSort,"冒泡排序"));
         list.add(new DataBean(JavaThread,"线程通信与锁详解"));
+
     }
 }

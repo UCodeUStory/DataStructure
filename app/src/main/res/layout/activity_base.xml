@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.wangpos.datastructure.sort.BisearchActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        >
+
+
+        <TextView
+            android:id="@+id/tvDataMenu"
+            android:layout_width="wrap_content"
+            android:text="1.数据"
+            android:textColor="#333"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginLeft="20dp"
+            android:text="1，2，3，4，6，7，8，9，10" />
+        <ImageView
+            android:id="@+id/ivData"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+        <TextView
+            android:id="@+id/tvResultMenu"
+            android:layout_width="wrap_content"
+            android:text="2.结果"
+            android:textColor="#333"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="1，2，3，4，6，7，8，9，10" />
+
+        <Button
+            android:id="@+id/btnRun"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:text="运行程序"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvSummaryMenu"
+            android:layout_width="wrap_content"
+            android:text="3.总结"
+            android:textColor="#333"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="1，2，3，4，6，7，8，9，10" />
+        <TextView
+            android:id="@+id/tvTimeMenu"
+            android:layout_width="wrap_content"
+            android:text="4.时间复杂度"
+            android:textColor="#333"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="O(n)" />
+        <TextView
+            android:id="@+id/tvSpaceMenu"
+            android:layout_width="wrap_content"
+            android:text="5.空间复杂度"
+            android:textColor="#333"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="O(n)" />
+        <TextView
+            android:id="@+id/tvWendingxingMenu"
+            android:layout_width="wrap_content"
+            android:text="6.稳定性"
+            android:textColor="#333"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvWendingXing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="代码"
+            android:textColor="#333"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/lly_codeView"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

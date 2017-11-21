@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+
+</head>
+<body>
+    <div>
+        <ul>
+            <li>请用,(单字节)分割数字,0-999之间的数字</li>
+            <li>">"一个一个节点插入</li>
+            <li>">>"一次性插入所有节点</li>
+            <li>双击节点删除</li>
+        </ul>
+    </div>
+    <div>
+        <input id="numbertext" title="" placeholder="请用,(单字节)分割数字,0-999之间的数字" value="30,25,19,37,35,40,39,34,22,42,36" />
+        <input type="button" value=">" title="增加一个节点" onclick="AddOneNumber()" />
+        <input type="button" value=">>" title="一次性增加所有节点" onclick="AddAllNumber()" />
+    </div>
+    <br />
+    <canvas id="gameView" style="background-color:antiquewhite"> </canvas>
+
+    <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
+    <script src="BinaryTree.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

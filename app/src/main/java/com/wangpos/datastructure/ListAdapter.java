@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.wangpos.datastructure.core.DataBean;
+
 import java.util.ArrayList;
 import java.util.List;
 

@@ -5,23 +5,23 @@ import android.os.Bundle;
 import android.util.Log;
 
 import com.wangpos.datastructure.R;
+import com.wangpos.datastructure.core.BaseActivity;
+import com.wangpos.datastructure.core.CodeBean;
+import com.wangpos.datastructure.core.Node;
 
-public class BinaryTreeActivity extends AppCompatActivity {
+public class BinaryTreeActivity extends BaseActivity{
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_binary_tree);
+    protected void initData() {
 
-
-        Node root = new Node(1);
-        Node b = new Node(2);
-        Node c = new Node(3);
-        Node d = new Node(4);
-        Node e = new Node(5);
-        Node f = new Node(6);
-        Node g = new Node(7);
-
+        Node root = new Node(10);
+        Node b = new Node(8);
+        Node c = new Node(12);
+        Node d = new Node(7);
+        Node e = new Node(9);
+        Node f = new Node(11);
+        Node g = new Node(13);
 
         root.setLeftChild(b);
         root.setRightChild(c);
@@ -31,46 +31,59 @@ public class BinaryTreeActivity extends AppCompatActivity {
 
         c.setLeftChild(f);
         c.setRightChild(g);
+
+        addItem(new CodeBean("先序遍历",preorderstr));
+        addItem(new CodeBean("中序遍历",inorderStr));
+        addItem(new CodeBean("后序遍历",postOrderStr));
+
+        preorder(root);
+    }
+
+    @Override
+    protected String getTextData() {
+        return null;
+    }
+
+    @Override
+    protected int getImageData() {
+        return R.drawable.tree;
+    }
+
+    @Override
+    protected String getResultData() {
+        return null;
+    }
+
+    @Override
+    protected String getTimeData() {
+        return null;
+    }
+
+    @Override
+    protected String getSpaceTimeData() {
+        return null;
+    }
+
+    @Override
+    protected String getWendingXingData() {
+        return null;
+    }
+
+    @Override
+    protected String getSummaryData() {
+        return null;
     }
 
 
-    public class Node{
-        private Node leftChild;
 
-        private Node rightChild;
 
-        private int data;
-
-        public Node(int data){
-            this.data = data;
-        }
-
-        public Node getLeftChild() {
-            return leftChild;
-        }
-
-        public void setLeftChild(Node leftChild) {
-            this.leftChild = leftChild;
-        }
-
-        public Node getRightChild() {
-            return rightChild;
-        }
-
-        public void setRightChild(Node rightChild) {
-            this.rightChild = rightChild;
-        }
-
-        public int getData() {
-            return data;
-        }
-
-        public void setData(int data) {
-            this.data = data;
-        }
-
-    }
-
+    private static final String preorderstr = " protected static void preorder(Node p) {\n"+
+            "        if (p != null) {\n"+
+            "            Log.i(\"qiyue\",\"data=\"+p.getData());\n"+
+            "            preorder(p.getLeftChild());\n"+
+            "            preorder(p.getRightChild());\n"+
+            "        }\n"+
+            "    }";
     /** 递归实现前序遍历
      *
      * 跟左右
@@ -83,6 +96,13 @@ public class BinaryTreeActivity extends AppCompatActivity {
         }
     }
 
+    private static final String inorderStr = " protected static void inorder(Node p){\n" +
+            "        if (p != null) {\n" +
+            "            inorder(p.getLeftChild());\n" +
+            "            Log.i(\"qiyue\",\"data=\"+p.getData());\n" +
+            "            inorder(p.getRightChild());\n" +
+            "        }\n" +
+            "    }";
     /**
      *  递归实现中序遍历
      *  左右跟
@@ -96,6 +116,13 @@ public class BinaryTreeActivity extends AppCompatActivity {
         }
     }
 
+    private static final String postOrderStr = " protected static void postorder(Node p){\n" +
+            "        if (p !=null){\n" +
+            "            postorder(p.getLeftChild());\n" +
+            "            postorder(p.getRightChild());\n" +
+            "            Log.i(\"qiyue\",\"data=\"+p.getData());\n" +
+            "        }\n" +
+            "    }";
     /**
      * 递归实现后续遍历
      * @param p

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_descript"
+        android:layout_width="wrap_content"
+        android:text="描述"
+        android:layout_marginLeft="20dp"
+        android:textColor="#0e5c9c"
+
+        android:layout_height="wrap_content" />
+
+    <thereisnospon.codeview.CodeView
+        android:id="@+id/codeView"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        >
+    </thereisnospon.codeview.CodeView>
+</LinearLayout>
