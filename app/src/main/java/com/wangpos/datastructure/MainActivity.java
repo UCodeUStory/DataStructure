@@ -11,9 +11,11 @@ import com.wangpos.datastructure.core.DataBean;
 import com.wangpos.datastructure.java.JavaThreadActivity;
 import com.wangpos.datastructure.sort.BinaryTreeActivity;
 import com.wangpos.datastructure.sort.BisearchActivity;
+import com.wangpos.datastructure.sort.BubbleSortActivity;
 import com.wangpos.datastructure.sort.DirectInsertSortActivity;
 import com.wangpos.datastructure.sort.EasyLinkListActivity;
 import com.wangpos.datastructure.sort.EasyLinkListReverseActivity;
+import com.wangpos.datastructure.sort.OptionSortActivity;
 import com.wangpos.datastructure.sort.QuickSortActivity;
 import com.wangpos.datastructure.sort.RecursionActivity;
 import com.wangpos.datastructure.sort.SpaceComplexityActivity;
@@ -102,6 +104,12 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case Recursion:
                 startActivity(new Intent(this, RecursionActivity.class));
+                break;
+            case BubbleSort:
+                startActivity(new Intent(this, BubbleSortActivity.class));
+                break;
+            case OptionSort:
+                startActivity(new Intent(this, OptionSortActivity.class));
                 break;
             default:
                 break;

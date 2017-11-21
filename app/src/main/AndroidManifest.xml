@@ -25,8 +25,8 @@
         <activity android:name=".sort.QuickSortActivity" />
         <activity android:name=".sort.BubbleSortActivity" />
         <activity android:name=".sort.BinaryTreeActivity" />
-        <activity android:name=".core.BaseActivity" />
         <activity android:name=".sort.RecursionActivity"></activity>
+        <activity android:name=".sort.OptionSortActivity"></activity>
     </application>
 
 </manifest>

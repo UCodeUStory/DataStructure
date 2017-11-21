@@ -46,7 +46,10 @@ public class BisearchActivity extends AppCompatActivity implements View.OnClickL
 
         tvData.setText(Arrays.toString(arr));
         tvSummary.setText("当数据量很大适宜采用该方法。采用二分法查找时，数据需是排好序的,算法适用于已知有序的集合，并且知道是从大到小还是从小到大的;");
-        tvTime.setText("O(log N)");
+        tvTime.setText("O(log N)" +
+                "\n" +
+                "最好情况：O(1)一次找到\n" +
+                "最坏情况：O(log N)");
         tvStorage.setText("O(1)");
         codeView.showCode("  /**\n" +
                 "     * 已知数组是从小到大的排序\n" +

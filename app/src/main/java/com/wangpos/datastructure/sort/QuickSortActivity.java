@@ -55,9 +55,10 @@ public class QuickSortActivity extends AppCompatActivity implements View.OnClick
 
         tvData.setText(Arrays.toString(arr));
         tvSummary.setText("");
-        tvTime.setText("");
-        tvStorage.setText("");
-        tvWeidingXing.setText("");
+        tvTime.setText("O(n*log2n) \n" +
+                "");
+        tvStorage.setText("O(log2n)~O(n)");
+        tvWeidingXing.setText("不稳定");
         codeView.showCode("" +
                 "\n" +
                 "    private static int sortUnit(int[] array, int low, int high)\n" +
