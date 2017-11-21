@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wangpos.datastructure.sort.RecursionActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvFeature"
+            android:textColor="#28f4ad"
+            android:lineSpacingExtra="5dp"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvIntroduceRecursion"
+            android:layout_width="match_parent"
+            android:textColor="#333333"
+            android:lineSpacingExtra="5dp"
+            android:textSize="15sp"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+</ScrollView>

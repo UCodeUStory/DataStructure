@@ -15,6 +15,7 @@ import com.wangpos.datastructure.sort.DirectInsertSortActivity;
 import com.wangpos.datastructure.sort.EasyLinkListActivity;
 import com.wangpos.datastructure.sort.EasyLinkListReverseActivity;
 import com.wangpos.datastructure.sort.QuickSortActivity;
+import com.wangpos.datastructure.sort.RecursionActivity;
 import com.wangpos.datastructure.sort.SpaceComplexityActivity;
 import com.wangpos.datastructure.sort.TimeComplexityActivity;
 
@@ -44,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
     public static final int BubbleSort = 10;
 
     public static final int JavaThread = 11;
+
+    public static final int Recursion = 12;
 
 
     @Override
@@ -97,6 +100,9 @@ public class MainActivity extends AppCompatActivity {
             case binaryTreeSort:
                 startActivity(new Intent(this, BinaryTreeActivity.class));
                 break;
+            case Recursion:
+                startActivity(new Intent(this, RecursionActivity.class));
+                break;
             default:
                 break;
         }
@@ -106,6 +112,7 @@ public class MainActivity extends AppCompatActivity {
     private void initData(List<DataBean> list) {
         list.add(new DataBean(TimeComplexity,"时间复杂度介绍"));
         list.add(new DataBean(SpaceComplexity,"空间复杂度介绍"));
+        list.add(new DataBean(Recursion,"递归与非递归区别和转换"));
         list.add(new DataBean(Bisearch,"折半查找／二分法查找"));
         list.add(new DataBean(EasyLinkList,"Java链表实现"));
         list.add(new DataBean(ReverseEasyLinkList,"反转一个链表"));
