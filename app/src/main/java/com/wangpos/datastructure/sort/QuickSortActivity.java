@@ -58,7 +58,45 @@ public class QuickSortActivity extends AppCompatActivity implements View.OnClick
         tvTime.setText("");
         tvStorage.setText("");
         tvWeidingXing.setText("");
-        codeView.showCode("");
+        codeView.showCode("" +
+                "\n" +
+                "    private static int sortUnit(int[] array, int low, int high)\n" +
+                "    {\n" +
+                "        int key = array[low];//选取第一个为基准数\n" +
+                "        while (low < high)\n" +
+                "        {\n" +
+                "                /*从后向前搜索比key小的值*/\n" +
+                "            while (array[high] >= key && high > low)\n" +
+                "                --high;\n" +
+                "                /*比key小的放左边*/\n" +
+                "            array[low] = array[high];\n" +
+                "                /*从前向后搜索比key大的值，比key大的放右边*/\n" +
+                "            while (array[low] <= key && high > low)\n" +
+                "                ++low;\n" +
+                "                /*比key大的放右边*/\n" +
+                "            array[high] = array[low];\n" +
+                "        }\n" +
+                "            /*左边都比key小，右边都比key大。//将key放在游标当前位置。//此时low等于high */\n" +
+                "        array[low] = key;\n" +
+                "\n" +
+                "\n" +
+                "        return high;\n" +
+                "    }" +
+                "" +
+                "" +
+                "   public static void sort(int[] array, int low, int high)\n" +
+                "    {\n" +
+                "        if (low >= high)\n" +
+                "            return;\n" +
+                "            /*完成一次单元排序*/\n" +
+                "        int index = sortUnit(array, low, high);\n" +
+                "            /*对左边单元进行排序*/\n" +
+                "        sort(array, low, index - 1);\n" +
+                "            /*对右边单元进行排序*/\n" +
+                "        sort(array, index + 1, high);\n" +
+                "    }" +
+                "" +
+                "");
 
         dataBeans = new DataBean[arr.length];
         for (int i = 0; i < arr.length; i++) {

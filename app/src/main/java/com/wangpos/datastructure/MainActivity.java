@@ -14,6 +14,7 @@ import com.wangpos.datastructure.sort.BisearchActivity;
 import com.wangpos.datastructure.sort.DirectInsertSortActivity;
 import com.wangpos.datastructure.sort.EasyLinkListActivity;
 import com.wangpos.datastructure.sort.EasyLinkListReverseActivity;
+import com.wangpos.datastructure.sort.QuickSortActivity;
 import com.wangpos.datastructure.sort.SpaceComplexityActivity;
 import com.wangpos.datastructure.sort.TimeComplexityActivity;
 
@@ -91,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this, JavaThreadActivity.class));
                 break;
             case QuickSort:
+                startActivity(new Intent(this, QuickSortActivity.class));
                 break;
             case binaryTreeSort:
                 startActivity(new Intent(this, BinaryTreeActivity.class));

@@ -59,6 +59,7 @@
             android:text="运行程序"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:visibility="gone"
             android:textSize="16sp"
             android:layout_height="wrap_content" />
         <TextView

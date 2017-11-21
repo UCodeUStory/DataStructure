@@ -18,6 +18,7 @@ public class BinaryTreeActivity extends BaseActivity{
         Node root = new Node(10);
         Node b = new Node(8);
         Node c = new Node(12);
+
         Node d = new Node(7);
         Node e = new Node(9);
         Node f = new Node(11);
@@ -36,13 +37,19 @@ public class BinaryTreeActivity extends BaseActivity{
         addItem(new CodeBean("中序遍历",inorderStr));
         addItem(new CodeBean("后序遍历",postOrderStr));
 
-        preorder(root);
+        // 10 8 7 9 12 11 13
+//        preorder(root);
+        // 7 8 9 10 11 12 13
+//        inorder(root);
+        // 7 9 8 11 13 12 10
+//        postorder(root);
     }
 
     @Override
     protected String getTextData() {
         return null;
     }
+
 
     @Override
     protected int getImageData() {
@@ -51,12 +58,16 @@ public class BinaryTreeActivity extends BaseActivity{
 
     @Override
     protected String getResultData() {
-        return null;
+        return  "先序遍历：10 8 7 9 12 11 13" +
+                "\n" +
+                "中序遍历：7 8 9 10 11 12 13" +
+                "\n" +
+                "后序遍历：7 9 8 11 13 12 10";
     }
 
     @Override
     protected String getTimeData() {
-        return null;
+        return "O(nlogn)";
     }
 
     @Override
@@ -75,8 +86,6 @@ public class BinaryTreeActivity extends BaseActivity{
     }
 
 
-
-
     private static final String preorderstr = " protected static void preorder(Node p) {\n"+
             "        if (p != null) {\n"+
             "            Log.i(\"qiyue\",\"data=\"+p.getData());\n"+
@@ -84,17 +93,21 @@ public class BinaryTreeActivity extends BaseActivity{
             "            preorder(p.getRightChild());\n"+
             "        }\n"+
             "    }";
+
     /** 递归实现前序遍历
      *
      * 跟左右
      * */
     protected static void preorder(Node p) {
         if (p != null) {
-            Log.i("qiyue","data="+p.getData());
+            Log.i("info","data="+p.getData());
             preorder(p.getLeftChild());
             preorder(p.getRightChild());
         }
     }
+
+
+
 
     private static final String inorderStr = " protected static void inorder(Node p){\n" +
             "        if (p != null) {\n" +
@@ -111,7 +124,7 @@ public class BinaryTreeActivity extends BaseActivity{
     protected static void inorder(Node p){
         if (p != null) {
             inorder(p.getLeftChild());
-            Log.i("qiyue","data="+p.getData());
+            Log.i("info","data="+p.getData());
             inorder(p.getRightChild());
         }
     }
@@ -131,9 +144,12 @@ public class BinaryTreeActivity extends BaseActivity{
         if (p !=null){
             postorder(p.getLeftChild());
             postorder(p.getRightChild());
-            Log.i("qiyue","data="+p.getData());
+            Log.i("info","data="+p.getData());
         }
     }
+
+
+
 
 
 }
