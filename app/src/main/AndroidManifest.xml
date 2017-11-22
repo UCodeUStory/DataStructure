@@ -9,11 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".sort.BisearchActivity" />
         <activity android:name=".sort.EasyLinkListActivity" />
@@ -27,6 +23,13 @@
         <activity android:name=".sort.BinaryTreeActivity" />
         <activity android:name=".sort.RecursionActivity"></activity>
         <activity android:name=".sort.OptionSortActivity"></activity>
+        <activity android:name=".sort.HeapSortActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

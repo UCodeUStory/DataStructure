@@ -15,5 +15,9 @@
 - 线程与锁详解(还差wait和notify，notifyAll)
 - 二叉树的遍历(还差非递归遍历方法)
 - 图的遍历
+- ArrayList实现
+- LinkList双向实现
+- 堆排序
+
 
 

@@ -15,6 +15,7 @@ import com.wangpos.datastructure.sort.BubbleSortActivity;
 import com.wangpos.datastructure.sort.DirectInsertSortActivity;
 import com.wangpos.datastructure.sort.EasyLinkListActivity;
 import com.wangpos.datastructure.sort.EasyLinkListReverseActivity;
+import com.wangpos.datastructure.sort.HeapSortActivity;
 import com.wangpos.datastructure.sort.OptionSortActivity;
 import com.wangpos.datastructure.sort.QuickSortActivity;
 import com.wangpos.datastructure.sort.RecursionActivity;
@@ -49,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
     public static final int JavaThread = 11;
 
     public static final int Recursion = 12;
+
+    public static final int HeapSort = 13;
 
 
     @Override
@@ -111,6 +114,9 @@ public class MainActivity extends AppCompatActivity {
             case OptionSort:
                 startActivity(new Intent(this, OptionSortActivity.class));
                 break;
+            case HeapSort:
+                startActivity(new Intent(this, HeapSortActivity.class));
+                break;
             default:
                 break;
         }
@@ -130,6 +136,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new DataBean(binaryTreeSort,"二叉树排序"));
         list.add(new DataBean(BubbleSort,"冒泡排序"));
         list.add(new DataBean(JavaThread,"线程通信与锁详解"));
+        list.add(new DataBean(HeapSort,"堆排序"));
 
     }
 }

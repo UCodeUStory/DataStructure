@@ -1,5 +1,7 @@
 package com.wangpos.datastructure.core;
 
+import android.support.annotation.DrawableRes;
+import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -103,6 +105,18 @@ public abstract class BaseActivity extends AppCompatActivity {
         return (V) root.findViewById(id);
     }
 
+
+    protected void addImage(String title,@DrawableRes int id){
+        View itemView = null;
+        itemView = LayoutInflater.from(this).inflate(R.layout.image_item,null);
+
+        TextView tvTitle = itemView.findViewById(R.id.tv_title);
+        ImageView imageView = itemView.findViewById(R.id.imageView);
+
+        tvTitle.setText(title);
+        imageView.setImageResource(id);
+        linearLayout.addView(itemView,linearLayout.getChildCount());
+    }
 
     protected void addItem(CodeBean codeBean){
 
