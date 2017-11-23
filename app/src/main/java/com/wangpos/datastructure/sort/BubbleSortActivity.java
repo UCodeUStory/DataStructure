@@ -16,6 +16,7 @@ public class BubbleSortActivity extends BaseActivity {
 
     @Override
     protected void initData() {
+        setTitleText("冒泡排序");
         addItem(new CodeBean("冒泡排序",bubbleSortStr));
 
     }

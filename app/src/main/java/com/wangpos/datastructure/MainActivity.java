@@ -28,6 +28,8 @@ import com.wangpos.datastructure.sort.TimeComplexityActivity;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.wangpos.datastructure.core.BaseActivity.setWindowStatusBarColor;
+
 public class MainActivity extends AppCompatActivity {
 
     public static final int Bisearch = 1;
@@ -66,6 +68,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        setWindowStatusBarColor(this,R.color.colorPrimary);
         ListView mListView = (ListView)findViewById(R.id.listView);
         final ListAdapter adapter = new ListAdapter(this);
         List<DataBean>list = new ArrayList<>();

@@ -1,5 +1,8 @@
 package com.wangpos.datastructure.sort;
 
+import android.widget.TextView;
+
+import com.wangpos.datastructure.R;
 import com.wangpos.datastructure.core.BaseActivity;
 import com.wangpos.datastructure.core.CodeBean;
 
@@ -14,6 +17,7 @@ public class ShellSortActivity extends BaseActivity {
     int array[] = {82 ,31 ,29 ,71, 72, 42, 64, 5,110};
     @Override
     protected void initData() {
+        setTitleText("希尔排序");
         addItem(new CodeBean("希尔排序",shellSortCode));
 
     }
@@ -121,4 +125,7 @@ public class ShellSortActivity extends BaseActivity {
             incrementNum = incrementNum / 2;
         }
     }
+
+
+
 }

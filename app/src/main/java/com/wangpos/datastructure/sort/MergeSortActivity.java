@@ -16,6 +16,7 @@ public class MergeSortActivity extends BaseActivity {
     int arrays[] = {4,7,5,3,2,8,6,1};
     @Override
     protected void initData() {
+        setTitleText("归并排序");
         addItem(new CodeBean("归并排序",mergeCode));
 
     }

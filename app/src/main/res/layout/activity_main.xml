@@ -6,10 +6,11 @@
     android:layout_height="match_parent"
     tools:context="com.wangpos.datastructure.MainActivity">
 
-
+    <include android:id="@+id/include_title" layout="@layout/app_title"></include>
 
     <ListView
         android:id="@+id/listView"
+        android:layout_below="@+id/include_title"
         android:layout_width="match_parent"
         android:layout_height="match_parent"></ListView>
 </RelativeLayout>

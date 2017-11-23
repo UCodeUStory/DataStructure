@@ -10,6 +10,7 @@ import com.wangpos.datastructure.core.BaseActivity;
 public class EightSortDescriptionActivity extends BaseActivity {
     @Override
     protected void initData() {
+        setTitleText("八大排序总结");
         addImage("时间复杂度", R.drawable.eight);
         addImage("类别",R.drawable.eight2);
 

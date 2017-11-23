@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:layout="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <include layout="@layout/app_title"></include>
+
+
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.wangpos.datastructure.sort.BisearchActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
+
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
@@ -144,3 +156,4 @@
 
     </LinearLayout>
 </ScrollView>
+</LinearLayout>

@@ -14,7 +14,7 @@ public class BinaryTreeActivity extends BaseActivity{
 
     @Override
     protected void initData() {
-
+        setTitleText("二叉树排序");
         Node root = new Node(10);
         Node b = new Node(8);
         Node c = new Node(12);

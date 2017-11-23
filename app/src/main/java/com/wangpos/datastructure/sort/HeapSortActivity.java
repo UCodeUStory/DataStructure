@@ -17,6 +17,7 @@ public class HeapSortActivity extends BaseActivity {
      int arr[] = { 1, 3, 4, 5, 2, 6, 9, 7, 8, 0 };
     @Override
     protected void initData() {
+        setTitleText("堆排序");
         addItem(new CodeBean("堆的构建建和排序",heapSortCode));
         addItem(new CodeBean("堆的递归算法",heapAdjustRecursionCode));
         addItem(new CodeBean("堆的非递归算法",heapAdjustIteration));

@@ -1,5 +1,7 @@
 package com.wangpos.datastructure.core;
 
+import android.app.Activity;
+import android.os.Build;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +9,8 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -50,10 +54,12 @@ public abstract class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_base);
 
+        setWindowStatusBarColor(this,R.color.colorPrimary);
 //        mListView = $(R.id.listView);
 //        adapter = new ListScrollAdapter(new ArrayList<CodeBean>());
 
         linearLayout = $(R.id.lly_codeView);
+
         initData();
 //        mListView.setAdapter(adapter);
 
@@ -213,5 +219,26 @@ public abstract class BaseActivity extends AppCompatActivity {
         }
 
         return text;
+    }
+
+    public void setTitleText(String title){
+        TextView tvTitle = $(R.id.tvTitle);
+        tvTitle.setText(title);
+
+    }
+
+    public static void setWindowStatusBarColor(Activity activity, int colorResId) {
+        try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                Window window = activity.getWindow();
+                window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+                window.setStatusBarColor(activity.getResources().getColor(colorResId));
+
+                //底部导航栏
+                //window.setNavigationBarColor(activity.getResources().getColor(colorResId));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

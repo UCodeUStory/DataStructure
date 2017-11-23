@@ -13,7 +13,7 @@ public class OptionSortActivity extends BaseActivity {
     int arr[] = {23, 12, 13, 44, 65, 26, 17, 38, 59};
     @Override
     protected void initData() {
-
+        setTitleText("选择排序");
         addItem(new CodeBean("选择排序",selectSortStr));
     }
 
