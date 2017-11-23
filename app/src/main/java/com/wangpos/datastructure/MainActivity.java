@@ -15,10 +15,13 @@ import com.wangpos.datastructure.sort.BubbleSortActivity;
 import com.wangpos.datastructure.sort.DirectInsertSortActivity;
 import com.wangpos.datastructure.sort.EasyLinkListActivity;
 import com.wangpos.datastructure.sort.EasyLinkListReverseActivity;
+import com.wangpos.datastructure.sort.EightSortDescriptionActivity;
 import com.wangpos.datastructure.sort.HeapSortActivity;
+import com.wangpos.datastructure.sort.MergeSortActivity;
 import com.wangpos.datastructure.sort.OptionSortActivity;
 import com.wangpos.datastructure.sort.QuickSortActivity;
 import com.wangpos.datastructure.sort.RecursionActivity;
+import com.wangpos.datastructure.sort.ShellSortActivity;
 import com.wangpos.datastructure.sort.SpaceComplexityActivity;
 import com.wangpos.datastructure.sort.TimeComplexityActivity;
 
@@ -121,6 +124,15 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case HeapSort:
                 startActivity(new Intent(this, HeapSortActivity.class));
+                break;
+            case MerageSort:
+                startActivity(new Intent(this, MergeSortActivity.class));
+                break;
+            case ShellSort:
+                startActivity(new Intent(this, ShellSortActivity.class));
+                break;
+            case EightSortDescription:
+                startActivity(new Intent(this, EightSortDescriptionActivity.class));
                 break;
             default:
                 break;
