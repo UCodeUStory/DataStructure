@@ -91,12 +91,18 @@ public class HeapSortActivity extends BaseActivity {
      *
      *
      * 调整堆，也可以叫构建堆，准确的说是构建
+     *
+     * 交换都是最后一步， while循环内只是覆盖，上移，每次找出自节点最大最大值给parent赋值，自身先不变，
+     * 下次循环自身变为parent，找出孩子中最大值赋值给自身
+     *
+     * 循环终止条件 是给定一个parent点,大于其孩子 小于 parent 就会终止，
+     *
      * @param array 数组 1, 3, 4, 5, 2, 6, 9, 7, 8, 0
      * @param parent
      * @param length
      */
     public void HeapAdjust(int[] array, int parent, int length) {
-        int temp = array[parent]; // temp保存当前父节点
+        int temp = array[parent]; // temp保存当前父节点   第一次始终是0
         int child = 2 * parent + 1; // 先获得左孩子
         while (child < length) {
             /**
@@ -125,6 +131,9 @@ public class HeapSortActivity extends BaseActivity {
             Log.i("info","temp="+temp +"HeapAdjust="+Arrays.toString(array));
         }
 
+        /**
+         * 将本次父节点赋值给最后一个parent ，parent可能是自己
+         */
         array[parent] = temp;
 
     }
@@ -132,26 +141,74 @@ public class HeapSortActivity extends BaseActivity {
 
     public int[] heapSort(int[] list) {
         /**
-         * 从第一个叶子节点的父节点开始构建减少很多比较
+         * 建立堆的过程必须从第一个叶子节点的父节点开始构建，原理就是，我们必须要建立小的堆，逐渐扩大，
+         *
+         * 建立堆算法解析
+         *
+         * 第一趟按要求，从倒数第二层开始，只有两层，从第一个叶子节点的父节点开始，判断是否孩子中最大的，如果不是，则和孩子中最大值交换
+         * 第二趟指针前移动，如果还是在倒数第二层和第一趟算法一样
+         * 经过几次指针移动后，到了倒数第三层，此时是三层结构，也判断是否孩子中最大的，如果不是，把最大值拿过来，但最小值不要着急给出去，
+         * 有可能这个值小的离谱，所以继续顺着这个最大值的分支，找他的孩子比较，如果验证已经大于孩子就停止，否者继续向下层比较
+         *
+         * 第一趟的算法可以写成这样：
+         *
+         * int temp = array[parent];
+         * int child = 2 * parent + 1;
+         * if (child + 1 < length && array[child] < array[child + 1]) {
+               child++;
+           }
+
+            if (temp >= array[child]) {
+
+            }else{
+                array[parent] = array[child];
+            }
+
+          再倒数三层以上的算法（ 多出了向下查找判断）：
+             int temp = array[parent];
+             int child = 2 * parent + 1;
+             if (child + 1 < length && array[child] < array[child + 1]) {
+                child++;
+             }
+
+             if (temp >= array[child]) {
+
+             }else{
+                array[parent] = array[child];
+             }
+
+             //相当于递归
+             parent = child;
+             child = 2 * parent + 1;
+
+         *
+         *
+         *
+         *
+         *
          */
         // 循环建立初始堆
         for (int i = (list.length-1) / 2; i >= 0; i--) {
-            HeapAdjust(list, i, list.length);
+//            HeapAdjust(list, i, list.length);
+            heapAdjustRecursion(list,i,list.length);
         }
-        //[9, 8, 6, 7, 2, 1, 4, 3, 5, 0]
-        //[0, 8, 6, 7, 2, 1, 4, 3, 5, 9]
+        //初始数据[9, 8, 6, 7, 2, 1, 4, 3, 5, 0]
+
         Log.i("info", "111111111"+Arrays.toString(list));
-        // 进行n-1次循环，完成排序
-        for (int i = list.length - 1; i > list.length - 2; i--) {
+        /**
+         * 当前顶点和最后一个交换后，第一个数据有可能不符合堆结构，所以我们要找到他的位置，
+         * 如果第一次比较如比孩子大，那就不需要更换，否者，将孩子中最大的换到自己位置，此时空缺位置检测放入3合不合适，
+         * 也就是继续和这个位子的孩子中最大值比较，如果大于，那就是这个位置
+         */
+        for (int i = list.length - 1; i > 0; i--) {
             // 最后一个元素和第一元素进行交换
             int temp = list[i];
             list[i] = list[0];
             list[0] = temp;
-            // 筛选 R[0] 结点，得到i-1个结点的堆
-            HeapAdjust(list, 0, i);
-
-
-            System.out.format("第 %d 趟: \t", list.length - i );
+            //第一次交换后的数据[0, 8, 6, 7, 2, 1, 4, 3, 5, 9]
+//            HeapAdjust(list, 0, i);
+            heapAdjustRecursion(list,0,i);
+            //第一趟结果[8, 7, 6, 5, 2, 1, 4, 3, 0, 9]
 
             Log.i("info","第"+(list.length - i)+"趟list="+Arrays.toString(list));
 //            printPart(list, 0, list.length - 1);
@@ -163,6 +220,68 @@ public class HeapSortActivity extends BaseActivity {
 
 
     }
+
+
+
+    private static final String heapAdjustRecursionCode = "/**\n" +
+            "     * 递归方法\n" +
+            "     * 1.需要额外的方法栈空间\n" +
+            "     * 2.每次都需要交换\n" +
+            "     */\n" +
+            "    public void heapAdjustRecursion(int array[],int parent,int length){\n" +
+            "\n" +
+            "        int temp = array[parent];\n" +
+            "        int child = 2 * parent + 1;\n" +
+            "\n" +
+            "        if (child >=length){\n" +
+            "            Log.i(\"info\",\"child=\"+child+\"heapAdjustRecursion 结束\");\n" +
+            "            return;\n" +
+            "        }\n" +
+            "        if (child + 1 < length && array[child] < array[child + 1]) {\n" +
+            "            child++;\n" +
+            "        }\n" +
+            "\n" +
+            "        if (temp >= array[child]) {\n" +
+            "\n" +
+            "        }else{\n" +
+            "            array[parent] = array[child];\n" +
+            "            array[child] = temp;\n" +
+            "        }\n" +
+            "        parent = child;\n" +
+            "\n" +
+            "        heapAdjustRecursion(array,parent,length);\n" +
+            "    }";
+
+
+    /**
+     * 递归方法
+     * 1.需要额外的方法栈空间
+     * 2.每次都需要交换
+     */
+    public void heapAdjustRecursion(int array[],int parent,int length){
+
+        int temp = array[parent];
+        int child = 2 * parent + 1;
+
+        if (child >=length){
+            Log.i("info","child="+child+"heapAdjustRecursion 结束");
+            return;
+        }
+        if (child + 1 < length && array[child] < array[child + 1]) {
+            child++;
+        }
+
+        if (temp >= array[child]) {
+
+        }else{
+            array[parent] = array[child];
+            array[child] = temp;
+        }
+        parent = child;
+
+        heapAdjustRecursion(array,parent,length);
+    }
+
 
 
 
