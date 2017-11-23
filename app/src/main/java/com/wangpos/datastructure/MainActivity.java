@@ -53,6 +53,11 @@ public class MainActivity extends AppCompatActivity {
 
     public static final int HeapSort = 13;
 
+    public static final int MerageSort = 14;
+
+    public static final int ShellSort = 15;
+
+    public static final int EightSortDescription = 16;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -137,6 +142,9 @@ public class MainActivity extends AppCompatActivity {
         list.add(new DataBean(BubbleSort,"冒泡排序"));
         list.add(new DataBean(JavaThread,"线程通信与锁详解"));
         list.add(new DataBean(HeapSort,"堆排序"));
+        list.add(new DataBean(MerageSort,"归并排序"));
+        list.add(new DataBean(ShellSort,"希尔排序"));
+        list.add(new DataBean(EightSortDescription,"八大排序总结"));
 
     }
 }
