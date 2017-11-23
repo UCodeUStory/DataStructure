@@ -23,9 +23,5 @@
 - 八大排序总结
 
 
- ![image](https://github.com/UCodeUStory/DataStructure/blob/master/menu.png)
-
- ![image](https://github.com/UCodeUStory/DataStructureDataStructure/blob/master/menu1.png)
-
- ![image](https://github.com/UCodeUStory/DataStructure/blob/master/menu2.png)
+<img width="480" height="960" src="https://github.com/UCodeUStory/DataStructure/blob/master/menu.png"/>
 
