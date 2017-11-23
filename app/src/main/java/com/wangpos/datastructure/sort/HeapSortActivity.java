@@ -5,6 +5,7 @@ import android.util.Log;
 
 import com.wangpos.datastructure.R;
 import com.wangpos.datastructure.core.BaseActivity;
+import com.wangpos.datastructure.core.CodeBean;
 
 import java.util.Arrays;
 
@@ -16,6 +17,7 @@ public class HeapSortActivity extends BaseActivity {
      int arr[] = { 1, 3, 4, 5, 2, 6, 9, 7, 8, 0 };
     @Override
     protected void initData() {
+        addItem(new CodeBean("堆的递归算法",heapAdjustRecursionCode));
         addImage("第一次比较，找到最后一个节点的父节,根结点编号为0开始，第i个元素，通过公式(i-1)/2得到他的父亲节点", R.drawable.dui1);
         addImage("第二次比较", R.drawable.dui2);
         addImage("第三次比较", R.drawable.dui3);
@@ -139,62 +141,62 @@ public class HeapSortActivity extends BaseActivity {
     }
 
 
+    /**
+     * 建立堆的过程必须从第一个叶子节点的父节点开始构建，原理就是，我们必须要建立小的堆，逐渐扩大，
+     *
+     * 建立堆算法解析
+     *
+     * 第一趟按要求，从倒数第二层开始，只有两层，从第一个叶子节点的父节点开始，判断是否孩子中最大的，如果不是，则和孩子中最大值交换
+     * 第二趟指针前移动，如果还是在倒数第二层和第一趟算法一样
+     * 经过几次指针移动后，到了倒数第三层，此时是三层结构，也判断是否孩子中最大的，如果不是，把最大值拿过来，但最小值不要着急给出去，
+     * 有可能这个值小的离谱，所以继续顺着这个最大值的分支，找他的孩子比较，如果验证已经大于孩子就停止，否者继续向下层比较
+     *
+     * 第一趟的算法可以写成这样：
+     *
+     * int temp = array[parent];
+     * int child = 2 * parent + 1;
+     * if (child + 1 < length && array[child] < array[child + 1]) {
+     child++;
+     }
+
+     if (temp >= array[child]) {
+
+     }else{
+     array[parent] = array[child];
+     }
+
+     再倒数三层以上的算法（ 多出了向下查找判断）：
+     int temp = array[parent];
+     int child = 2 * parent + 1;
+     if (child + 1 < length && array[child] < array[child + 1]) {
+     child++;
+     }
+
+     if (temp >= array[child]) {
+
+     }else{
+     array[parent] = array[child];
+     }
+
+     //相当于递归
+     parent = child;
+     child = 2 * parent + 1;
+
+     *
+     *
+     */
     public int[] heapSort(int[] list) {
-        /**
-         * 建立堆的过程必须从第一个叶子节点的父节点开始构建，原理就是，我们必须要建立小的堆，逐渐扩大，
-         *
-         * 建立堆算法解析
-         *
-         * 第一趟按要求，从倒数第二层开始，只有两层，从第一个叶子节点的父节点开始，判断是否孩子中最大的，如果不是，则和孩子中最大值交换
-         * 第二趟指针前移动，如果还是在倒数第二层和第一趟算法一样
-         * 经过几次指针移动后，到了倒数第三层，此时是三层结构，也判断是否孩子中最大的，如果不是，把最大值拿过来，但最小值不要着急给出去，
-         * 有可能这个值小的离谱，所以继续顺着这个最大值的分支，找他的孩子比较，如果验证已经大于孩子就停止，否者继续向下层比较
-         *
-         * 第一趟的算法可以写成这样：
-         *
-         * int temp = array[parent];
-         * int child = 2 * parent + 1;
-         * if (child + 1 < length && array[child] < array[child + 1]) {
-               child++;
-           }
 
-            if (temp >= array[child]) {
-
-            }else{
-                array[parent] = array[child];
-            }
-
-          再倒数三层以上的算法（ 多出了向下查找判断）：
-             int temp = array[parent];
-             int child = 2 * parent + 1;
-             if (child + 1 < length && array[child] < array[child + 1]) {
-                child++;
-             }
-
-             if (temp >= array[child]) {
-
-             }else{
-                array[parent] = array[child];
-             }
-
-             //相当于递归
-             parent = child;
-             child = 2 * parent + 1;
-
-         *
-         *
-         *
-         *
-         *
-         */
         // 循环建立初始堆
         for (int i = (list.length-1) / 2; i >= 0; i--) {
 //            HeapAdjust(list, i, list.length);
-            heapAdjustRecursion(list,i,list.length);
+//            heapAdjustRecursion(list,i,list.length);
+//            heapAdjustIteration(list,i,list.length);
+            heapAdjustIterationGood(list,i,list.length);
         }
         //初始数据[9, 8, 6, 7, 2, 1, 4, 3, 5, 0]
 
-        Log.i("info", "111111111"+Arrays.toString(list));
+        Log.i("info", "初始后堆"+Arrays.toString(list));
         /**
          * 当前顶点和最后一个交换后，第一个数据有可能不符合堆结构，所以我们要找到他的位置，
          * 如果第一次比较如比孩子大，那就不需要更换，否者，将孩子中最大的换到自己位置，此时空缺位置检测放入3合不合适，
@@ -206,12 +208,12 @@ public class HeapSortActivity extends BaseActivity {
             list[i] = list[0];
             list[0] = temp;
             //第一次交换后的数据[0, 8, 6, 7, 2, 1, 4, 3, 5, 9]
-//            HeapAdjust(list, 0, i);
-            heapAdjustRecursion(list,0,i);
+//            heapAdjustRecursion(list,0,i);
+//            heapAdjustIteration(list,0,i);
+            heapAdjustIterationGood(list,0,i);
             //第一趟结果[8, 7, 6, 5, 2, 1, 4, 3, 0, 9]
 
             Log.i("info","第"+(list.length - i)+"趟list="+Arrays.toString(list));
-//            printPart(list, 0, list.length - 1);
 
         }
 
@@ -282,6 +284,65 @@ public class HeapSortActivity extends BaseActivity {
         heapAdjustRecursion(array,parent,length);
     }
 
+
+    /**
+     * 迭代算法（非递归算法）
+     * 每次都交换
+     */
+    public void heapAdjustIteration(int array[],int parent,int length){
+        int temp = array[parent];
+        int child = 2 *parent + 1;
+
+        while(child<length){
+            /**选出最大child**/
+            if (child + 1<length && array[child]<array[child +1]){
+                child ++;
+            }
+
+            if(temp>array[child]){
+                Log.i("info","heapAdjustIteration结束");
+                break;
+            }else{
+                array[parent] = array[child];
+                array[child] = temp;
+                parent = child;
+                child = 2 *parent +1;
+            }
+
+        }
+
+    }
+
+    /**
+     * 迭代算法（优化版）（非递归算法）
+     * 赋值不交换，最后一次再交换，减少一般的交换次数，也就是确定最终位置（和选择排序一样）
+     */
+    public void heapAdjustIterationGood(int array[],int parent,int length){
+        int temp = array[parent];
+        int child = 2 *parent + 1;
+
+        while(child<length){
+            /**选出最大child**/
+            if (child + 1<length && array[child]<array[child +1]){
+                child ++;
+            }
+
+            if(temp>array[child]){
+                Log.i("info","heapAdjustIteration结束");
+                break;
+            }else{
+                array[parent] = array[child];
+
+                parent = child;
+                child = 2 *parent +1;
+            }
+
+        }
+        //指向最后一个，child 可能指向没有
+        array[parent] = temp;
+//        array[child] = temp;
+
+    }
 
 
 
