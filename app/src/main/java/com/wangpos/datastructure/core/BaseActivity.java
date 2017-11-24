@@ -7,6 +7,7 @@ import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
@@ -20,6 +21,7 @@ import com.wangpos.datastructure.R;
 import com.wangpos.datastructure.sort.ListViewForScrollView;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import thereisnospon.codeview.CodeView;
 
@@ -240,5 +242,9 @@ public abstract class BaseActivity extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public void print(int a[]){
+        Log.i("info",Arrays.toString(a));
     }
 }

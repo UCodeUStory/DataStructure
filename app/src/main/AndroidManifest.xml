@@ -33,6 +33,7 @@
         </activity>
         <activity android:name=".sort.ShellSortActivity"></activity>
         <activity android:name=".sort.EightSortDescriptionActivity"></activity>
+        <activity android:name=".sort.CountSortActivity"></activity>
     </application>
 
 </manifest>

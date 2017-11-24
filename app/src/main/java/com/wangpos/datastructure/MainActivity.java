@@ -12,6 +12,7 @@ import com.wangpos.datastructure.java.JavaThreadActivity;
 import com.wangpos.datastructure.sort.BinaryTreeActivity;
 import com.wangpos.datastructure.sort.BisearchActivity;
 import com.wangpos.datastructure.sort.BubbleSortActivity;
+import com.wangpos.datastructure.sort.CountSortActivity;
 import com.wangpos.datastructure.sort.DirectInsertSortActivity;
 import com.wangpos.datastructure.sort.EasyLinkListActivity;
 import com.wangpos.datastructure.sort.EasyLinkListReverseActivity;
@@ -63,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
     public static final int ShellSort = 15;
 
     public static final int EightSortDescription = 16;
+
+    public static final int CountSort = 17;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -138,6 +141,10 @@ public class MainActivity extends AppCompatActivity {
             case EightSortDescription:
                 startActivity(new Intent(this, EightSortDescriptionActivity.class));
                 break;
+            case CountSort:
+                startActivity(new Intent(this,CountSortActivity.class));
+                break;
+
             default:
                 break;
         }
@@ -161,6 +168,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new DataBean(MerageSort,"归并排序"));
         list.add(new DataBean(ShellSort,"希尔排序"));
         list.add(new DataBean(EightSortDescription,"八大排序总结"));
+        list.add(new DataBean(CountSort, "计数排序"));
 
     }
 }

@@ -21,6 +21,10 @@
 - 归并排序
 - 希尔排序
 - 八大排序总结
+- 计数排序
+- 基数排序
+- 桶排序
+
 
 
 <img width="480" height="960" src="https://github.com/UCodeUStory/DataStructure/blob/master/menu.png"/>
