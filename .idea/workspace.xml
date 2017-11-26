@@ -12,7 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c36b3d7-82fb-4da1-98f5-8345655eb5e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/java/JavaWaitNotifyActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
@@ -22,9 +21,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/java/JavaWaitNotifyActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/java/JavaWaitNotifyActivity.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -97,24 +94,28 @@
       <file leaf-file-name="JavaWaitNotifyActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/java/JavaWaitNotifyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-72">
-              <caret line="93" column="19" lean-forward="false" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
+            <state relative-caret-position="-5247">
+              <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2098#2099#0" expanded="true" />
-                <element signature="e#2122#2123#0" expanded="true" />
-                <element signature="e#2176#2177#0" expanded="true" />
-                <element signature="e#2203#2204#0" expanded="true" />
-                <element signature="e#2255#2256#0" expanded="true" />
-                <element signature="e#2282#2283#0" expanded="true" />
-                <element signature="e#2339#2340#0" expanded="true" />
-                <element signature="e#2366#2367#0" expanded="true" />
-                <element signature="e#2425#2426#0" expanded="true" />
-                <element signature="e#2452#2453#0" expanded="true" />
-                <element signature="e#3601#3602#0" expanded="true" />
-                <element signature="e#3641#3642#0" expanded="true" />
-                <element signature="e#4276#4277#0" expanded="true" />
-                <element signature="e#4316#4317#0" expanded="true" />
+                <element signature="e#1250#1393#0" expanded="true" />
+                <element signature="e#1392#1393#0" expanded="true" />
+                <element signature="e#2799#2800#0" expanded="true" />
+                <element signature="e#2823#2824#0" expanded="true" />
+                <element signature="e#2877#2878#0" expanded="true" />
+                <element signature="e#2904#2905#0" expanded="true" />
+                <element signature="e#2956#2957#0" expanded="true" />
+                <element signature="e#2983#2984#0" expanded="true" />
+                <element signature="e#3040#3041#0" expanded="true" />
+                <element signature="e#3067#3068#0" expanded="true" />
+                <element signature="e#3126#3127#0" expanded="true" />
+                <element signature="e#3153#3154#0" expanded="true" />
+                <element signature="e#7815#7816#0" expanded="true" />
+                <element signature="e#7855#7856#0" expanded="true" />
+                <element signature="e#8490#8491#0" expanded="true" />
+                <element signature="e#8530#8531#0" expanded="true" />
+                <element signature="e#10486#10487#0" expanded="true" />
+                <element signature="e#10526#10527#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -3256,7 +3257,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511671646789" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511687951652" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -3304,7 +3305,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511671646790" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511687951652" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -3487,7 +3488,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511671646790" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511687951653" />
       </method>
     </configuration>
     <list size="1">
@@ -3548,7 +3549,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3629707" sideWeight="0.52442" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18828452" sideWeight="0.47557998" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29811716" sideWeight="0.47557998" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -4044,24 +4045,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/java/JavaWaitNotifyActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72">
-          <caret line="93" column="19" lean-forward="false" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
+        <state relative-caret-position="-5247">
+          <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2098#2099#0" expanded="true" />
-            <element signature="e#2122#2123#0" expanded="true" />
-            <element signature="e#2176#2177#0" expanded="true" />
-            <element signature="e#2203#2204#0" expanded="true" />
-            <element signature="e#2255#2256#0" expanded="true" />
-            <element signature="e#2282#2283#0" expanded="true" />
-            <element signature="e#2339#2340#0" expanded="true" />
-            <element signature="e#2366#2367#0" expanded="true" />
-            <element signature="e#2425#2426#0" expanded="true" />
-            <element signature="e#2452#2453#0" expanded="true" />
-            <element signature="e#3601#3602#0" expanded="true" />
-            <element signature="e#3641#3642#0" expanded="true" />
-            <element signature="e#4276#4277#0" expanded="true" />
-            <element signature="e#4316#4317#0" expanded="true" />
+            <element signature="e#1250#1393#0" expanded="true" />
+            <element signature="e#1392#1393#0" expanded="true" />
+            <element signature="e#2799#2800#0" expanded="true" />
+            <element signature="e#2823#2824#0" expanded="true" />
+            <element signature="e#2877#2878#0" expanded="true" />
+            <element signature="e#2904#2905#0" expanded="true" />
+            <element signature="e#2956#2957#0" expanded="true" />
+            <element signature="e#2983#2984#0" expanded="true" />
+            <element signature="e#3040#3041#0" expanded="true" />
+            <element signature="e#3067#3068#0" expanded="true" />
+            <element signature="e#3126#3127#0" expanded="true" />
+            <element signature="e#3153#3154#0" expanded="true" />
+            <element signature="e#7815#7816#0" expanded="true" />
+            <element signature="e#7855#7856#0" expanded="true" />
+            <element signature="e#8490#8491#0" expanded="true" />
+            <element signature="e#8530#8531#0" expanded="true" />
+            <element signature="e#10486#10487#0" expanded="true" />
+            <element signature="e#10526#10527#0" expanded="true" />
           </folding>
         </state>
       </provider>
