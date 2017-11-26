@@ -27,5 +27,5 @@
 
 
 
-<img width="480" height="960" src="https://github.com/UCodeUStory/DataStructure/blob/master/menu.png"/>
+<img width="480" height="854" src="https://github.com/UCodeUStory/DataStructure/blob/master/menu.png"/>
 

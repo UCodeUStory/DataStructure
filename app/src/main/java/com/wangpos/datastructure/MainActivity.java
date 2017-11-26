@@ -9,6 +9,7 @@ import android.widget.ListView;
 
 import com.wangpos.datastructure.core.DataBean;
 import com.wangpos.datastructure.java.JavaThreadActivity;
+import com.wangpos.datastructure.java.JavaWaitNotifyActivity;
 import com.wangpos.datastructure.sort.BinaryTreeActivity;
 import com.wangpos.datastructure.sort.BisearchActivity;
 import com.wangpos.datastructure.sort.BubbleSortActivity;
@@ -67,6 +68,8 @@ public class MainActivity extends AppCompatActivity {
 
     public static final int CountSort = 17;
 
+    public static final int JavaThreadWaitNotify = 18;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -113,6 +116,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case JavaThread:
                 startActivity(new Intent(this, JavaThreadActivity.class));
+                break;
+            case JavaThreadWaitNotify:
+                startActivity(new Intent(this, JavaWaitNotifyActivity.class));
                 break;
             case QuickSort:
                 startActivity(new Intent(this, QuickSortActivity.class));
@@ -164,6 +170,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new DataBean(binaryTreeSort,"二叉树排序"));
         list.add(new DataBean(BubbleSort,"冒泡排序"));
         list.add(new DataBean(JavaThread,"线程通信与锁详解"));
+        list.add(new DataBean(JavaThreadWaitNotify,"Wait/notify/notifyAll"));
         list.add(new DataBean(HeapSort,"堆排序"));
         list.add(new DataBean(MerageSort,"归并排序"));
         list.add(new DataBean(ShellSort,"希尔排序"));

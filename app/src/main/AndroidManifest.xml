@@ -34,6 +34,7 @@
         <activity android:name=".sort.ShellSortActivity"></activity>
         <activity android:name=".sort.EightSortDescriptionActivity"></activity>
         <activity android:name=".sort.CountSortActivity"></activity>
+        <activity android:name=".java.JavaWaitNotifyActivity"></activity>
     </application>
 
 </manifest>
