@@ -20,6 +20,7 @@ import com.wangpos.datastructure.sort.EasyLinkListActivity;
 import com.wangpos.datastructure.sort.EasyLinkListReverseActivity;
 import com.wangpos.datastructure.sort.EightSortDescriptionActivity;
 import com.wangpos.datastructure.sort.HeapSortActivity;
+import com.wangpos.datastructure.sort.MaxMinSelectActivity;
 import com.wangpos.datastructure.sort.MergeSortActivity;
 import com.wangpos.datastructure.sort.OptionSortActivity;
 import com.wangpos.datastructure.sort.QuickSortActivity;
@@ -72,6 +73,8 @@ public class MainActivity extends AppCompatActivity {
     public static final int JavaThreadWaitNotify = 18;
 
     public static final int JavaThreadJoin = 19;
+
+    public static final int MaxMinSelect = 20;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -153,9 +156,11 @@ public class MainActivity extends AppCompatActivity {
             case CountSort:
                 startActivity(new Intent(this,CountSortActivity.class));
                 break;
-
             case JavaThreadJoin:
                 startActivity(new Intent(this, JavaThreadSummary.class));
+                break;
+            case MaxMinSelect:
+                startActivity(new Intent(this, MaxMinSelectActivity.class));
                 break;
             default:
                 break;
@@ -183,6 +188,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new DataBean(ShellSort,"希尔排序"));
         list.add(new DataBean(EightSortDescription,"八大排序总结"));
         list.add(new DataBean(CountSort, "计数排序"));
+        list.add(new DataBean(MaxMinSelect,"快速找出最大值最小值算法"));
 
     }
 }

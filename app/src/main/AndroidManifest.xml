@@ -36,6 +36,7 @@
         <activity android:name=".sort.CountSortActivity"></activity>
         <activity android:name=".java.JavaWaitNotifyActivity"></activity>
         <activity android:name=".java.JavaThreadSummary"></activity>
+        <activity android:name=".sort.MaxMinSelectActivity"></activity>
     </application>
 
 </manifest>
