@@ -25,6 +25,7 @@ import com.wangpos.datastructure.sort.MergeSortActivity;
 import com.wangpos.datastructure.sort.OptionSortActivity;
 import com.wangpos.datastructure.sort.QuickSortActivity;
 import com.wangpos.datastructure.sort.RecursionActivity;
+import com.wangpos.datastructure.sort.SelectIndexDataActivity;
 import com.wangpos.datastructure.sort.ShellSortActivity;
 import com.wangpos.datastructure.sort.SpaceComplexityActivity;
 import com.wangpos.datastructure.sort.TimeComplexityActivity;
@@ -75,6 +76,8 @@ public class MainActivity extends AppCompatActivity {
     public static final int JavaThreadJoin = 19;
 
     public static final int MaxMinSelect = 20;
+
+    public static final int RandomizedSelect = 21;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -162,6 +165,9 @@ public class MainActivity extends AppCompatActivity {
             case MaxMinSelect:
                 startActivity(new Intent(this, MaxMinSelectActivity.class));
                 break;
+            case RandomizedSelect:
+                startActivity(new Intent(this, SelectIndexDataActivity.class));
+                break;
             default:
                 break;
         }
@@ -189,6 +195,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new DataBean(EightSortDescription,"八大排序总结"));
         list.add(new DataBean(CountSort, "计数排序"));
         list.add(new DataBean(MaxMinSelect,"快速找出最大值最小值算法"));
+        list.add(new DataBean(RandomizedSelect,"随机选择法查找第k个数据"));
 
     }
 }
