@@ -20,6 +20,7 @@ import com.wangpos.datastructure.sort.EasyLinkListActivity;
 import com.wangpos.datastructure.sort.EasyLinkListReverseActivity;
 import com.wangpos.datastructure.sort.EightSortDescriptionActivity;
 import com.wangpos.datastructure.sort.HeapSortActivity;
+import com.wangpos.datastructure.sort.MaxDataSelectDataActivity;
 import com.wangpos.datastructure.sort.MaxMinSelectActivity;
 import com.wangpos.datastructure.sort.MergeSortActivity;
 import com.wangpos.datastructure.sort.OptionSortActivity;
@@ -78,6 +79,8 @@ public class MainActivity extends AppCompatActivity {
     public static final int MaxMinSelect = 20;
 
     public static final int RandomizedSelect = 21;
+
+    public static final int MaxDataSelectData = 22;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -168,6 +171,8 @@ public class MainActivity extends AppCompatActivity {
             case RandomizedSelect:
                 startActivity(new Intent(this, SelectIndexDataActivity.class));
                 break;
+            case MaxDataSelectData:
+                startActivity(new Intent(this,MaxDataSelectDataActivity.class));
             default:
                 break;
         }
@@ -196,6 +201,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new DataBean(CountSort, "计数排序"));
         list.add(new DataBean(MaxMinSelect,"快速找出最大值最小值算法"));
         list.add(new DataBean(RandomizedSelect,"随机选择法查找第k个数据"));
+        list.add(new DataBean(MaxDataSelectData,"10亿数据选出前100数据"));
 
     }
 }

@@ -38,6 +38,7 @@
         <activity android:name=".java.JavaThreadSummary"></activity>
         <activity android:name=".sort.MaxMinSelectActivity"></activity>
         <activity android:name=".sort.SelectIndexDataActivity"></activity>
+        <activity android:name=".sort.MaxDataSelectDataActivity"></activity>
     </application>
 
 </manifest>
