@@ -6,4 +6,6 @@
 
     <color name="start">#3f403d</color>
     <color name="end">#16a788</color>
+    <color name="test">#FFF</color>
+    <color name="githubtitle">#000000</color>
 </resources>

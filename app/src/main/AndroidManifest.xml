@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wangpos.datastructure">
 
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -40,6 +41,7 @@
         <activity android:name=".sort.SelectIndexDataActivity"></activity>
         <activity android:name=".sort.MaxDataSelectDataActivity"></activity>
         <activity android:name=".sort.HashTableActivity"></activity>
+        <activity android:name=".core.WebViewActivity"></activity>
     </application>
 
 </manifest>

@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.wangpos.datastructure.core.DataBean;
+import com.wangpos.datastructure.core.WebViewActivity;
 import com.wangpos.datastructure.java.JavaThreadActivity;
 import com.wangpos.datastructure.java.JavaThreadSummary;
 import com.wangpos.datastructure.java.JavaWaitNotifyActivity;
@@ -84,6 +85,8 @@ public class MainActivity extends AppCompatActivity {
 
     public static final int HashTable = 23;
 
+    public static final int ToGitHub = 24;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -110,6 +113,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void onClickItem(DataBean data) {
         switch (data.type){
+            case ToGitHub:
+                Intent toGitHubIntent = new Intent(this, WebViewActivity.class);
+                toGitHubIntent.putExtra(WebViewActivity.EXTRA_URL,"https://github.com/UCodeUStory");
+                startActivity(toGitHubIntent);
+                break;
             case TimeComplexity:
                 startActivity(new Intent(this,TimeComplexityActivity.class));
                 break;
@@ -175,6 +183,12 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case MaxDataSelectData:
                 startActivity(new Intent(this,MaxDataSelectDataActivity.class));
+            case HashTable:
+                Intent hashIntent = new Intent(this, WebViewActivity.class);
+                hashIntent.putExtra(WebViewActivity.EXTRA_URL,"https://github.com/UCodeUStory/DataStructure/blob/master/hashtable.md");
+                startActivity(hashIntent);
+                break;
+
             default:
                 break;
         }
@@ -182,6 +196,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initData(List<DataBean> list) {
+        list.add(new DataBean(ToGitHub,"进入作者GitHub"));
         list.add(new DataBean(TimeComplexity,"时间复杂度介绍"));
         list.add(new DataBean(SpaceComplexity,"空间复杂度介绍"));
         list.add(new DataBean(Recursion,"递归与非递归区别和转换"));
@@ -205,6 +220,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new DataBean(RandomizedSelect,"随机选择法查找第k个数据"));
         list.add(new DataBean(MaxDataSelectData,"10亿数据选出前100数据"));
         list.add(new DataBean(HashTable,"散列表(哈希表)"));
+
 
     }
 }
