@@ -82,6 +82,8 @@ public class MainActivity extends AppCompatActivity {
 
     public static final int MaxDataSelectData = 22;
 
+    public static final int HashTable = 23;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -202,6 +204,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new DataBean(MaxMinSelect,"快速找出最大值最小值算法"));
         list.add(new DataBean(RandomizedSelect,"随机选择法查找第k个数据"));
         list.add(new DataBean(MaxDataSelectData,"10亿数据选出前100数据"));
+        list.add(new DataBean(HashTable,"散列表(哈希表)"));
 
     }
 }
