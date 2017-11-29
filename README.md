@@ -27,7 +27,7 @@
 - 同时找出最大值和最小值最优算法
 - 快速查找法，查找第k个最大的数
 - 10亿数据查找前100个
-- 散列表
+- 散列表(哈希表)
 
 
 <img width="480" height="854" src="https://github.com/UCodeUStory/DataStructure/blob/master/menu.png"/>
