@@ -87,6 +87,10 @@ public class MainActivity extends AppCompatActivity {
 
     public static final int ToGitHub = 24;
 
+    public static final int binarySearchTree = 25;
+
+    public static final int Singleton = 26;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -188,6 +192,16 @@ public class MainActivity extends AppCompatActivity {
                 hashIntent.putExtra(WebViewActivity.EXTRA_URL,"https://github.com/UCodeUStory/DataStructure/blob/master/hashtable.md");
                 startActivity(hashIntent);
                 break;
+            case binarySearchTree:
+                Intent binarySearchIntent = new Intent(this, WebViewActivity.class);
+                binarySearchIntent.putExtra(WebViewActivity.EXTRA_URL,"https://github.com/UCodeUStory/DataStructure/blob/master/sources/tree.md");
+                startActivity(binarySearchIntent);
+                break;
+            case Singleton:
+                Intent singletonIntent = new Intent(this, WebViewActivity.class);
+                singletonIntent.putExtra(WebViewActivity.EXTRA_URL,"https://github.com/UCodeUStory/DataStructure/blob/master/sources/singleInstance.md");
+                startActivity(singletonIntent);
+                break;
 
             default:
                 break;
@@ -207,10 +221,12 @@ public class MainActivity extends AppCompatActivity {
         list.add(new DataBean(QuickSort,"快速排序"));
         list.add(new DataBean(OptionSort,"选择排序"));
         list.add(new DataBean(binaryTreeSort,"二叉树排序"));
+        list.add(new DataBean(binarySearchTree,"二叉树搜索树介绍"));
         list.add(new DataBean(BubbleSort,"冒泡排序"));
         list.add(new DataBean(JavaThread,"线程通信与锁详解"));
         list.add(new DataBean(JavaThreadWaitNotify,"Wait/notify/notifyAll"));
         list.add(new DataBean(JavaThreadJoin,"Join详解"));
+        list.add(new DataBean(Singleton,"最好的单例模式"));
         list.add(new DataBean(HeapSort,"堆排序"));
         list.add(new DataBean(MerageSort,"归并排序"));
         list.add(new DataBean(ShellSort,"希尔排序"));
@@ -220,6 +236,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new DataBean(RandomizedSelect,"随机选择法查找第k个数据"));
         list.add(new DataBean(MaxDataSelectData,"10亿数据选出前100数据"));
         list.add(new DataBean(HashTable,"散列表(哈希表)"));
+
 
 
     }

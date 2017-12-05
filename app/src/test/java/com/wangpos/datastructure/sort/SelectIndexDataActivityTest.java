@@ -1,12 +1,8 @@
 package com.wangpos.datastructure.sort;
 
-import android.util.Log;
-
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.Arrays;
-import java.util.Comparator;
 import java.util.Random;
 
 import static org.junit.Assert.*;
@@ -63,6 +59,36 @@ public class SelectIndexDataActivityTest {
         assertEquals(2,result);
 
     }
+
+
+    /**
+     * 以录音为例，有，IDLE，READY_RECORD, RECORDING,READY_PAUSE，PAUSED，READY_CANCEL，CANCELED,SAVING,SAVED
+     *
+     *
+     * @throws Exception
+     */
+    @Test
+    public void testSate() throws Exception {
+         //状态机应用场景
+
+
+    }
+
+
+
+    enum EValue {
+
+        IDLE,READY_RECORD,RECORDING,READY_PAUSE,PAUSED
+
+    }
+
+
+
+
+
+
+
+
 
 
 
