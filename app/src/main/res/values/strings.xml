@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">算法大全</string>
+    <string name="addtwonumber">相加两个数</string>
 </resources>
