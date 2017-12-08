@@ -14,7 +14,7 @@
 - 冒泡排序
 - 线程与锁详解
 - 二叉树的遍历(还差非递归遍历方法)
-- [图的详解](https://github.com/UCodeUStory/DataStructure/blob/master/tu.md)
+- [图的详解](https://github.com/UCodeUStory/DataStructure/blob/master/sources/tu.md)
 - 图的遍历
 - ArrayList实现
 - LinkList双向实现

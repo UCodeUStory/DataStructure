@@ -12,10 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c36b3d7-82fb-4da1-98f5-8345655eb5e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sources/tu.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/MainActivity.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,8 +56,8 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2618">
-              <caret line="189" column="27" lean-forward="false" selection-start-line="189" selection-start-column="27" selection-end-line="189" selection-end-column="27" />
+            <state relative-caret-position="475">
+              <caret line="208" column="118" lean-forward="true" selection-start-line="208" selection-start-column="118" selection-end-line="208" selection-end-column="125" />
               <folding />
             </state>
           </provider>
@@ -88,12 +86,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="194">
-                <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+              <first_editor relative-caret-position="245">
+                <caret line="16" column="66" lean-forward="false" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -101,7 +99,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tu.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tu.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sources/tu.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -2942,18 +2940,18 @@
         <option value="$PROJECT_DIR$/app/src/test/java/com/wangpos/datastructure/user/ReadyContinue.java" />
         <option value="$PROJECT_DIR$/app/src/test/java/com/wangpos/datastructure/sort/SelectIndexDataActivityTest.java" />
         <option value="$PROJECT_DIR$/sources/singleInstance.md" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/java/AddTwoNumber.java" />
         <option value="$PROJECT_DIR$/sources/tree.md" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/sources/tu.md" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/MainActivity.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="719" />
+    <option name="x" value="29" />
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="958" />
@@ -3112,7 +3110,7 @@
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="sync.plugin.last.upgrade.timestamp" value="1512721565179" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="device.picker.selection" value="ba5c4f7b" />
+    <property name="device.picker.selection" value="0123abcd" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="android.profiler.active" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/test/java/com/wangpos/datastructure" />
@@ -3331,7 +3329,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512725083026" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512725409735" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -3379,7 +3377,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512725083026" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512725409736" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -3541,7 +3539,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512725083027" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512725409737" />
       </method>
     </configuration>
     <list size="5">
@@ -3636,11 +3634,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="719" y="23" width="1680" height="958" extended-state="0" />
+    <frame x="29" y="23" width="1680" height="958" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32897863" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845187" sideWeight="0.495116" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -3654,7 +3653,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41211402" sideWeight="0.52442" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22832723" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22832723" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24969475" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -3666,7 +3665,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845187" sideWeight="0.495116" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3998779" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -3866,6 +3864,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3930,6 +3929,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3975,14 +3975,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2618">
-          <caret line="189" column="27" lean-forward="false" selection-start-line="189" selection-start-column="27" selection-end-line="189" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/ListAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -4007,6 +3999,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sources/tu.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="99">
+            <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="208" column="118" lean-forward="true" selection-start-line="208" selection-start-column="118" selection-end-line="208" selection-end-column="125" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -4015,19 +4026,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="194">
-            <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/tu.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="99">
-            <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <first_editor relative-caret-position="245">
+            <caret line="16" column="66" lean-forward="false" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
             <folding />
           </first_editor>
           <second_editor />

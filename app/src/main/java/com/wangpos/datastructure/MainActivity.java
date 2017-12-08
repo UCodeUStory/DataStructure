@@ -91,6 +91,8 @@ public class MainActivity extends AppCompatActivity {
 
     public static final int Singleton = 26;
 
+    public static final int TU = 27;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -202,6 +204,11 @@ public class MainActivity extends AppCompatActivity {
                 singletonIntent.putExtra(WebViewActivity.EXTRA_URL,"https://github.com/UCodeUStory/DataStructure/blob/master/sources/singleInstance.md");
                 startActivity(singletonIntent);
                 break;
+            case TU:
+                Intent tuIntent = new Intent(this, WebViewActivity.class);
+                tuIntent.putExtra(WebViewActivity.EXTRA_URL,"https://github.com/UCodeUStory/DataStructure/blob/master/sources/tu.md");
+                startActivity(tuIntent);
+                break;
 
             default:
                 break;
@@ -236,6 +243,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new DataBean(RandomizedSelect,"随机选择法查找第k个数据"));
         list.add(new DataBean(MaxDataSelectData,"10亿数据选出前100数据"));
         list.add(new DataBean(HashTable,"散列表(哈希表)"));
+        list.add(new DataBean(TU,"图详解"));
 
 
 
