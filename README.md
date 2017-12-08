@@ -14,6 +14,7 @@
 - 冒泡排序
 - 线程与锁详解
 - 二叉树的遍历(还差非递归遍历方法)
+- [图的详解](https://github.com/UCodeUStory/DataStructure/blob/master/tu.md)
 - 图的遍历
 - ArrayList实现
 - LinkList双向实现
@@ -28,6 +29,7 @@
 - 快速查找法，查找第k个最大的数
 - 10亿数据查找前100个
 - [散列表(哈希表)](https://github.com/UCodeUStory/DataStructure/blob/master/hashtable.md)
+
 
 
 <img width="480" height="854" src="https://github.com/UCodeUStory/DataStructure/blob/master/menu.png"/>
