@@ -41,12 +41,18 @@
 
 入度(Indegree) 以某顶点为弧头，终止于该顶点的弧的数目称为该顶点的入度
 
-出度(Outdegree)、
-路径(path)、
-回路(环)、
-简单路径、
+出度(Outdegree)
+
+路径(path)
+
+回路(环)
+
+简单路径
+
 简单回路（简单环）
-、连通、
+
+连通
+
 连通图(Connected graph)、
 连通分量(Connected Component)、
 强连通图、
