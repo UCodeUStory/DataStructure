@@ -1,6 +1,6 @@
 
 ## Java 垃圾回收机制详解
-
+- [Java内存模型](https://github.com/UCodeUStory/DataStructure/blob/master/sources/JavaMemoryMode.md)
 
 - 1.内存回收机制：内存回收就是释放掉在内存中已经没用的对象。
 
