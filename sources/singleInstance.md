@@ -20,6 +20,7 @@
 ### 例子2，线程安全，多频调用效率极低
 
     public class SafeLazyInitialization {
+    
         private static Instance instance;
     
         public synchronized static Instance getInstance() {

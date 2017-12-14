@@ -93,6 +93,8 @@ public class MainActivity extends AppCompatActivity {
 
     public static final int TU = 27;
 
+    public static final int JavaGC = 28;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -210,6 +212,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(tuIntent);
                 break;
 
+            case JavaGC:
+                Intent javaGcIntent = new Intent(this, WebViewActivity.class);
+                javaGcIntent.putExtra(WebViewActivity.EXTRA_URL,"https://github.com/UCodeUStory/DataStructure/blob/master/sources/JavaGarbageCollection.md");
+                startActivity(javaGcIntent);
+                break;
+
             default:
                 break;
         }
@@ -244,6 +252,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new DataBean(MaxDataSelectData,"10亿数据选出前100数据"));
         list.add(new DataBean(HashTable,"散列表(哈希表)"));
         list.add(new DataBean(TU,"图详解"));
+        list.add(new DataBean(JavaGC,"Java垃圾回收机制"));
 
 
 
