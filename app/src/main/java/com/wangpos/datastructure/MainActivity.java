@@ -12,6 +12,7 @@ import com.wangpos.datastructure.core.WebViewActivity;
 import com.wangpos.datastructure.java.JavaThreadActivity;
 import com.wangpos.datastructure.java.JavaThreadSummary;
 import com.wangpos.datastructure.java.JavaWaitNotifyActivity;
+import com.wangpos.datastructure.other.MaxSubStringActivity;
 import com.wangpos.datastructure.sort.BinaryTreeActivity;
 import com.wangpos.datastructure.sort.BisearchActivity;
 import com.wangpos.datastructure.sort.BubbleSortActivity;
@@ -94,6 +95,8 @@ public class MainActivity extends AppCompatActivity {
     public static final int TU = 27;
 
     public static final int JavaGC = 28;
+
+    public static final int MAXSubString = 29;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -217,6 +220,9 @@ public class MainActivity extends AppCompatActivity {
                 javaGcIntent.putExtra(WebViewActivity.EXTRA_URL,"https://github.com/UCodeUStory/DataStructure/blob/master/sources/JavaGarbageCollection.md");
                 startActivity(javaGcIntent);
                 break;
+            case MAXSubString:
+                startActivity(new Intent(this, MaxSubStringActivity.class));
+                break;
 
             default:
                 break;
@@ -253,6 +259,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new DataBean(HashTable,"散列表(哈希表)"));
         list.add(new DataBean(TU,"图详解"));
         list.add(new DataBean(JavaGC,"Java垃圾回收机制"));
+        list.add(new DataBean(MAXSubString,"求最大不重复子串"));
 
 
 
