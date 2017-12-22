@@ -42,6 +42,7 @@
         <activity android:name=".sort.MaxDataSelectDataActivity"></activity>
         <activity android:name=".sort.HashTableActivity"></activity>
         <activity android:name=".core.WebViewActivity"></activity>
+        <activity android:name=".java.KeepMoreRequest"></activity>
         <activity android:name=".other.MaxSubStringActivity">
             <!--<intent-filter>-->
                 <!--<action android:name="android.intent.action.MAIN" />-->

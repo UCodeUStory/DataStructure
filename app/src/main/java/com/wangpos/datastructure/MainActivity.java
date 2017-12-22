@@ -12,6 +12,7 @@ import com.wangpos.datastructure.core.WebViewActivity;
 import com.wangpos.datastructure.java.JavaThreadActivity;
 import com.wangpos.datastructure.java.JavaThreadSummary;
 import com.wangpos.datastructure.java.JavaWaitNotifyActivity;
+import com.wangpos.datastructure.java.KeepMoreRequest;
 import com.wangpos.datastructure.other.MaxSubStringActivity;
 import com.wangpos.datastructure.sort.BinaryTreeActivity;
 import com.wangpos.datastructure.sort.BisearchActivity;
@@ -97,6 +98,8 @@ public class MainActivity extends AppCompatActivity {
     public static final int JavaGC = 28;
 
     public static final int MAXSubString = 29;
+
+    public static final int WaitMoreAsyncRequest = 30;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -224,6 +227,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this, MaxSubStringActivity.class));
                 break;
 
+            case WaitMoreAsyncRequest:
+                startActivity(new Intent(this, KeepMoreRequest.class));
+                break;
             default:
                 break;
         }
@@ -247,6 +253,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new DataBean(JavaThread,"线程通信与锁详解"));
         list.add(new DataBean(JavaThreadWaitNotify,"Wait/notify/notifyAll"));
         list.add(new DataBean(JavaThreadJoin,"Join详解"));
+        list.add(new DataBean(WaitMoreAsyncRequest,"等待多个异步请求完成"));
         list.add(new DataBean(Singleton,"最好的单例模式"));
         list.add(new DataBean(HeapSort,"堆排序"));
         list.add(new DataBean(MerageSort,"归并排序"));

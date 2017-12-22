@@ -62,7 +62,6 @@ public abstract class BaseActivity extends AppCompatActivity {
 
         linearLayout = $(R.id.lly_codeView);
 
-        initData();
 //        mListView.setAdapter(adapter);
 
         tvDataMenu = $(R.id.tvDataMenu);
@@ -84,7 +83,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 
         tvWendingXingMenu = $(R.id.tvWendingxingMenu);
         tvWendingXing = $(R.id.tvWendingXing);
-
+        initData();
 
 
         tvData.setText(getTVData());
