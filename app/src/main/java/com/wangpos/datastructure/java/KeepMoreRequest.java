@@ -10,6 +10,9 @@ import java.util.concurrent.CountDownLatch;
 
 /**
  * Created by qiyue on 2017/12/22.
+ *
+ *
+ * Java多线程（七）之同步器基础：AQS框架深入分析
  */
 
 public class KeepMoreRequest extends BaseActivity {
@@ -45,6 +48,9 @@ public class KeepMoreRequest extends BaseActivity {
 
                 workThread1.start();
                 workThread2.start();
+
+
+
 
                 Thread t = new Thread(){
 
