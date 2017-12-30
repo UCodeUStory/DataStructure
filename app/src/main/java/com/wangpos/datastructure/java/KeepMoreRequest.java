@@ -120,9 +120,6 @@ public class KeepMoreRequest extends BaseActivity {
 
     public void start1Thread(){
         CountDownLatch countDownLatch = new CountDownLatch(2);
-
-
-
     }
 
 
