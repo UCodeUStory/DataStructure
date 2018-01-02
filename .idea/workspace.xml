@@ -12,7 +12,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c36b3d7-82fb-4da1-98f5-8345655eb5e3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/javacollection.md" afterPath="$PROJECT_DIR$/sources/javacollection.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/graph/GraphActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sources/tu.md" afterPath="$PROJECT_DIR$/sources/tu.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -52,18 +63,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="JavaGarbageCollection.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sources/JavaGarbageCollection.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -116,12 +115,50 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="javacollection.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="javacollection.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sources/javacollection.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="272">
-                <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <first_editor relative-caret-position="119">
+                <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GraphActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/graph/GraphActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding>
+                <element signature="e#290#291#0" expanded="true" />
+                <element signature="e#317#318#0" expanded="true" />
+                <element signature="e#367#368#0" expanded="true" />
+                <element signature="e#391#392#0" expanded="true" />
+                <element signature="e#445#446#0" expanded="true" />
+                <element signature="e#472#473#0" expanded="true" />
+                <element signature="e#524#525#0" expanded="true" />
+                <element signature="e#551#552#0" expanded="true" />
+                <element signature="e#608#609#0" expanded="true" />
+                <element signature="e#635#636#0" expanded="true" />
+                <element signature="e#694#695#0" expanded="true" />
+                <element signature="e#721#722#0" expanded="true" />
+                <element signature="e#776#777#0" expanded="true" />
+                <element signature="e#803#804#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tu.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sources/tu.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="285">
+                <caret line="70" column="12" lean-forward="false" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -132,8 +169,8 @@
       <file leaf-file-name="FindFileActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/java/FindFileActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-697">
-              <caret line="83" column="30" lean-forward="true" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
+            <state relative-caret-position="1105">
+              <caret line="83" column="30" lean-forward="false" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#368#369#0" expanded="true" />
@@ -168,26 +205,9 @@
       <file leaf-file-name="KeepMoreRequest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/java/KeepMoreRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="646">
               <caret line="44" column="67" lean-forward="false" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
-              <folding>
-                <element signature="e#2182#2183#0" expanded="false" />
-                <element signature="e#2241#2242#0" expanded="false" />
-                <element signature="e#2291#2292#0" expanded="false" />
-                <element signature="e#2315#2316#0" expanded="false" />
-                <element signature="e#2369#2370#0" expanded="false" />
-                <element signature="e#2428#2429#0" expanded="false" />
-                <element signature="e#2480#2481#0" expanded="false" />
-                <element signature="e#2507#2508#0" expanded="false" />
-                <element signature="e#2564#2565#0" expanded="false" />
-                <element signature="e#2591#2592#0" expanded="false" />
-                <element signature="e#2650#2651#0" expanded="false" />
-                <element signature="e#2677#2678#0" expanded="false" />
-                <element signature="e#2732#2733#0" expanded="false" />
-                <element signature="e#2759#2760#0" expanded="false" />
-                <element signature="e#2793#2794#0" expanded="false" />
-                <element signature="e#2862#2863#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -2953,7 +2973,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/sort/MaxDataSelectDataActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/sort/HashTableDataProvider.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/sort/HashTableActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_webview.xml" />
@@ -2990,7 +3009,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/java/AddTwoNumber.java" />
         <option value="$PROJECT_DIR$/sources/tree.md" />
-        <option value="$PROJECT_DIR$/sources/tu.md" />
         <option value="$PROJECT_DIR$/sources/singleInstance.md" />
         <option value="$PROJECT_DIR$/sources/JavaMemoryMode.md" />
         <option value="$PROJECT_DIR$/sources/JavaGarbageCollection.md" />
@@ -3004,6 +3022,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/java/FileBean.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/java/FindFileActivity.java" />
         <option value="$PROJECT_DIR$/sources/javacollection.md" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/graph/GraphActivity.java" />
+        <option value="$PROJECT_DIR$/sources/tu.md" />
       </list>
     </option>
   </component>
@@ -3029,6 +3049,20 @@
     <panes>
       <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataStructure" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle Scripts" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidBuildScriptsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -3169,27 +3203,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="graph" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="AndroidView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataStructure" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle Scripts" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidBuildScriptsGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3197,7 +3217,7 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
-    <property name="sync.plugin.last.upgrade.timestamp" value="1514644968037" />
+    <property name="sync.plugin.last.upgrade.timestamp" value="1514880210548" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="device.picker.selection" value="0123abcd" />
     <property name="extract.method.default.visibility" value="private" />
@@ -3420,7 +3440,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1514816562271" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1514881120362" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -3468,7 +3488,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1514816562271" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1514881120362" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -3651,7 +3671,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1514816562272" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1514881120362" />
       </method>
     </configuration>
     <list size="5">
@@ -3749,8 +3769,9 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32897863" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32779098" sideWeight="0.495116" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -3776,7 +3797,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32779098" sideWeight="0.495116" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3998779" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -3825,13 +3845,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/sort/SelectIndexDataActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="33" column="61" lean-forward="false" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/sort/HashTableDataProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -3956,11 +3969,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hashtable.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="5134">
@@ -3969,14 +3977,9 @@
           <second_editor />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/tu.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="156">
-            <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          </first_editor>
-          <second_editor />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -4002,17 +4005,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="102">
             <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -4056,6 +4059,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -4063,6 +4067,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1649">
           <caret line="113" column="22" lean-forward="false" selection-start-line="113" selection-start-column="22" selection-end-line="113" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -4070,18 +4075,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sources/JavaMemoryMode.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="302" column="0" lean-forward="true" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SECOND">
           <first_editor relative-caret-position="0">
@@ -4089,6 +4087,11 @@
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="302" column="0" lean-forward="true" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -4105,26 +4108,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/java/KeepMoreRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="646">
           <caret line="44" column="67" lean-forward="false" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
-          <folding>
-            <element signature="e#2182#2183#0" expanded="false" />
-            <element signature="e#2241#2242#0" expanded="false" />
-            <element signature="e#2291#2292#0" expanded="false" />
-            <element signature="e#2315#2316#0" expanded="false" />
-            <element signature="e#2369#2370#0" expanded="false" />
-            <element signature="e#2428#2429#0" expanded="false" />
-            <element signature="e#2480#2481#0" expanded="false" />
-            <element signature="e#2507#2508#0" expanded="false" />
-            <element signature="e#2564#2565#0" expanded="false" />
-            <element signature="e#2591#2592#0" expanded="false" />
-            <element signature="e#2650#2651#0" expanded="false" />
-            <element signature="e#2677#2678#0" expanded="false" />
-            <element signature="e#2732#2733#0" expanded="false" />
-            <element signature="e#2759#2760#0" expanded="false" />
-            <element signature="e#2793#2794#0" expanded="false" />
-            <element signature="e#2862#2863#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -4138,8 +4124,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/java/FindFileActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-697">
-          <caret line="83" column="30" lean-forward="true" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
+        <state relative-caret-position="1105">
+          <caret line="83" column="30" lean-forward="false" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#368#369#0" expanded="true" />
@@ -4183,16 +4169,50 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sources/javacollection.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="119">
+            <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/graph/GraphActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#317#318#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#391#392#0" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#472#473#0" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#608#609#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#694#695#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#803#804#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/tu.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="272">
-            <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <first_editor relative-caret-position="285">
+            <caret line="70" column="12" lean-forward="false" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
             <folding />
           </first_editor>
           <second_editor />
