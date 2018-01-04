@@ -46,4 +46,7 @@ public class GraphActivity extends BaseActivity {
     protected String getSummaryData() {
         return null;
     }
+
+
+
 }
