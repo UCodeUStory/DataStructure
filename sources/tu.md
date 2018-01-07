@@ -87,7 +87,9 @@
 连通
 
 连通图(Connected graph)、
+
 连通分量(Connected Component)、
+
 强连通图、
 强连通分量(有向图中的极大强连通子图)、
 生成树、
