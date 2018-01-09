@@ -97,6 +97,16 @@ public class UndirectedGraph {
     }
 
 
+    /**
+     * I/tu      ( 7206): 0A>2(C)>3(D)>5(F)
+     I/tu      ( 7206): 1B
+     I/tu      ( 7206): 2C>1(B)>3(D)
+     I/tu      ( 7206): 3D
+     I/tu      ( 7206): 4E
+     I/tu      ( 7206): 5F>6(G)
+     I/tu      ( 7206): 6G>4(E)
+
+     */
     public void print() {
         System.out.printf("List Graph:\n");
         for (int i = 0; i < mVNodeArrays.length; i++) {
@@ -116,8 +126,8 @@ public class UndirectedGraph {
     }
 
 
-    /*
-     * 深度优先搜索遍历图
+    /**
+     * 深度优先搜索遍历图 A C B D F G E
      */
     public void DFS() {
         boolean[] visited = new boolean[mVNodeArrays.length];       // 顶点访问标记
@@ -152,7 +162,7 @@ public class UndirectedGraph {
     }
 
     /**
-     * 广度优先搜索
+     * 广度优先搜索 A C D F B G E
      */
     public void BFS() {
 
@@ -173,7 +183,7 @@ public class UndirectedGraph {
             if (!visited[i]) {
                 visited[i] = true;
 
-                Log.i("tu", "yyy" + mVNodeArrays[i].data);
+                Log.i("tu", "y" + mVNodeArrays[i].data);
                 //入列
                 queue[rear] = i;
                 rear++;
