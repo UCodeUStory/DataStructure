@@ -23,15 +23,25 @@ public class GraphActivity extends BaseActivity {
                 {"F", "G"},
                 {"G", "E"},
                 };
-        UndirectedGraph undirectedGraph = new UndirectedGraph(vexs,edges);
-        undirectedGraph.print();
-        undirectedGraph.DFS();
+//        UndirectedGraph undirectedGraph = new UndirectedGraph(vexs,edges);
+//        undirectedGraph.print();
+//        undirectedGraph.DFS();
+//
+//        undirectedGraph.BFS();
 
-        undirectedGraph.BFS();
+        UndirectedGraphMatrix undirectedGraphMatrix = new UndirectedGraphMatrix(vexs,edges);
+        undirectedGraphMatrix.DFS();
+        undirectedGraphMatrix.BFS();
+
+
         addImage("深度优先搜索图解",R.drawable.dfs);
         addItem(new CodeBean("邻接表存储-深度优先搜索代码",adjacencylist_dfs));
         addImage("广度优先搜索图解",R.drawable.bfs);
         addItem(new CodeBean("邻接表存储-广度优先搜索代码",bfs_code));
+
+        addItem(new CodeBean("邻接矩阵存储-深度优先搜索代码",matrix_dfs_code));
+        addItem(new CodeBean("邻接矩阵存储-广度优先搜索代码",matrix_bfs_code));
+
     }
 
     @Override
@@ -163,5 +173,101 @@ public class GraphActivity extends BaseActivity {
             "        }\n" +
             "\n" +
             "\n" +
+            "    }";
+
+    static String matrix_dfs_code = " /*\n" +
+            "    * 返回顶点v的第一个邻接顶点的索引，失败则返回-1\n" +
+            "    */\n" +
+            "    private int firstVertex(int v) {\n" +
+            "\n" +
+            "        if (v<0 || v>(mVexs.length-1))\n" +
+            "            return -1;\n" +
+            "\n" +
+            "        for (int i = 0; i < mVexs.length; i++)\n" +
+            "            if (mMatrix[v][i] == 1)\n" +
+            "                return i;\n" +
+            "\n" +
+            "        return -1;\n" +
+            "    }\n" +
+            "\n" +
+            "    /*\n" +
+            "     * 返回顶点v相对于w的下一个邻接顶点的索引，失败则返回-1\n" +
+            "     */\n" +
+            "    private int nextVertex(int v, int w) {\n" +
+            "\n" +
+            "        if (v<0 || v>(mVexs.length-1) || w<0 || w>(mVexs.length-1))\n" +
+            "            return -1;\n" +
+            "\n" +
+            "        for (int i = w + 1; i < mVexs.length; i++)\n" +
+            "            if (mMatrix[v][i] == 1)\n" +
+            "                return i;\n" +
+            "\n" +
+            "        return -1;\n" +
+            "    }\n" +
+            "\n" +
+            "    /*\n" +
+            "     * 深度优先搜索遍历图的递归实现\n" +
+            "     */\n" +
+            "    private void DFS(int i, boolean[] visited) {\n" +
+            "\n" +
+            "        visited[i] = true;\n" +
+            "        Log.i(\"tu\",mVexs[i]);\n" +
+            "        // 遍历该顶点的所有邻接顶点。若是没有访问过，那么继续往下走\n" +
+            "        for (int w = firstVertex(i); w >= 0; w = nextVertex(i, w)) {\n" +
+            "            if (!visited[w])\n" +
+            "                DFS(w, visited);\n" +
+            "        }\n" +
+            "    }\n" +
+            "\n" +
+            "    /*\n" +
+            " * 深度优先搜索遍历图\n" +
+            " */\n" +
+            "    public void DFS() {\n" +
+            "        boolean[] visited = new boolean[mVexs.length];       // 顶点访问标记\n" +
+            "\n" +
+            "        // 初始化所有顶点都没有被访问\n" +
+            "        for (int i = 0; i < mVexs.length; i++)\n" +
+            "            visited[i] = false;\n" +
+            "\n" +
+            "        Log.i(\"tu\",\"DFS: \");\n" +
+            "        for (int i = 0; i < mVexs.length; i++) {\n" +
+            "            if (!visited[i])\n" +
+            "                DFS(i, visited);\n" +
+            "        }\n" +
+            "        Log.i(\"tu\",\"\");\n" +
+            "    }";
+
+    static String matrix_bfs_code = "  /*\n" +
+            "    * 广度优先搜索（类似于树的层次遍历）\n" +
+            "    */\n" +
+            "    public void BFS() {\n" +
+            "        int head = 0;\n" +
+            "        int rear = 0;\n" +
+            "        int[] queue = new int[mVexs.length];            // 辅组队列\n" +
+            "        boolean[] visited = new boolean[mVexs.length];  // 顶点访问标记\n" +
+            "\n" +
+            "        for (int i = 0; i < mVexs.length; i++)\n" +
+            "            visited[i] = false;\n" +
+            "\n" +
+            "        Log.i(\"tu\",\"BFS: \");\n" +
+            "        for (int i = 0; i < mVexs.length; i++) {\n" +
+            "            if (!visited[i]) {\n" +
+            "                visited[i] = true;\n" +
+            "                Log.i(\"tu\", mVexs[i]);\n" +
+            "                queue[rear++] = i;  // 入队列\n" +
+            "            }\n" +
+            "\n" +
+            "            while (head != rear) {\n" +
+            "                int j = queue[head++];  // 出队列\n" +
+            "                for (int k = firstVertex(j); k >= 0; k = nextVertex(j, k)) { //k是为访问的邻接顶点\n" +
+            "                    if (!visited[k]) {\n" +
+            "                        visited[k] = true;\n" +
+            "                        Log.i(\"tu\", mVexs[k]);\n" +
+            "                        queue[rear++] = k;\n" +
+            "                    }\n" +
+            "                }\n" +
+            "            }\n" +
+            "        }\n" +
+            "        Log.i(\"tu\",\"\");\n" +
             "    }";
 }

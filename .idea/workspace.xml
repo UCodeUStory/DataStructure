@@ -13,6 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c36b3d7-82fb-4da1-98f5-8345655eb5e3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/graph/UndirectedGraphMatrix.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
@@ -24,8 +25,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/graph/GraphActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/graph/GraphActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/graph/UndirectedGraph.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/graph/UndirectedGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/image_item.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/image_item.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -65,39 +64,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="singleInstance.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sources/singleInstance.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1836">
-                <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="GraphActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/graph/GraphActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="431">
+              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1471#1472#0" expanded="true" />
+                <element signature="e#1507#1508#0" expanded="true" />
+                <marker date="1515482712000" expanded="false" signature="1393:1404" ph=" { " />
+                <marker date="1515482712000" expanded="false" signature="1416:1422" ph=" }" />
+                <marker date="1515482712000" expanded="false" signature="1992:2003" ph=" { " />
+                <marker date="1515482712000" expanded="false" signature="2015:2021" ph=" }" />
+                <marker date="1515482712000" expanded="false" signature="2076:2087" ph=" { " />
+                <marker date="1515482712000" expanded="false" signature="2099:2105" ph=" }" />
+                <marker date="1515482712000" expanded="false" signature="2162:2173" ph=" { " />
+                <marker date="1515482712000" expanded="false" signature="2185:2191" ph=" }" />
+                <marker date="1515482712000" expanded="false" signature="2244:2255" ph=" { " />
+                <marker date="1515482712000" expanded="false" signature="2267:2273" ph=" }" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GraphActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/graph/GraphActivity.java">
+      <file leaf-file-name="settings.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/settings.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2116">
-              <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1157#1158#0" expanded="true" />
-                <element signature="e#1193#1194#0" expanded="true" />
-                <marker date="1515469080000" expanded="false" signature="1079:1090" ph=" { " />
-                <marker date="1515469080000" expanded="false" signature="1102:1108" ph=" }" />
-                <marker date="1515469080000" expanded="false" signature="1678:1689" ph=" { " />
-                <marker date="1515469080000" expanded="false" signature="1701:1707" ph=" }" />
-                <marker date="1515469080000" expanded="false" signature="1762:1773" ph=" { " />
-                <marker date="1515469080000" expanded="false" signature="1785:1791" ph=" }" />
-                <marker date="1515469080000" expanded="false" signature="1848:1859" ph=" { " />
-                <marker date="1515469080000" expanded="false" signature="1871:1877" ph=" }" />
-                <marker date="1515469080000" expanded="false" signature="1930:1941" ph=" { " />
-                <marker date="1515469080000" expanded="false" signature="1953:1959" ph=" }" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UndirectedGraphMatrix.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/graph/UndirectedGraphMatrix.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="115" column="2" lean-forward="false" selection-start-line="115" selection-start-column="2" selection-end-line="147" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -106,8 +112,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="340">
-                <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+              <first_editor relative-caret-position="272">
+                <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -154,8 +160,8 @@
       <file leaf-file-name="UndirectedGraph.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/graph/UndirectedGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="163" column="2" lean-forward="false" selection-start-line="163" selection-start-column="2" selection-end-line="217" selection-end-column="5" />
+            <state relative-caret-position="844">
+              <caret line="55" column="7" lean-forward="false" selection-start-line="55" selection-start-column="7" selection-end-line="64" selection-end-column="22" />
               <folding>
                 <element signature="e#2074#2075#0" expanded="true" />
                 <element signature="e#2114#2115#0" expanded="true" />
@@ -184,19 +190,6 @@
           </provider>
           <provider editor-type-id="android-manifest">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tu.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sources/tu.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1343">
-                <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
           </provider>
         </entry>
       </file>
@@ -230,6 +223,7 @@
       <find>runBtn</find>
       <find>testInteruptThread</find>
       <find>addIm</find>
+      <find>getPosition</find>
       <find>'</find>
     </findStrings>
     <replaceStrings>
@@ -2909,7 +2903,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_webview.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/core/WebViewActivity.java" />
         <option value="$PROJECT_DIR$/hashtable.md" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
@@ -2957,8 +2950,9 @@
         <option value="$PROJECT_DIR$/sources/tu.md" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/graph/UndirectedGraph.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/graph/GraphActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/image_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/graph/UndirectedGraphMatrix.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/graph/GraphActivity.java" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -3130,40 +3124,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="datastructure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataStructure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataStructure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datastructure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3402,7 +3362,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515469391597" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515482759803" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -3450,7 +3410,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515469391597" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515482759803" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -3633,7 +3593,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515469391597" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515482759804" />
       </method>
     </configuration>
     <list size="5">
@@ -3807,26 +3767,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_title.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="14" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_webview.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/sort/MaxDataSelectDataActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -4123,17 +4063,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/graph/UndirectedGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="163" column="2" lean-forward="false" selection-start-line="163" selection-start-column="2" selection-end-line="217" selection-end-column="5" />
-          <folding>
-            <element signature="e#2074#2075#0" expanded="true" />
-            <element signature="e#2114#2115#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_base.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -4164,25 +4093,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/graph/UndirectedGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="844">
+          <caret line="55" column="7" lean-forward="false" selection-start-line="55" selection-start-column="7" selection-end-line="64" selection-end-column="22" />
+          <folding>
+            <element signature="e#2074#2075#0" expanded="true" />
+            <element signature="e#2114#2115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/graph/UndirectedGraphMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="115" column="2" lean-forward="false" selection-start-line="115" selection-start-column="2" selection-end-line="147" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/graph/GraphActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2116">
-          <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+        <state relative-caret-position="431">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1157#1158#0" expanded="true" />
-            <element signature="e#1193#1194#0" expanded="true" />
-            <marker date="1515469080000" expanded="false" signature="1079:1090" ph=" { " />
-            <marker date="1515469080000" expanded="false" signature="1102:1108" ph=" }" />
-            <marker date="1515469080000" expanded="false" signature="1678:1689" ph=" { " />
-            <marker date="1515469080000" expanded="false" signature="1701:1707" ph=" }" />
-            <marker date="1515469080000" expanded="false" signature="1762:1773" ph=" { " />
-            <marker date="1515469080000" expanded="false" signature="1785:1791" ph=" }" />
-            <marker date="1515469080000" expanded="false" signature="1848:1859" ph=" { " />
-            <marker date="1515469080000" expanded="false" signature="1871:1877" ph=" }" />
-            <marker date="1515469080000" expanded="false" signature="1930:1941" ph=" { " />
-            <marker date="1515469080000" expanded="false" signature="1953:1959" ph=" }" />
+            <element signature="e#1471#1472#0" expanded="true" />
+            <element signature="e#1507#1508#0" expanded="true" />
+            <marker date="1515482712000" expanded="false" signature="1393:1404" ph=" { " />
+            <marker date="1515482712000" expanded="false" signature="1416:1422" ph=" }" />
+            <marker date="1515482712000" expanded="false" signature="1992:2003" ph=" { " />
+            <marker date="1515482712000" expanded="false" signature="2015:2021" ph=" }" />
+            <marker date="1515482712000" expanded="false" signature="2076:2087" ph=" { " />
+            <marker date="1515482712000" expanded="false" signature="2099:2105" ph=" }" />
+            <marker date="1515482712000" expanded="false" signature="2162:2173" ph=" { " />
+            <marker date="1515482712000" expanded="false" signature="2185:2191" ph=" }" />
+            <marker date="1515482712000" expanded="false" signature="2244:2255" ph=" { " />
+            <marker date="1515482712000" expanded="false" signature="2267:2273" ph=" }" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -4194,8 +4150,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="340">
-            <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <first_editor relative-caret-position="272">
+            <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
             <folding />
           </first_editor>
           <second_editor />
