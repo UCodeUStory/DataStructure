@@ -9,6 +9,7 @@ import android.widget.ListView;
 
 import com.wangpos.datastructure.core.DataBean;
 import com.wangpos.datastructure.core.WebViewActivity;
+import com.wangpos.datastructure.graph.GraphActivity;
 import com.wangpos.datastructure.java.JavaThreadActivity;
 import com.wangpos.datastructure.java.JavaThreadSummary;
 import com.wangpos.datastructure.java.JavaWaitNotifyActivity;
@@ -100,6 +101,8 @@ public class MainActivity extends AppCompatActivity {
     public static final int MAXSubString = 29;
 
     public static final int WaitMoreAsyncRequest = 30;
+
+    public static final int Graph = 31;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -230,6 +233,9 @@ public class MainActivity extends AppCompatActivity {
             case WaitMoreAsyncRequest:
                 startActivity(new Intent(this, KeepMoreRequest.class));
                 break;
+            case Graph:
+                startActivity(new Intent(this, GraphActivity.class));
+                break;
             default:
                 break;
         }
@@ -267,6 +273,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new DataBean(TU,"图详解"));
         list.add(new DataBean(JavaGC,"Java垃圾回收机制"));
         list.add(new DataBean(MAXSubString,"求最大不重复子串"));
+        list.add(new DataBean(Graph,"图的算法"));
 
 
 
