@@ -10,11 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".MainActivity">
-            <intent-filter>
+          <!--  <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter>-->
         </activity>
         <activity android:name=".sort.BisearchActivity" />
         <activity android:name=".sort.EasyLinkListActivity" />
@@ -48,6 +48,13 @@
         </activity>
         <activity android:name=".graph.GraphActivity">
 
+        </activity>
+        <activity android:name=".graph.TopologicalOrderActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

@@ -9,6 +9,21 @@ import android.util.Log;
  */
 
 public class UndirectedGraphMatrix {
+    public String[] getmVexs() {
+        return mVexs;
+    }
+
+    public void setmVexs(String[] mVexs) {
+        this.mVexs = mVexs;
+    }
+
+    public int[][] getmMatrix() {
+        return mMatrix;
+    }
+
+    public void setmMatrix(int[][] mMatrix) {
+        this.mMatrix = mMatrix;
+    }
 
     private String[] mVexs;       // 顶点集合
     private int[][] mMatrix;    // 邻接矩阵
