@@ -4,6 +4,8 @@ import com.wangpos.datastructure.R;
 import com.wangpos.datastructure.core.BaseActivity;
 import com.wangpos.datastructure.core.CodeBean;
 
+import java.util.List;
+
 /**
  * Created by qiyue on 2018/1/9.
  */
@@ -40,7 +42,13 @@ public class TopologicalOrderActivity extends BaseActivity {
 
 //        graphMatrix.printPointDegree();
 
-        graphMatrix.toplogicSort();
+//        graphMatrix.toplogicSort();
+
+        graphMatrix.toplogicSortByDFS();
+
+//        List<Integer> result = graphMatrix.getDfsResult();
+
+
 
     }
 
