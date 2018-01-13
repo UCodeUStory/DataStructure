@@ -12,6 +12,7 @@ import java.util.List;
 
 public class TopologicalOrderActivity extends BaseActivity {
 
+
     @Override
     protected void initData() {
 
@@ -47,6 +48,8 @@ public class TopologicalOrderActivity extends BaseActivity {
         graphMatrix.toplogicSortByDFS();
 
 //        List<Integer> result = graphMatrix.getDfsResult();
+
+        addItem(new CodeBean("深度优先搜搜拓扑排序",sortByDFSCode));
 
 
 
@@ -99,4 +102,44 @@ public class TopologicalOrderActivity extends BaseActivity {
     }
 
 
+    public static String sortByDFSCode = "\n" +
+            "    public void toplogicSortByDFS(){\n" +
+            "\n" +
+            "\n" +
+            "        boolean[] visited = new boolean[mVexs.length];       // 顶点访问标记\n" +
+            "\n" +
+            "        // 初始化所有顶点都没有被访问\n" +
+            "        for (int i = 0; i < mVexs.length; i++)\n" +
+            "            visited[i] = false;\n" +
+            "\n" +
+            "        Log.i(\"tu\",\"DFS: \");\n" +
+            "        for (int i = 0; i < mVexs.length; i++) {\n" +
+            "            if (!visited[i]) {\n" +
+            "                DFS(i, visited);\n" +
+            "            }\n" +
+            "        }\n" +
+            "\n" +
+            "        for (int i=dfsResult.size()-1;i>=0;i--){\n" +
+            "            Log.i(\"topo\",mVexs[dfsResult.get(i).intValue()]);\n" +
+            "        }\n" +
+            "    }\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "    /*\n" +
+            "     * 深度优先搜索遍历图的递归实现\n" +
+            "     */\n" +
+            "    private void DFS(int i, boolean[] visited) {\n" +
+            "\n" +
+            "        visited[i] = true;\n" +
+            "        Log.i(\"tu\",mVexs[i]);\n" +
+            "        // 遍历该顶点的所有邻接顶点。若是没有访问过，那么继续往下走\n" +
+            "        for (int w = firstVertex(i); w >= 0; w = nextVertex(i, w)) {\n" +
+            "            if (!visited[w]) {\n" +
+            "                DFS(w, visited);\n" +
+            "\n" +
+            "            }\n" +
+            "        }\n" +
+            "        dfsResult.add(i);\n" +
+            "    }";
 }
