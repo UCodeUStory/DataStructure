@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import com.wangpos.datastructure.R;
 import com.wangpos.datastructure.core.BaseActivity;
+import com.wangpos.datastructure.core.CodeBean;
 
 import java.util.Arrays;
 
@@ -51,6 +52,7 @@ public class QuickSortActivity extends BaseActivity {
     @Override
     protected void initData() {
         setTitleText("快速排序");
+        addItem(new CodeBean("快速排序",quickSortCode));
 
     }
 
@@ -112,6 +114,9 @@ public class QuickSortActivity extends BaseActivity {
             array[high] = array[low];//
 
 
+            /**
+             * 一次的效果就是比Key小的放在了key（low）位置，再找比key大的放在high位置
+             */
 
 
             Log.i("info","一趟="+Arrays.toString(array));
@@ -125,6 +130,9 @@ public class QuickSortActivity extends BaseActivity {
          */
         int meetPosition = low = high;
 
+        /**
+         * key的位置被霸占了，所以key的位置是最终相遇的位置
+         */
         array[meetPosition] = key;
 
         return meetPosition;
@@ -139,10 +147,66 @@ public class QuickSortActivity extends BaseActivity {
             /*完成一次单元排序*/
         int index = sortUnit(array, low, high);
             /*对左边单元进行排序*/
-//        sort(array, low, index - 1);
+        sort(array, low, index - 1);
 //            /*对右边单元进行排序*/
-//        sort(array, index + 1, high);
+        sort(array, index + 1, high);
     }
 
 
+
+    private static String quickSortCode = "private static int sortUnit(int[] array, int low, int high)\n" +
+            "    {\n" +
+            "        int key = array[low];//选取第一个为基准数\n" +
+            "\n" +
+            "        while (low < high)\n" +
+            "        {\n" +
+            "                /*从后向前搜索比key小的值*/\n" +
+            "            while (array[high] >= key && high > low)\n" +
+            "                --high;\n" +
+            "                /*比key小的放左边*/\n" +
+            "            array[low] = array[high];\n" +
+            "                /*从前向后搜索比key大的值，比key大的放右边*/\n" +
+            "            while (array[low] <= key && high > low)\n" +
+            "                ++low;\n" +
+            "                /*比key大的放右边*/\n" +
+            "            array[high] = array[low];//\n" +
+            "\n" +
+            "\n" +
+            "            /**\n" +
+            "             * 一次的效果就是比Key小的放在了key（low）位置，再找比key大的放在high位置\n" +
+            "             */\n" +
+            "\n" +
+            "\n" +
+            "            Log.i(\"info\",\"一趟=\"+Arrays.toString(array));\n" +
+            "//            Log.i(\"info\",\"一趟=\"+\"low=\"+low +\"high=\"+high);\n" +
+            "        }\n" +
+            "            /*左边都比key小，右边都比key大。//将key放在游标当前位置。\n" +
+            "            //此时low等于high */\n" +
+            "        /**\n" +
+            "         * 相遇位置，\n" +
+            "         * 一开始meetPosition 等于low\n" +
+            "         */\n" +
+            "        int meetPosition = low = high;\n" +
+            "\n" +
+            "        /**\n" +
+            "         * key的位置被霸占了，所以key的位置是最终相遇的位置\n" +
+            "         */\n" +
+            "        array[meetPosition] = key;\n" +
+            "\n" +
+            "        return meetPosition;\n" +
+            "    }\n" +
+            "    /**快速排序\n" +
+            "     *@paramarry\n" +
+            "     *@return */\n" +
+            "    public static void sort(int[] array, int low, int high)\n" +
+            "    {\n" +
+            "        if (low >= high)\n" +
+            "            return;\n" +
+            "            /*完成一次单元排序*/\n" +
+            "        int index = sortUnit(array, low, high);\n" +
+            "            /*对左边单元进行排序*/\n" +
+            "        sort(array, low, index - 1);\n" +
+            "//            /*对右边单元进行排序*/\n" +
+            "        sort(array, index + 1, high);\n" +
+            "    }";
 }

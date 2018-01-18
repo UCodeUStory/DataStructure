@@ -17,6 +17,7 @@ import thereisnospon.codeview.CodeViewTheme;
 public class DirectInsertSortActivity extends AppCompatActivity implements View.OnClickListener {
 
     CodeView codeView;
+
     private Button btnRun;
     private TextView tvData;
     private TextView tvResult;
@@ -43,6 +44,7 @@ public class DirectInsertSortActivity extends AppCompatActivity implements View.
         tvTime = (TextView) findViewById(R.id.time);
         tvStorage = (TextView) findViewById(R.id.tvStorage);
         tvWeidingXing = (TextView) findViewById(R.id.tvWendingXing);
+
 
         tvResult.setText("");
 
@@ -100,7 +102,7 @@ public class DirectInsertSortActivity extends AppCompatActivity implements View.
      */
     public <Type extends Comparable<? super Type>> Type[] directInsertSort(Type[] arrays) {
         for (int i = 0; i < arrays.length; i++) {
-            for (int j = i + 1; j<arrays.length; j++) {
+            for (int j = i ; j>=0; j--) {
                 Type temp = arrays[i];
                 if (arrays[j].compareTo(arrays[i]) < 0) {//从小到大
                     arrays[i] = arrays[j];
