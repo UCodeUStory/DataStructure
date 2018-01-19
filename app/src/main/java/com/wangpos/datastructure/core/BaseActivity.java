@@ -24,6 +24,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import thereisnospon.codeview.CodeView;
+import thereisnospon.codeview.CodeViewTheme;
 
 public abstract class BaseActivity extends AppCompatActivity {
 
@@ -134,6 +135,22 @@ public abstract class BaseActivity extends AppCompatActivity {
         CodeView codeView = itemView.findViewById(R.id.codeView);
 
         tvDescription.setText(codeBean.description);
+        codeView.showCode(codeBean.codeStr);
+
+        linearLayout.addView(itemView,linearLayout.getChildCount());
+//        adapter.notifyDataSetChanged();
+    }
+
+    protected void addItem(CodeBean codeBean,CodeViewTheme theme){
+
+        View itemView = null;
+        itemView = LayoutInflater.from(this).inflate(R.layout.code_item,null);
+
+        TextView tvDescription = itemView.findViewById(R.id.tv_descript);
+        CodeView codeView = itemView.findViewById(R.id.codeView);
+
+        tvDescription.setText(codeBean.description);
+        codeView.setTheme(theme);
         codeView.showCode(codeBean.codeStr);
 
         linearLayout.addView(itemView,linearLayout.getChildCount());

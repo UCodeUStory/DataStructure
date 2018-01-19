@@ -9,6 +9,7 @@ import android.widget.ListView;
 
 import com.wangpos.datastructure.core.DataBean;
 import com.wangpos.datastructure.core.WebViewActivity;
+import com.wangpos.datastructure.graph.DjstaActivity;
 import com.wangpos.datastructure.graph.GraphActivity;
 import com.wangpos.datastructure.graph.TopologicalOrderActivity;
 import com.wangpos.datastructure.java.JavaThreadActivity;
@@ -106,6 +107,8 @@ public class MainActivity extends AppCompatActivity {
     public static final int Graph = 31;
 
     public static final int TopologicalSort = 32;
+
+    public static final int Djsta = 33;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -243,6 +246,8 @@ public class MainActivity extends AppCompatActivity {
             case TopologicalSort:
                 startActivity(new Intent(this, TopologicalOrderActivity.class));
                 break;
+            case Djsta:
+                startActivity(new Intent(this,DjstaActivity.class));
             default:
                 break;
         }
@@ -282,6 +287,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new DataBean(MAXSubString,"求最大不重复子串"));
         list.add(new DataBean(Graph,"图的算法"));
         list.add(new DataBean(TopologicalSort,"拓扑排序"));
+        list.add(new DataBean(Djsta,"最短路径算法1"));
 
 
     }

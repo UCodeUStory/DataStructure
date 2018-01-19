@@ -34,9 +34,18 @@ public class MatrixUDG {
     public void dijkstra(int vs) {
         // flag[i]=true表示"顶点vs"到"顶点i"的最短路径已成功获取
         boolean[] flag = new boolean[mVexs.length];
+        /**
+         * 路径保存辅助类
+         */
         int[] prev = new int[mVexs.length];
+        /**
+         * 最短距离
+         */
         int[] dist = new int[mVexs.length];
 
+        /**
+         * 路径保存
+         */
         String[] path = new String[mVexs.length];
         // 初始化
         for (int i = 0; i < mVexs.length; i++) {
@@ -78,22 +87,15 @@ public class MatrixUDG {
         // 打印dijkstra最短路径的结果
         Log.i("tu","dijkstra(%c): \n"+ mVexs[vs]);
         for (int i=0; i < mVexs.length; i++) {
-
-
-//            Log.i("tu", "" + mVexs[vs] + "到" + mVexs[i] + " 最短距离 " + dist[i]);
-
             int p = i;
             while (prev[p] != 0) {
-
                 if (path[i]!=null) {
                     path[i] = mVexs[prev[p]] + ">" + path[i];
                 }else{
                     path[i] = mVexs[prev[p]] + "";
                 }
-
                 p = prev[p];
             }
-
 
             if (path[i]!=null) {
                 path[i] = mVexs[vs] +">" + path[i] + ">" + mVexs[i];
@@ -107,13 +109,6 @@ public class MatrixUDG {
             String text = AlignText.join(" ",mVexs[vs] + "到" + mVexs[i],alignLeft("路径="+path[i],15),"最短距离=" + dist[i]);
 
             Log.i("tu",text);
-
-//            String lujing = AlignText.as(15).alignLeft("路径="+path[i]);
-
-
-
-
-
 
         }
     }
