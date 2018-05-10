@@ -13,7 +13,6 @@ public class TimeComplexityActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_time_complexity);
-
         tvIntroduce = (TextView)findViewById(R.id.introduce);
         TextView tvTwo = (TextView)findViewById(R.id.tvTwo);
 
