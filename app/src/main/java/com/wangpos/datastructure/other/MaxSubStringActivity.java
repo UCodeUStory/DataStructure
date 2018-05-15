@@ -19,10 +19,6 @@ public class MaxSubStringActivity extends BaseActivity {
     @Override
     protected void initData() {
 
-
-//        Log.i("sub",""+lengthOfLongestSubstring("abcdefghi"));
-//        Log.i("sub",""+lengthOfLongestSubstring("aabccdefghi"));
-
         Log.i("sub",""+lengthOfLongestSubstring("aabcadefghi"));//实际这个bcacefghi  //[a, c, d, e, f, g, h, i]
         addItem(new CodeBean("最长的子字符串不重复字符",code));
 
@@ -70,30 +66,6 @@ public class MaxSubStringActivity extends BaseActivity {
     protected String getSummaryData() {
         return null;
     }
-
-//
-//    public int lengthOfLongestSubstring(String s) {
-//        // write your code here
-//        if(s.length()==0){
-//            return 0;
-//        }
-//        int maxLength=1;
-//        List<Character> list=new ArrayList<Character>();
-//        for (int i=0;i<s.length();i++) {
-//            if (list.contains(s.charAt(i))) {
-//                list = list.subList(list.indexOf(s.charAt(i))+1,list.size());
-//                list.add(s.charAt(i));
-//                maxLength = Math.max(maxLength,list.size());
-//            }else{
-//                list.add(s.charAt(i));
-//                maxLength = Math.max(maxLength,list.size());
-//            }
-//        }
-//
-//
-//        Log.i("sub","最长子串="+list.toString());
-//        return maxLength;
-//    }
 
 
 

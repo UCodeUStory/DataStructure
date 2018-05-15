@@ -13,7 +13,7 @@
 - [选择排序](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/sort/OptionSortActivity.java)
 - [冒泡排序](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/sort/BubbleSortActivity.java)
 - [线程与锁详解](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/java/JavaThreadActivity.java)
-- [二叉树的遍历]()
+- 二叉树的遍历
 - [二叉排序树]()
 - [图的详解](https://github.com/UCodeUStory/DataStructure/blob/master/sources/tu.md)
 - 图的邻接表存储构成图
@@ -24,7 +24,7 @@
 - 有向图的创建
 - 拓扑排序-邻接矩阵存储-Kahn算法
 - 拓扑排序-邻接矩阵存储-深度优先搜索算法
-- 最短路径算法之Dijkstra算法（狄克斯特拉算法）
+- [最短路径算法之Dijkstra算法（狄克斯特拉算法](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/graph/DjstaActivity.java)
 - 最短路径算法
 - ArrayList实现
 - LinkList双向实现
@@ -39,7 +39,7 @@
 - 快速查找法，查找第k个最大的数
 - 10亿数据查找前100个
 - [散列表(哈希表)](https://github.com/UCodeUStory/DataStructure/blob/master/hashtable.md)
-- 求最大不重复子串
+- [求最大不重复子串](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/other/MaxSubStringActivity.java)
 - 两个排序数组的中值
 
 
