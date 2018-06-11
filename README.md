@@ -42,6 +42,10 @@
 - [求最大不重复子串](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/other/MaxSubStringActivity.java)
 - 两个排序数组的中值
 
+####Java 
+- [Java垃圾回收机制](https://github.com/UCodeUStory/DataStructure/blob/master/sources/JavaGarbageCollection.md)
+- [Java 强、软、弱、虚引用](https://github.com/UCodeUStory/DataStructure/blob/master/sources/reference.md)
+- [Java 线程池]
 
 
 <img width="480" height="854" src="https://github.com/UCodeUStory/DataStructure/blob/master/menu.png"/>
