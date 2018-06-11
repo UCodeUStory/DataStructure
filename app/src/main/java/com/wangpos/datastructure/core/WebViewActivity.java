@@ -34,6 +34,8 @@ public class WebViewActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_webview);
         webview = (WebView) findViewById(R.id.webview);
+
+
         initCreateData();
         setWindowStatusBarColor(this,R.color.githubtitle);
     }
@@ -131,6 +133,7 @@ public class WebViewActivity extends Activity {
         webview.getSettings().setAppCacheEnabled(true);//是否使用缓存
         webview.getSettings().setDomStorageEnabled(true);//DOM Storage
         webview.getSettings().setTextSize(WebSettings.TextSize.NORMAL);
+
         this.webview.loadUrl(this.getUrl());
     }
   /*  @SuppressLint("SetJavaScriptEnabled")

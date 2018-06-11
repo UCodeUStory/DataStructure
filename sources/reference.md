@@ -59,40 +59,54 @@
 
 1. 特点
 
-        如果一个对象只具有弱引用，那么在垃圾回收器线程扫描的过程中，一旦发现了只具有弱引用的对象，不管当前内存空间足够与否，都会回收它的内存。不过，由于垃圾回收器是一个优先级很低的线程，因此不一定会很快发现那些只具有弱引用的对象。
-        
+        如果一个对象只具有弱引用，那么在垃圾回收器线程扫描的过程中，一旦发现了只具有弱引用的对象，不管当前内存空间足够与否，都会回收它的内存。
+        不过，由于垃圾回收器是一个优先级很低的线程，因此不一定会很快发现那些只具有弱引用的对象，因此可以用于缓存
         弱引用也可以和一个引用队列（ReferenceQueue）联合使用，如果弱引用所引用的对象被垃圾回收，Java虚拟机就会把这个弱引用加入到与之关联的引用队列中。
 
         ***** WeakReference：防止内存泄漏，要保证内存被虚拟机回收
 
 
-2. handler为什么这样会造成内存泄漏
+2. 应用
+   1. 解决Handler内存泄露
+   2. 实现缓存，Android 官方建议使用WeakReference 而不是softReference
+   
+#### 下面Java和Android环境下SoftReference 和WeakReference使用
+       
+       
+       public static void main(String[] args) throws InterruptedException {
+       
+               initsoftReference();
+               initweakReference();
+               
+               Thread.sleep(2000);
+               System.gc();
+               
+               if (softReference.get() == null) {
+                   System.out.println("SoftReference : " + "null");
+               }else{
+                   System.out.println("SoftReference : " + softReference.get());
+               }
+       
+       
+               if (weakReference.get() == null) {
+                   System.out.println("WeakReference : " + "null");
+               }else{
+                   System.out.println("WeakReference : " + weakReference.get());
+               }
+               
+           }
+       
+           private static void initsoftReference() {
+               softReference = new SoftReference(value_soft);
+               value_soft = null;
+           }
+       
+           private static void initweakReference() {
+               weakReference = new WeakReference(value_weak);
+               value_weak = null;
+           }
+      
+#### 从上面的情况，我们还让你容易可以观察Android环境下与纯Java环境下两者直接的输出结果不同！
+在Android环境下WeakReference 与SoftReference 两者输出结果一样。其实对于手机系统存在多应用，又对于内存是比较敏感的，自然对于内存释放会更加严格。
+试想一下，如果众多对象使用 SoftReference引用，大部分都是这也是为什么google不建议SoftReference 的原因之一。
 
-        这种情况就是由于android的特殊机制造成的：当一个android主线程被创建的时候，同时会有一个Looper对象被创建，而这个Looper对象会实现一个MessageQueue(消息队列)，当我们创建一个handler对象时，而handler的作用就是放入和取出消息从这个消息队列中，每当我们通过handler将一个msg放入消息队列时，这个msg就会持有一个handler对象的引用。
-        
-        因此当Activity被结束后，这个msg在被取出来之前，这msg会继续存活，但是这个msg持有handler的引用，而handler在Activity中创建，会持有Activity的引用，因而当Activity结束后，Activity对象并不能够被gc回收，因而出现内存泄漏。
-
-3. 根本原因
-
-        Activity在被结束之后，MessageQueue并不会随之被结束，如果这个消息队列中存在msg，则导致持有handler的引用，但是又由于Activity被结束了，msg无法被处理，从而导致永久持有handler对象，handler永久持有Activity对象，于是发生内存泄漏。但是为什么为static类型就会解决这个问题呢？
-        
-        因为在java中所有非静态的对象都会持有当前类的强引用，而静态对象则只会持有当前类的弱引用。
-        
-        声明为静态后，handler将会持有一个Activity的弱引用，而弱引用会很容易被gc回收，这样就能解决Activity结束后，gc却无法回收的情况。
-
-4. 弱引用解决办法
-
-        代码如下所示
-        private MyHandler handler = new MyHandler(this);
-        private static class MyHandler extends Handler{
-            WeakReference<FirstActivity> weakReference;
-            MyHandler(FirstActivity activity) {
-                weakReference = new WeakReference<>(activity);
-            }
-            @Override
-            public void handleMessage(Message msg) {
-                super.handleMessage(msg);
-                switch (msg.what){
-                }
-            }
-        }

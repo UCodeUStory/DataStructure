@@ -16,6 +16,7 @@ import com.wangpos.datastructure.java.JavaThreadActivity;
 import com.wangpos.datastructure.java.JavaThreadSummary;
 import com.wangpos.datastructure.java.JavaWaitNotifyActivity;
 import com.wangpos.datastructure.java.KeepMoreRequest;
+import com.wangpos.datastructure.java.ReferenceQueueActivity;
 import com.wangpos.datastructure.other.MaxSubStringActivity;
 import com.wangpos.datastructure.sort.BinaryTreeActivity;
 import com.wangpos.datastructure.sort.BisearchActivity;
@@ -109,6 +110,8 @@ public class MainActivity extends AppCompatActivity {
     public static final int TopologicalSort = 32;
 
     public static final int Djsta = 33;
+
+    public static final int JavaReferenceQueue = 34;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -248,6 +251,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case Djsta:
                 startActivity(new Intent(this,DjstaActivity.class));
+            case JavaReferenceQueue:
+                startActivity(new Intent(this,ReferenceQueueActivity.class));
+                break;
             default:
                 break;
         }
@@ -288,6 +294,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new DataBean(Graph,"图的算法"));
         list.add(new DataBean(TopologicalSort,"拓扑排序"));
         list.add(new DataBean(Djsta,"最短路径算法1"));
+        list.add(new DataBean(JavaReferenceQueue,"ReferenceQueue"));
 
 
     }
