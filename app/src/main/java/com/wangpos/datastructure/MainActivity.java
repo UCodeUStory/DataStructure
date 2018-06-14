@@ -299,7 +299,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new DataBean(MAXSubString,"求最大不重复子串"));
         list.add(new DataBean(Graph,"图的算法"));
         list.add(new DataBean(TopologicalSort,"拓扑排序"));
-        list.add(new DataBean(Djsta,"最短路径算法1"));
+        list.add(new DataBean(Djsta,"最短路径算法Djsta"));
         list.add(new DataBean(JavaReferenceQueue,"ReferenceQueue"));
         list.add(new DataBean(JavaThreadPrinciple,"Java线程池原理"));
 

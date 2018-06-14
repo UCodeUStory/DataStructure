@@ -25,19 +25,16 @@
 - 拓扑排序-邻接矩阵存储-Kahn算法
 - 拓扑排序-邻接矩阵存储-深度优先搜索算法
 - [最短路径算法之Dijkstra算法（狄克斯特拉算法](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/graph/DjstaActivity.java)
-- 最短路径算法
 - ArrayList实现
 - LinkList双向实现
-- 堆排序
-- 归并排序
-- 希尔排序
-- 八大排序总结
-- 计数排序
-- 基数排序(以后再加，不常用)
-- 桶排序
-- 同时找出最大值和最小值最优算法
-- 快速查找法，查找第k个最大的数
-- 10亿数据查找前100个
+- [堆排序](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/sort/HeapSortActivity.java)
+- [归并排序](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/sort/MergeSortActivity.java)
+- [希尔排序](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/sort/ShellSortActivity.java)
+- [八大排序总结](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/sort/EightSortDescriptionActivity.java)
+- [计数排序](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/sort/CountSortActivity.java)
+- [同时找出最大值和最小值最优算法](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/sort/MaxMinSelectActivity.java)
+- [快速查找法，查找第k个最大的数](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/sort/SelectIndexDataActivity.java)
+- [10亿数据查找前100个](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/sort/MaxDataSelectDataActivity.java)
 - [散列表(哈希表)](https://github.com/UCodeUStory/DataStructure/blob/master/hashtable.md)
 - [求最大不重复子串](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/other/MaxSubStringActivity.java)
 - 两个排序数组的中值
@@ -51,6 +48,8 @@
 - [tomcat 新版本 使用LRU缓存，最后也被废弃了](https://github.com/UCodeUStory/DataStructure/blob/master/sources/tomcat_lru_cache.java)
 - [Java 实现LRU缓存3种方式 ](https://github.com/UCodeUStory/DataStructure/blob/master/sources/lru.md)
 - [Volley源码分析经典算法](https://github.com/UCodeUStory/DataStructure/blob/master/sources/volley_algorithm.md)
+- [LinkHashMap 实现FIFO](https://github.com/UCodeUStory/DataStructure/blob/master/sources/fifo.md)
+- [Java 集合原理](http://wiki.jikexueyuan.com/project/java-collection/hashset.html)
 - 探索 Design Support Library V28 新增内容
 - Design V4 和 V7区别和分别包含内容
 - EventBus源码分析
