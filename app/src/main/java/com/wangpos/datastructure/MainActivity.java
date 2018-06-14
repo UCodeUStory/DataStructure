@@ -13,6 +13,7 @@ import com.wangpos.datastructure.graph.DjstaActivity;
 import com.wangpos.datastructure.graph.GraphActivity;
 import com.wangpos.datastructure.graph.TopologicalOrderActivity;
 import com.wangpos.datastructure.java.JavaThreadActivity;
+import com.wangpos.datastructure.java.JavaThreadPrincipleActivity;
 import com.wangpos.datastructure.java.JavaThreadSummary;
 import com.wangpos.datastructure.java.JavaWaitNotifyActivity;
 import com.wangpos.datastructure.java.KeepMoreRequest;
@@ -112,6 +113,8 @@ public class MainActivity extends AppCompatActivity {
     public static final int Djsta = 33;
 
     public static final int JavaReferenceQueue = 34;
+
+    public static final int JavaThreadPrinciple = 35;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -254,6 +257,9 @@ public class MainActivity extends AppCompatActivity {
             case JavaReferenceQueue:
                 startActivity(new Intent(this,ReferenceQueueActivity.class));
                 break;
+            case JavaThreadPrinciple:
+                startActivity(new Intent(this,JavaThreadPrincipleActivity.class));
+                break;
             default:
                 break;
         }
@@ -295,6 +301,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new DataBean(TopologicalSort,"拓扑排序"));
         list.add(new DataBean(Djsta,"最短路径算法1"));
         list.add(new DataBean(JavaReferenceQueue,"ReferenceQueue"));
+        list.add(new DataBean(JavaThreadPrinciple,"Java线程池原理"));
 
 
     }

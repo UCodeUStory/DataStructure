@@ -54,6 +54,7 @@
 
         </activity>
         <activity android:name=".java.ReferenceQueueActivity"/>
+        <activity android:name=".java.JavaThreadPrincipleActivity"/>
     </application>
 
 </manifest>
