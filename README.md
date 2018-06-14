@@ -47,8 +47,9 @@
 - [Java 强、软、弱、虚引用](https://github.com/UCodeUStory/DataStructure/blob/master/sources/reference.md)
 - [Java 线程池实现原理](https://github.com/UCodeUStory/DataStructure/blob/master/sources/thread_principle.md)
 - [weakHashMap](https://github.com/UCodeUStory/DataStructure/blob/master/sources/weakHashMap.md)
-- [tomcat 使用currentHashMap和weakHashMap做分代缓存](https://github.com/UCodeUStory/DataStructure/blob/master/sources/tomcat_cache.java)
-- [LRU](https://github.com/UCodeUStory/DataStructure/blob/master/sources/lru.md)
+- [tomcat 旧版本  使用currentHashMap和weakHashMap做分代缓存](https://github.com/UCodeUStory/DataStructure/blob/master/sources/tomcat_cache.java)
+- [tomcat 新版本 使用LRU缓存，最后也被废弃了](https://github.com/UCodeUStory/DataStructure/blob/master/sources/tomcat_lru_cache.java)
+- [Java 实现LRU缓存3种方式 ](https://github.com/UCodeUStory/DataStructure/blob/master/sources/lru.md)
 - [Volley源码分析经典算法](https://github.com/UCodeUStory/DataStructure/blob/master/sources/volley_algorithm.md)
 - 探索 Design Support Library V28 新增内容
 - Design V4 和 V7区别和分别包含内容
