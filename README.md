@@ -37,7 +37,8 @@
 - [10亿数据查找前100个](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/sort/MaxDataSelectDataActivity.java)
 - [散列表(哈希表)](https://github.com/UCodeUStory/DataStructure/blob/master/hashtable.md)
 - [求最大不重复子串](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/other/MaxSubStringActivity.java)
-- 两个排序数组的中值
+- [死锁](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/java/DeadLockDemo.java)
+- 两个排序数组的中值it 
 
 #### Java 
 - [Java垃圾回收机制](https://github.com/UCodeUStory/DataStructure/blob/master/sources/JavaGarbageCollection.md)

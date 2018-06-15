@@ -1,5 +1,7 @@
 package com.wangpos.datastructure.sort;
 
+import com.wangpos.datastructure.java.DeadLockDemo;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -84,6 +86,11 @@ public class SelectIndexDataActivityTest {
 
 
 
+    @Test
+    public void test_dead_lock(){
+        DeadLockDemo deadLockDemo = new DeadLockDemo();
+        deadLockDemo.startAllThread();
+    }
 
 
 
