@@ -53,8 +53,8 @@
 - [LinkHashMap 实现FIFO](https://github.com/UCodeUStory/DataStructure/blob/master/sources/fifo.md)
 - [Java 集合原理](http://wiki.jikexueyuan.com/project/java-collection/hashset.html)
 - [Android Design Support Library包含内容](https://github.com/UCodeUStory/DataStructure/blob/master/sources/adsl.md)
-- [Android v4 v7 v8 v13区别]()
-- 探索 Design Support Library V28 新增内容
+- [Android v4 v7 v8 v13区别](https://github.com/UCodeUStory/DataStructure/blob/master/sources/v4_v7_v8_v13.md)
+- [Android Design Support Library V28 新增加内容]
 - EventBus源码分析
 - Bufferknife源码分析
 
