@@ -38,7 +38,7 @@
 - [散列表(哈希表)](https://github.com/UCodeUStory/DataStructure/blob/master/hashtable.md)
 - [求最大不重复子串](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/other/MaxSubStringActivity.java)
 - [死锁](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/java/DeadLockDemo.java)
-- [两个线程交替输出1010](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/java/thread_one_zero.java)
+- [两个线程交替输出1010](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/java/ThreadOneZero.java)
 - 两个排序数组的中值it 
 
 #### Java 

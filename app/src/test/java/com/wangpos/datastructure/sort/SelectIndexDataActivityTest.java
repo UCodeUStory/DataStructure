@@ -1,6 +1,7 @@
 package com.wangpos.datastructure.sort;
 
 import com.wangpos.datastructure.java.DeadLockDemo;
+import com.wangpos.datastructure.java.ThreadOneZero;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -95,6 +96,10 @@ public class SelectIndexDataActivityTest {
 
 
 
+    @Test
+    public void testThreadZeroOne(){
+        ThreadOneZero.testPrint();
+    }
 
 
 
