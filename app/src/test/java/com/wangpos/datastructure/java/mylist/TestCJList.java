@@ -8,7 +8,7 @@ import java.util.Arrays;
  * Created by qiyue on 2018/6/20.
  */
 
-public class TestCJArrayList {
+public class TestCJList {
 
 
     @Test
@@ -31,4 +31,23 @@ public class TestCJArrayList {
             System.out.println("data ="+cjArrayList.get(i));
         }
     }
+
+    @Test
+    public void testCJLinkList(){
+        CJLinkList<String> cjLinkList = new CJLinkList<>();
+
+        cjLinkList.add("111");
+        cjLinkList.add("222");
+        cjLinkList.add("3333");
+        cjLinkList.add("444");
+
+//        cjLinkList.remove("3333");
+
+        for(int i=0;i<cjLinkList.size;i++){
+            System.out.println("data= "+cjLinkList.get(i));
+        }
+
+    }
+
+
 }

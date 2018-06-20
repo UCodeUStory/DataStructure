@@ -14,7 +14,7 @@
 - [冒泡排序](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/sort/BubbleSortActivity.java)
 - [线程与锁详解](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/java/JavaThreadActivity.java)
 - 二叉树的遍历
-- [二叉排序树]()
+- 二叉排序树
 - [图的详解](https://github.com/UCodeUStory/DataStructure/blob/master/sources/tu.md)
 - 图的邻接表存储构成图
 - 无向图的邻接表存储-深度优先搜索
@@ -26,7 +26,7 @@
 - 拓扑排序-邻接矩阵存储-深度优先搜索算法
 - [最短路径算法之Dijkstra算法（狄克斯特拉算法](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/graph/DjstaActivity.java)
 - [ArrayList实现原理](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/java/mylist/CJArrayList.java)
-- LinkList双向实现
+- [LinkList双向实现](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/java/mylist/CJArrayList.java)
 - [堆排序](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/sort/HeapSortActivity.java)
 - [归并排序](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/sort/MergeSortActivity.java)
 - [希尔排序](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/sort/ShellSortActivity.java)

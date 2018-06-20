@@ -13,8 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c36b3d7-82fb-4da1-98f5-8345655eb5e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/java/mylist/CJArrayList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/test/java/com/wangpos/datastructure/java/mylist/TestCJArrayList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/java/mylist/CJLinkList.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/test/java/com/wangpos/datastructure/java/mylist/TestCJArrayList.java" afterPath="$PROJECT_DIR$/app/src/test/java/com/wangpos/datastructure/java/mylist/TestCJList.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/resourceHashesCache.bin" />
@@ -26,7 +26,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/java/AddTwoNumber.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/java/AddTwoNumber.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -70,8 +69,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="210">
-                <caret line="27" column="130" lean-forward="false" selection-start-line="27" selection-start-column="130" selection-end-line="27" selection-end-column="130" />
+              <first_editor relative-caret-position="-49">
+                <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -94,7 +93,7 @@
       <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/java/util/ArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
+            <state relative-caret-position="10744">
               <caret line="668" column="0" lean-forward="false" selection-start-line="668" selection-start-column="0" selection-end-line="670" selection-end-column="5" />
               <folding>
                 <element signature="e#26001#26002#0" expanded="true" />
@@ -109,8 +108,8 @@
       <file leaf-file-name="CJArrayList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/java/mylist/CJArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="45" lean-forward="false" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="45" />
+            <state relative-caret-position="65">
+              <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2515#2516#0" expanded="true" />
@@ -120,128 +119,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestCJArrayList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/test/java/com/wangpos/datastructure/java/mylist/TestCJArrayList.java">
+      <file leaf-file-name="TestCJList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/test/java/com/wangpos/datastructure/java/mylist/TestCJList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="307">
+              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#434#442#0" expanded="true" />
+                <element signature="e#429#437#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/java/util/AbstractList.java">
+      <file leaf-file-name="CJLinkList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/java/mylist/CJLinkList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="53" column="41" lean-forward="false" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
+            <state relative-caret-position="136">
+              <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="23" />
               <folding>
-                <element signature="e#0#28006#0" expanded="false" />
-                <element signature="e#5474#5475#0" expanded="false" />
-                <element signature="e#5531#5532#0" expanded="false" />
-                <element signature="e#6015#6016#0" expanded="false" />
-                <element signature="e#6072#6073#0" expanded="false" />
-                <element signature="e#6368#6369#0" expanded="false" />
-                <element signature="e#6425#6426#0" expanded="false" />
-                <element signature="e#8652#8653#0" expanded="false" />
-                <element signature="e#8690#8691#0" expanded="false" />
-                <element signature="e#10686#10687#0" expanded="false" />
-                <element signature="e#10718#10719#0" expanded="false" />
-                <element signature="e#10908#10909#0" expanded="false" />
-                <element signature="e#10946#10947#0" expanded="false" />
-                <element signature="e#12827#12828#0" expanded="false" />
-                <element signature="e#12874#12875#0" expanded="false" />
-                <element signature="e#14049#14050#0" expanded="false" />
-                <element signature="e#14087#14088#0" expanded="false" />
-                <element signature="e#14127#14128#0" expanded="false" />
-                <element signature="e#14169#14170#0" expanded="false" />
-                <element signature="e#14604#14605#0" expanded="false" />
-                <element signature="e#14641#14642#0" expanded="false" />
-                <element signature="e#14679#14680#0" expanded="false" />
-                <element signature="e#14718#14719#0" expanded="false" />
-                <element signature="e#23220#23221#0" expanded="false" />
-                <element signature="e#23276#23277#0" expanded="false" />
-                <element signature="e#25088#25089#0" expanded="false" />
-                <element signature="e#25126#25127#0" expanded="false" />
-                <element signature="e#25497#25498#0" expanded="false" />
-                <element signature="e#25534#25535#0" expanded="false" />
-                <element signature="e#25817#25818#0" expanded="false" />
-                <element signature="e#25874#25875#0" expanded="false" />
-                <element signature="e#26108#26109#0" expanded="false" />
-                <element signature="e#26167#26168#0" expanded="false" />
-                <element signature="e#26407#26408#0" expanded="false" />
-                <element signature="e#26468#26469#0" expanded="false" />
-                <element signature="e#26510#26511#0" expanded="false" />
-                <element signature="e#26575#26576#0" expanded="false" />
-                <element signature="e#26765#26766#0" expanded="false" />
-                <element signature="e#26805#26806#0" expanded="false" />
-                <element signature="e#27467#27468#0" expanded="false" />
-                <element signature="e#27521#27522#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractCollection.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/java/util/AbstractCollection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="66" column="7" lean-forward="false" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#17058#0" expanded="false" />
-                <element signature="e#3356#3357#0" expanded="false" />
-                <element signature="e#3390#3391#0" expanded="false" />
-                <element signature="e#9830#9831#0" expanded="false" />
-                <element signature="e#9887#9888#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Collection.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/java/util/Collection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2108">
-              <caret line="149" column="34" lean-forward="false" selection-start-line="149" selection-start-column="34" selection-end-line="149" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#28844#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <element signature="e#27295#27296#0" expanded="false" />
-                <element signature="e#27351#27352#0" expanded="false" />
-                <element signature="e#27982#27983#0" expanded="false" />
-                <element signature="e#28047#28048#0" expanded="false" />
-                <element signature="e#28776#28777#0" expanded="false" />
-                <element signature="e#28840#28841#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="v4_v7_v8_v13.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sources/v4_v7_v8_v13.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="2193">
-                <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SelectIndexDataActivityTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/test/java/com/wangpos/datastructure/sort/SelectIndexDataActivityTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1187">
-              <caret line="100" column="26" lean-forward="false" selection-start-line="100" selection-start-column="26" selection-end-line="100" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2134#2135#0" expanded="true" />
+                <element signature="e#1879#1880#0" expanded="true" />
+                <element signature="e#1928#1929#0" expanded="true" />
+                <element signature="e#1976#1977#0" expanded="true" />
+                <element signature="e#2030#2031#0" expanded="true" />
+                <element signature="e#2136#2137#0" expanded="true" />
                 <element signature="e#2175#2176#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LinkedList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/java/util/LinkedList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="47">
+              <caret line="205" column="1" lean-forward="false" selection-start-line="205" selection-start-column="1" selection-end-line="232" selection-end-column="5" />
+              <folding>
+                <element signature="e#9773#9774#0" expanded="true" />
+                <element signature="e#9812#9813#0" expanded="true" />
+                <element signature="e#16903#16904#0" expanded="true" />
+                <element signature="e#16952#16953#0" expanded="true" />
+                <element signature="e#17441#17442#0" expanded="true" />
+                <element signature="e#17495#17496#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -260,8 +179,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>btnRun</find>
-      <find>runBtn</find>
       <find>testInteruptThread</find>
       <find>addIm</find>
       <find>'</find>
@@ -290,6 +207,8 @@
       <find>size</find>
       <find>get</find>
       <find>get(</find>
+      <find>checkElementIndex</find>
+      <find>contains</find>
     </findStrings>
     <replaceStrings>
       <replace>protected</replace>
@@ -2968,8 +2887,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sources/singleInstance.md" />
-        <option value="$PROJECT_DIR$/sources/tu.md" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/graph/UndirectedGraph.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/image_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/graph/GraphActivity.java" />
@@ -3017,7 +2934,9 @@
         <option value="$USER_HOME$/Library/Android/sdk/sources/android-26/java/util/AbstractCollection.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/java/AddTwoNumber.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/java/mylist/CJArrayList.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/java/mylist/CJLinkList.java" />
         <option value="$PROJECT_DIR$/app/src/test/java/com/wangpos/datastructure/java/mylist/TestCJArrayList.java" />
+        <option value="$PROJECT_DIR$/app/src/test/java/com/wangpos/datastructure/java/mylist/TestCJList.java" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -3088,86 +3007,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datastructure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataStructure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataStructure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datastructure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sort" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataStructure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataStructure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datastructure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mylist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -3206,6 +3045,18 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datastructure" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3283,33 +3134,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android JUnit.TestCJArrayList.testCJList">
-    <configuration default="false" name="SelectIndexDataActivityTest.testSate" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.wangpos.datastructure.sort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="app" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.wangpos.datastructure.sort" />
-      <option name="MAIN_CLASS_NAME" value="com.wangpos.datastructure.sort.SelectIndexDataActivityTest" />
-      <option name="METHOD_NAME" value="testSate" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Android JUnit.TestCJList.testCJLinkList">
     <configuration default="false" name="SelectIndexDataActivityTest.test_dead_lock" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -3414,6 +3239,32 @@
       <patterns />
       <method />
     </configuration>
+    <configuration default="false" name="TestCJList.testCJLinkList" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.wangpos.datastructure.java.mylist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="app" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.wangpos.datastructure.java.mylist" />
+      <option name="MAIN_CLASS_NAME" value="com.wangpos.datastructure.java.mylist.TestCJList" />
+      <option name="METHOD_NAME" value="testCJLinkList" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -3484,7 +3335,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1529459444044" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1529462478087" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -3532,7 +3383,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1529459444044" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1529462478087" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -3715,24 +3566,24 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1529459444044" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1529462478088" />
       </method>
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Android App.app" />
-      <item index="1" class="java.lang.String" itemvalue="Android JUnit.SelectIndexDataActivityTest.testSate" />
-      <item index="2" class="java.lang.String" itemvalue="Android JUnit.SelectIndexDataActivityTest.test_dead_lock" />
-      <item index="3" class="java.lang.String" itemvalue="Android JUnit.SelectIndexDataActivityTest.testThreadZeroOne" />
-      <item index="4" class="java.lang.String" itemvalue="Android JUnit.TestCJArrayList.testArrayList" />
-      <item index="5" class="java.lang.String" itemvalue="Android JUnit.TestCJArrayList.testCJList" />
+      <item index="1" class="java.lang.String" itemvalue="Android JUnit.SelectIndexDataActivityTest.test_dead_lock" />
+      <item index="2" class="java.lang.String" itemvalue="Android JUnit.SelectIndexDataActivityTest.testThreadZeroOne" />
+      <item index="3" class="java.lang.String" itemvalue="Android JUnit.TestCJArrayList.testArrayList" />
+      <item index="4" class="java.lang.String" itemvalue="Android JUnit.TestCJArrayList.testCJList" />
+      <item index="5" class="java.lang.String" itemvalue="Android JUnit.TestCJList.testCJLinkList" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Android JUnit.TestCJArrayList.testCJList" />
-        <item index="1" class="java.lang.String" itemvalue="Android JUnit.TestCJArrayList.testArrayList" />
-        <item index="2" class="java.lang.String" itemvalue="Android JUnit.SelectIndexDataActivityTest.testThreadZeroOne" />
-        <item index="3" class="java.lang.String" itemvalue="Android JUnit.SelectIndexDataActivityTest.test_dead_lock" />
-        <item index="4" class="java.lang.String" itemvalue="Android JUnit.SelectIndexDataActivityTest.testSate" />
+        <item index="0" class="java.lang.String" itemvalue="Android JUnit.TestCJList.testCJLinkList" />
+        <item index="1" class="java.lang.String" itemvalue="Android JUnit.TestCJArrayList.testCJList" />
+        <item index="2" class="java.lang.String" itemvalue="Android JUnit.TestCJArrayList.testArrayList" />
+        <item index="3" class="java.lang.String" itemvalue="Android JUnit.SelectIndexDataActivityTest.testThreadZeroOne" />
+        <item index="4" class="java.lang.String" itemvalue="Android JUnit.SelectIndexDataActivityTest.test_dead_lock" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
@@ -3771,12 +3622,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SelectIndexDataActivityTest_testThreadZeroOne - 2018.06.19 at 10h 39m 26s.xml">
-      <configuration name="SelectIndexDataActivityTest.testThreadZeroOne" configurationId="AndroidJUnit" />
-    </history-entry>
-    <history-entry file="SelectIndexDataActivityTest_testThreadZeroOne - 2018.06.19 at 10h 40m 59s.xml">
-      <configuration name="SelectIndexDataActivityTest.testThreadZeroOne" configurationId="AndroidJUnit" />
-    </history-entry>
     <history-entry file="SelectIndexDataActivityTest_testThreadZeroOne - 2018.06.19 at 14h 59m 35s.xml">
       <configuration name="SelectIndexDataActivityTest.testThreadZeroOne" configurationId="AndroidJUnit" />
     </history-entry>
@@ -3800,6 +3645,12 @@
     </history-entry>
     <history-entry file="TestCJArrayList_testCJList - 2018.06.20 at 09h 28m 56s.xml">
       <configuration name="TestCJArrayList.testCJList" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="TestCJList_testCJLinkList - 2018.06.20 at 10h 39m 11s.xml">
+      <configuration name="TestCJList.testCJLinkList" configurationId="AndroidJUnit" />
+    </history-entry>
+    <history-entry file="TestCJList_testCJLinkList - 2018.06.20 at 10h 39m 41s.xml">
+      <configuration name="TestCJList.testCJLinkList" configurationId="AndroidJUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -3891,20 +3742,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/java/lang/ref/ReferenceQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="120" column="35" lean-forward="false" selection-start-line="120" selection-start-column="35" selection-end-line="120" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/java/ReferenceQueueActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="2" selection-end-line="58" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sources/javacollection.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -4396,22 +4233,9 @@
         <state relative-caret-position="1187">
           <caret line="100" column="26" lean-forward="false" selection-start-line="100" selection-start-column="26" selection-end-line="100" selection-end-column="26" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2134#2135#0" expanded="true" />
-            <element signature="e#2175#2176#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="668" column="0" lean-forward="false" selection-start-line="668" selection-start-column="0" selection-end-line="670" selection-end-column="5" />
-          <folding>
-            <element signature="e#26001#26002#0" expanded="true" />
-            <element signature="e#26055#26056#0" expanded="true" />
-            <element signature="e#49927#49928#0" expanded="true" />
-            <element signature="e#49992#49993#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2134#2135#0" expanded="false" />
+            <element signature="e#2175#2176#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4426,21 +4250,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/wangpos/datastructure/java/mylist/TestCJArrayList.java">
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="10744">
+          <caret line="668" column="0" lean-forward="false" selection-start-line="668" selection-start-column="0" selection-end-line="670" selection-end-column="5" />
+          <folding>
+            <element signature="e#26001#26002#0" expanded="true" />
+            <element signature="e#26055#26056#0" expanded="true" />
+            <element signature="e#49927#49928#0" expanded="true" />
+            <element signature="e#49992#49993#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/java/util/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="205" column="1" lean-forward="false" selection-start-line="205" selection-start-column="1" selection-end-line="232" selection-end-column="5" />
+          <folding>
+            <element signature="e#9773#9774#0" expanded="true" />
+            <element signature="e#9812#9813#0" expanded="true" />
+            <element signature="e#16903#16904#0" expanded="true" />
+            <element signature="e#16952#16953#0" expanded="true" />
+            <element signature="e#17441#17442#0" expanded="true" />
+            <element signature="e#17495#17496#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/java/mylist/CJLinkList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <element signature="e#1879#1880#0" expanded="true" />
+            <element signature="e#1928#1929#0" expanded="true" />
+            <element signature="e#1976#1977#0" expanded="true" />
+            <element signature="e#2030#2031#0" expanded="true" />
+            <element signature="e#2136#2137#0" expanded="true" />
+            <element signature="e#2175#2176#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/wangpos/datastructure/java/mylist/TestCJList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#434#442#0" expanded="true" />
+            <element signature="e#429#437#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/java/mylist/CJArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="45" lean-forward="false" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="45" />
+        <state relative-caret-position="65">
+          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2515#2516#0" expanded="true" />
@@ -4452,8 +4319,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="210">
-            <caret line="27" column="130" lean-forward="false" selection-start-line="27" selection-start-column="130" selection-end-line="27" selection-end-column="130" />
+          <first_editor relative-caret-position="-49">
+            <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
             <folding />
           </first_editor>
           <second_editor />
