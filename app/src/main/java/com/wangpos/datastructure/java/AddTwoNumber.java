@@ -3,6 +3,8 @@ package com.wangpos.datastructure.java;
 import com.wangpos.datastructure.R;
 import com.wangpos.datastructure.core.BaseActivity;
 
+import java.util.ArrayList;
+
 /**
  * Created by qiyue on 2017/12/7.
  */
