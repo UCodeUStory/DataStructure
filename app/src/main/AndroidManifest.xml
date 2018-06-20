@@ -57,6 +57,7 @@
         <activity android:name=".java.JavaThreadPrincipleActivity"/>
 
         <activity android:name=".java.ArrayListActivity"/>
+        <activity android:name=".interview.DesignV28Activity"/>
     </application>
 
 </manifest>

@@ -12,6 +12,7 @@ import com.wangpos.datastructure.core.WebViewActivity;
 import com.wangpos.datastructure.graph.DjstaActivity;
 import com.wangpos.datastructure.graph.GraphActivity;
 import com.wangpos.datastructure.graph.TopologicalOrderActivity;
+import com.wangpos.datastructure.interview.DesignV28Activity;
 import com.wangpos.datastructure.java.JavaThreadActivity;
 import com.wangpos.datastructure.java.JavaThreadPrincipleActivity;
 import com.wangpos.datastructure.java.JavaThreadSummary;
@@ -115,6 +116,8 @@ public class MainActivity extends AppCompatActivity {
     public static final int JavaReferenceQueue = 34;
 
     public static final int JavaThreadPrinciple = 35;
+
+    public static final int DesignV28 = 36;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -260,6 +263,9 @@ public class MainActivity extends AppCompatActivity {
             case JavaThreadPrinciple:
                 startActivity(new Intent(this,JavaThreadPrincipleActivity.class));
                 break;
+            case DesignV28:
+                startActivity(new Intent(this,DesignV28Activity.class));
+                break;
             default:
                 break;
         }
@@ -302,6 +308,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new DataBean(Djsta,"最短路径算法Djsta"));
         list.add(new DataBean(JavaReferenceQueue,"ReferenceQueue"));
         list.add(new DataBean(JavaThreadPrinciple,"Java线程池原理"));
+        list.add(new DataBean(DesignV28,"AndroidDesignV28新增内容"));
 
 
     }
