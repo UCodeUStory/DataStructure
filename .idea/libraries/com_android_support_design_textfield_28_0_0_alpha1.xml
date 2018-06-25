@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.android.support:design-textfield-28.0.0-alpha1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-textfield-28.0.0-alpha1.aar/c6b5f6d3681d17db51d7c07c7472bfd9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-textfield-28.0.0-alpha1.aar/c6b5f6d3681d17db51d7c07c7472bfd9/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/design-textfield/28.0.0-alpha1/c4dcdefb08dda3a13e450963cfb048f72f82afe4/design-textfield-28.0.0-alpha1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

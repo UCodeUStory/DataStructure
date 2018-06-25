@@ -11,9 +11,39 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+//    buildTypes {
+//        release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//    }
+
+
+    signingConfigs {
+        releaseConfig {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storeFile file('/Users/qiyue/wangpos/code3/keystore/debug.keystore')
+            storePassword 'android'
+        }
+
+
+    }
+
     buildTypes {
         release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            buildConfigField "boolean", "DEBUG_MODEL", "false"
             minifyEnabled false
+            signingConfig signingConfigs.releaseConfig
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            buildConfigField "boolean", "DEBUG_MODEL", "true"
+            minifyEnabled false
+            signingConfig signingConfigs.releaseConfig
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -25,8 +55,8 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:28.0.0-alpha1'
     testCompile 'junit:junit:4.12'
     compile project(':codeview')
-    implementation 'com.android.support:design:28.0.0-alpha3'
+    implementation 'com.android.support:appcompat-v7:28.0.0-alpha1'
+    implementation 'com.android.support:design:28.0.0-alpha1'
 }

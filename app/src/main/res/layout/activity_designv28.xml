@@ -1,6 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <android.support.design.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="MaterialButton"
+        app:backgroundTint="@color/colorPrimary"
+        app:icon="@mipmap/ic_launcher"
+
+        />
+
+    <android.support.design.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="MaterialButton"
+        app:backgroundTint="@color/colorPrimary"
+        app:icon="@mipmap/ic_launcher"
+        app:iconTint="#e9a404"
+
+        />
+
+
+    <android.support.design.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="MaterialButton"
+        app:backgroundTint="@color/colorPrimary"
+        app:icon="@mipmap/ic_launcher"
+        app:iconTint="#e9a404"
+        app:cornerRadius="7dp"
+        />
+
+    <android.support.design.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="MaterialButton"
+        app:backgroundTint="@color/colorPrimary"
+        app:icon="@mipmap/ic_launcher"
+        app:iconTint="#e9a404"
+        app:cornerRadius="7dp"
+        app:rippleColor="@color/colorAccent"
+        />
+
+    <android.support.design.chip.Chip
+
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/single_chip"
+        app:chipText="A single Chip"
+        />
+
+    <android.support.design.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <android.support.design.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipText="Chip"
+            android:id="@+id/ChipGroupChip1"
+            app:chipBackgroundColor="@color/colorAccent"
+            app:closeIconEnabled="true"
+            />
+        <android.support.design.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:chipText="Group"
+            />
+        <android.support.design.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            app:chipText="good"
+            />
+    </android.support.design.chip.ChipGroup>
+
+    <android.support.design.card.MaterialCardView
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="1dp"
+        >
+        <TextView
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018/5/21\nThis is a MaterialCardView "
+            android:textAlignment="center"
+            />
+
+    </android.support.design.card.MaterialCardView>
 
 </LinearLayout>

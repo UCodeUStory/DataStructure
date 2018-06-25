@@ -1,13 +1,17 @@
 package com.wangpos.datastructure;
 
+import android.content.ComponentName;
 import android.content.Intent;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.wangpos.datastructure.core.DataBean;
+import com.wangpos.datastructure.core.USList;
 import com.wangpos.datastructure.core.WebViewActivity;
 import com.wangpos.datastructure.graph.DjstaActivity;
 import com.wangpos.datastructure.graph.GraphActivity;
@@ -40,8 +44,10 @@ import com.wangpos.datastructure.sort.ShellSortActivity;
 import com.wangpos.datastructure.sort.SpaceComplexityActivity;
 import com.wangpos.datastructure.sort.TimeComplexityActivity;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Collections;
 
 import static com.wangpos.datastructure.core.BaseActivity.setWindowStatusBarColor;
 
@@ -128,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
         setWindowStatusBarColor(this,R.color.colorPrimary);
         ListView mListView = (ListView)findViewById(R.id.listView);
         final ListAdapter adapter = new ListAdapter(this);
-        List<DataBean>list = new ArrayList<>();
+        USList<DataBean>list = new USList<>();
 
         initData(list);
 
@@ -265,6 +271,11 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case DesignV28:
                 startActivity(new Intent(this,DesignV28Activity.class));
+
+//                Intent intent = new Intent();
+//                ComponentName componentName = new ComponentName("com.mediatek.factorymode", "com.mediatek.factorymode.FactoryMode");
+//                intent.setComponent(componentName);
+//                startActivity(intent);
                 break;
             default:
                 break;
@@ -272,7 +283,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void initData(List<DataBean> list) {
+    private void initData(USList<DataBean> list) {
         list.add(new DataBean(ToGitHub,"进入作者GitHub"));
         list.add(new DataBean(TimeComplexity,"时间复杂度介绍"));
         list.add(new DataBean(SpaceComplexity,"空间复杂度介绍"));
@@ -309,6 +320,10 @@ public class MainActivity extends AppCompatActivity {
         list.add(new DataBean(JavaReferenceQueue,"ReferenceQueue"));
         list.add(new DataBean(JavaThreadPrinciple,"Java线程池原理"));
         list.add(new DataBean(DesignV28,"AndroidDesignV28新增内容"));
+
+        //Debug
+
+//        list.add(0,list.get(list.size()-1));
 
 
     }
