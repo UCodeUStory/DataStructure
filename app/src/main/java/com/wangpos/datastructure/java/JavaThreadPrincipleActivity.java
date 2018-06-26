@@ -1,8 +1,10 @@
 package com.wangpos.datastructure.java;
 
 import android.util.Log;
+import android.view.View;
 
 import com.wangpos.datastructure.core.BaseActivity;
+import com.wangpos.datastructure.core.CodeBean;
 import com.wangpos.datastructure.java.thread.ThreadExcutor;
 import com.wangpos.datastructure.java.thread.USThreadPool;
 
@@ -19,90 +21,31 @@ import java.util.concurrent.ThreadPoolExecutor;
 public class JavaThreadPrincipleActivity extends BaseActivity {
 
     private ThreadExcutor threadExcutor;
+    CJThreadPool cjThreadPool;
 
     @Override
     protected void initData() {
 
-//        USThreadPool usThreadPool = USThreadPool.getInstance();
-//
-//        for(int i=0;i<30;i++){
-//            final int finalI = i;
-//            usThreadPool.submit(new Runnable() {
-//                @Override
-//                public void run() {
-//                    Log.i("USThreadPool",""+ finalI+"任务已经被执行" +
-//                            "");
-//                }
-//            });
-//        }
+         addItem(new CodeBean("自己实现简单的线程池原理" ,threadcode));
+
+         cjThreadPool = new CJThreadPool();
 
 
-//        threadExcutor = new ThreadExcutor(3);
-//        for (int i = 0; i < 10; i++) {
-//            final int finalI = i;
-//            threadExcutor.exec(new Runnable() {
-//                @Override
-//                public void run() {
-////                    System.out.println("线程 " + Thread.currentThread().getName() + " 在帮我干活");
-//                    Log.i("qy","线程 " + Thread.currentThread().getName() + " 在帮我干活"+ 1);
-//                }
-//            });
-//        }
-
-
-//        final BlockingQueue<String> bq = new ArrayBlockingQueue<String>(10);
-//        Runnable producerRunnable = new Runnable() {
-//            int i = 0;
-//
-//            public void run() {
-//                while (true) {
-//                    try {
-//                        Log.i("qy", "我生产了一个" + i++);
-//                        if (i == 20) {
-//                            break;
-//                        }
-//                        bq.put(i + "");
-//                        Thread.sleep(1000);
-//                    } catch (InterruptedException e) {
-//                        e.printStackTrace();
-//                    }
-//                }
-//            }
-//        };
-//        Runnable customerRunnable = new Runnable() {
-//            public void run() {
-//                while (true) {
-//                    try {
-//                        Log.i("qy", "我消费了一个" + Thread.currentThread().getName()+"====" + bq.take());
-//                        Thread.sleep(2000);
-//                    } catch (InterruptedException e) {
-//                        e.printStackTrace();
-//                    }
-//                }
-//            }
-//        };
-//        Thread producerThread = new Thread(producerRunnable);
-//        Thread customerThread = new Thread(customerRunnable);
-//        Thread customerThread2 = new Thread(customerRunnable);
-//        Thread customerThread3 = new Thread(customerRunnable);
-//        Thread customerThread4 = new Thread(customerRunnable);
-//        producerThread.start();
-//        customerThread.start();
-//        customerThread2.start();
-//        customerThread3.start();
-//        customerThread4.start();
-//        excutor.shutdown();
-
-        CJThreadPool cjThreadPool = new CJThreadPool();
-        for (int i = 0; i < 10; i++) {
-              Log.i("qy","for>>>>>>>>>>"+i);
-              cjThreadPool.execute(new Runnable() {
-                  @Override
-                  public void run() {
-                      Log.i("qy","I am "+System.currentTimeMillis());
-                  }
-              });
-        }
+        runBtn.setVisibility(View.VISIBLE);
+        runBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                for (int i = 0; i < 10; i++) {
+                    final int finalI = i;
+                    cjThreadPool.execute(new Runnable() {
+                        @Override
+                        public void run() {
+                            Log.i("qy","I am "+"("+ System.currentTimeMillis() +")");
+                        }
+                    });
+                }
+            }
+        });
 
 
     }
@@ -112,11 +55,14 @@ public class JavaThreadPrincipleActivity extends BaseActivity {
     protected void onPause() {
         super.onPause();
 //        threadExcutor.shutdown();
+
+        cjThreadPool.shutdown();
+
     }
 
     @Override
     protected String getTextData() {
-        return null;
+        return "开启10个测试线程";
     }
 
     @Override
@@ -148,4 +94,104 @@ public class JavaThreadPrincipleActivity extends BaseActivity {
     protected String getSummaryData() {
         return null;
     }
+
+
+
+    public static String threadcode = "package com.wangpos.datastructure.java;\n" +
+            "\n" +
+            "import android.util.Log;\n" +
+            "\n" +
+            "import com.wangpos.datastructure.java.thread.ThreadExcutor;\n" +
+            "\n" +
+            "import java.util.HashSet;\n" +
+            "import java.util.concurrent.ArrayBlockingQueue;\n" +
+            "import java.util.concurrent.BlockingQueue;\n" +
+            "import java.util.concurrent.LinkedBlockingQueue;\n" +
+            "\n" +
+            "/**\n" +
+            " * Created by qiyue on 2018/6/25.\n" +
+            " */\n" +
+            "\n" +
+            "public class CJThreadPool {\n" +
+            "\n" +
+            "    //创建\n" +
+            "    private volatile boolean RUNNING = true;\n" +
+            "\n" +
+            "    LinkedBlockingQueue<Runnable> blockingQueues;\n" +
+            "\n" +
+            "    private final static int DEFAULT_CORESIZE = 3;\n" +
+            "\n" +
+            "    private final static int DEFAULT_QUEUESIZE = 10;\n" +
+            "\n" +
+            "\n" +
+            "    HashSet<WorkThread> works = new HashSet<>();\n" +
+            "\n" +
+            "    private int coreSize = DEFAULT_CORESIZE;\n" +
+            "\n" +
+            "    private int queueSize = DEFAULT_QUEUESIZE;\n" +
+            "\n" +
+            "    private int currentStartThreadSize = 0;\n" +
+            "    boolean shutdown = false;\n" +
+            "\n" +
+            "\n" +
+            "    public CJThreadPool() {\n" +
+            "        this(DEFAULT_CORESIZE, DEFAULT_QUEUESIZE);\n" +
+            "    }\n" +
+            "\n" +
+            "    public CJThreadPool(int a_coreSize, int a_queueSize) {\n" +
+            "        this.coreSize = a_coreSize;\n" +
+            "        this.blockingQueues = new LinkedBlockingQueue<Runnable>(a_queueSize);\n" +
+            "        Log.i(\"qy\",\"create\");\n" +
+            "    }\n" +
+            "\n" +
+            "    public void execute(Runnable a_runnable) {\n" +
+            "        if (currentStartThreadSize < coreSize) {\n" +
+            "            currentStartThreadSize++;\n" +
+            "//            a_runnable.run();\n" +
+            "//            Log.i(\"qy\", \"add\" + currentStartThreadSize);\n" +
+            "            WorkThread workThread = new WorkThread();\n" +
+            "            workThread.start();\n" +
+            "            works.add(workThread);\n" +
+            "        }\n" +
+            "\n" +
+            "        try {\n" +
+            "//            Log.i(\"qy\",\"put-1===\"+blockingQueues.size());\n" +
+            "            blockingQueues.put(a_runnable);\n" +
+            "//            Log.i(\"qy\",\"put-2====\"+blockingQueues.size());\n" +
+            "        } catch (InterruptedException e) {\n" +
+            "            e.printStackTrace();\n" +
+            "        }\n" +
+            "    }\n" +
+            "\n" +
+            "\n" +
+            "    class WorkThread extends Thread {\n" +
+            "        @Override\n" +
+            "        public void run() {\n" +
+            "            super.run();\n" +
+            "\n" +
+            "            while (true && RUNNING) {\n" +
+            "                try {\n" +
+            "\n" +
+            "                    Runnable current = blockingQueues.take();\n" +
+            "                    current.run();\n" +
+            "                    Log.i(\"qy\", \"我消费了一个\" + Thread.currentThread().getName() + \"====\" + current + \" size = \" + blockingQueues.size());\n" +
+            "                    Thread.sleep(1000);\n" +
+            "                } catch (InterruptedException e) {\n" +
+            "                    e.printStackTrace();\n" +
+            "                }\n" +
+            "            }\n" +
+            "        }\n" +
+            "\n" +
+            "\n" +
+            "    }\n" +
+            "\n" +
+            "    public void shutdown() {\n" +
+            "        RUNNING = false;\n" +
+            "\n" +
+            "        works.clear();\n" +
+            "        blockingQueues.clear();\n" +
+            "    }\n" +
+            "\n" +
+            "\n" +
+            "}\n";
 }
