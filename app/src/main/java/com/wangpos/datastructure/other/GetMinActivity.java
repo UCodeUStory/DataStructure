@@ -7,14 +7,22 @@ import com.wangpos.datastructure.core.BaseActivity;
  */
 
 public class GetMinActivity extends BaseActivity {
+    MyStack myStack = null;
     @Override
     protected void initData() {
+
+        myStack = new MyStack();
+        myStack.push(4);
+        myStack.push(3);
+        myStack.push(1);
+        myStack.push(2);
+
 
     }
 
     @Override
     protected String getTextData() {
-        return null;
+        return "{4,3,1,2}";
     }
 
     @Override
@@ -24,7 +32,7 @@ public class GetMinActivity extends BaseActivity {
 
     @Override
     protected String getResultData() {
-        return null;
+        return ""+"min="+myStack.getMin();
     }
 
     @Override

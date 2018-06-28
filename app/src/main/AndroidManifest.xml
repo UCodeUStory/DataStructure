@@ -58,6 +58,8 @@
 
         <activity android:name=".java.ArrayListActivity"/>
         <activity android:name=".interview.DesignV28Activity"/>
+        <activity android:name=".other.GetMinActivity"/>
+
     </application>
 
 </manifest>

@@ -23,6 +23,7 @@ import com.wangpos.datastructure.java.JavaThreadSummary;
 import com.wangpos.datastructure.java.JavaWaitNotifyActivity;
 import com.wangpos.datastructure.java.KeepMoreRequest;
 import com.wangpos.datastructure.java.ReferenceQueueActivity;
+import com.wangpos.datastructure.other.GetMinActivity;
 import com.wangpos.datastructure.other.MaxSubStringActivity;
 import com.wangpos.datastructure.sort.BinaryTreeActivity;
 import com.wangpos.datastructure.sort.BisearchActivity;
@@ -124,6 +125,8 @@ public class MainActivity extends AppCompatActivity {
     public static final int JavaThreadPrinciple = 35;
 
     public static final int DesignV28 = 36;
+
+    public static final int GetMin = 37;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -277,6 +280,9 @@ public class MainActivity extends AppCompatActivity {
 //                intent.setComponent(componentName);
 //                startActivity(intent);
                 break;
+            case GetMin:
+                startActivity(new Intent(this, GetMinActivity.class));
+                break;
             default:
                 break;
         }
@@ -320,6 +326,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new DataBean(JavaReferenceQueue,"ReferenceQueue"));
         list.add(new DataBean(JavaThreadPrinciple,"Java线程池原理"));
         list.add(new DataBean(DesignV28,"AndroidDesignV28新增内容"));
+        list.add(new DataBean(GetMin,"通过栈实现获取最小值"));
 
         //Debug
 

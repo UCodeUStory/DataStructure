@@ -37,6 +37,9 @@ public class MyStack {
 
         data = stackData.pop();
 
+        if (data == getMin()){
+            stackMin.pop();
+        }
         return data;
 
     }
