@@ -1,5 +1,10 @@
 ### EventBus源码分析
+使用 EventBus 时注意
 
+  1. 使用 EventBus eventBus = EventBus.builder().addIndex(new MyEventBusIndex()).build();才是开启注解方式
+  eventBus.register(this);
+  
+  2. 而使用 EventBus.getDefault().register() 是使用反射的方式
 
 #### 1.第一步：编译时期注解解析器
 
