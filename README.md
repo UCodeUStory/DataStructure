@@ -51,29 +51,21 @@
 - [Java 实现LRU缓存3种方式 ](https://github.com/UCodeUStory/DataStructure/blob/master/sources/lru.md)
 - [LinkHashMap 实现FIFO](https://github.com/UCodeUStory/DataStructure/blob/master/sources/fifo.md)
 - [Java 集合原理](http://wiki.jikexueyuan.com/project/java-collection/hashset.html)
+- [synchronized 和 Lock区别](https://github.com/UCodeUStory/DataStructure/blob/master/sources/synchronized_lock.md)
 #### Android
 1. [Volley源码分析经典算法](https://github.com/UCodeUStory/DataStructure/blob/master/sources/volley_algorithm.md)
 2. [Android Design Support Library包含内容](https://github.com/UCodeUStory/DataStructure/blob/master/sources/adsl.md)
 3. [Android v4 v7 v8 v13区别](https://github.com/UCodeUStory/DataStructure/blob/master/sources/v4_v7_v8_v13.md)
 4. [Android Design Support Library V28 新增加内容](https://github.com/UCodeUStory/DataStructure/blob/master/sources/design_v28.md)
-5. [EventBus源码分析](https://github.com/UCodeUStory/DataStructure/blob/master/sources/eventbus.md)
-6. Bufferknife源码分析
-7. [Android网络数据安全](https://github.com/UCodeUStory/DataStructure/blob/master/sources/netsafe.md)
-8. Retrofit的实现原理
-9. 应用详细启动流程，设计的进程，fork新进程
-10. HashMap原理，Hash冲突，并发集合
-11. Android两种虚拟机区别和联系
-12. GC机制
-13. Actvity的OnNewIntent 
-14. View的绘制原理
-15. 类的加载机制
-16. requestlayout，invalidate,postInvalidate 区别于联系
-17. 项目架构
-18. 项目优化
-19. 项目难度与亮点
-20. Glide缓存源码，加载原理
-21. 网络优化，服务端与客户端两方面
-22. ActivityThread 原理
+5. [Android网络数据安全](https://github.com/UCodeUStory/DataStructure/blob/master/sources/netsafe.md)
+6. [EventBus源码分析](https://github.com/UCodeUStory/DataStructure/blob/master/sources/eventbus.md)
+7. [Bufferknife源码分析](https://github.com/UCodeUStory/DataStructure/blob/master/sources/butterknife.md)
+8. [Glide缓存源码分析]
+9. [RxJava 实现原理]
+10. [Retrofit 实现原理]
+
+
+
 
 
 <img width="380" height="654" src="https://github.com/UCodeUStory/DataStructure/blob/master/menu.png"/>
