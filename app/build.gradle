@@ -3,6 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     buildToolsVersion '26.0.2'
+
     defaultConfig {
         applicationId "com.wangpos.datastructure"
         minSdkVersion 15
