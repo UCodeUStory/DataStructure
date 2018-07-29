@@ -164,29 +164,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        OkHttpClient okHttpClient = new OkHttpClient.Builder()
-                .readTimeout(60, TimeUnit.SECONDS)
-                .writeTimeout(60,TimeUnit.SECONDS)
-                .connectTimeout(60,TimeUnit.SECONDS)
-                .addInterceptor(new Interceptor() {
-                    @Override
-                    public Response intercept(Chain chain) throws IOException {
-                        return null;
-                    }
-                })
-                .addNetworkInterceptor(new Interceptor() {
-                    @Override
-                    public Response intercept(Chain chain) throws IOException {
-                        return null;
-                    }
-                })
-                .cache(new Cache(new File("sd")))
-                .connectionPool(new ConnectionPool())
-                .dispatcher(new Dispatcher())
-                .build()
-
-                ;
-
     }
 
     private void onClickItem(DataBean data) {
