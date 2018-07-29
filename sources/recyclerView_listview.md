@@ -1,0 +1,37 @@
+### RecyclerView 和 ListView区别
+
+1. RecyclerView封装了ViewHolder，抽象了分割线，等函数，使自定义起来非常好用
+
+
+2. 缓存层级不同，RecyclerView有4层缓存，ListView只有两层
+
+
+RecyclerView中的CacheViews(屏幕外)获取缓存时,是通过匹配item的pos获取目标位置的缓存,这样做的好处是,当数据元不变的时候,无需重新bindview.而同样是离屏的缓存,在ListView从mScrapViews根据pos获取相应的缓存,但并没有直接使用,而是重新getView,这样就会导致重新bindView.
+
+
+ListView中通过pos获取的是view,即pos->view;而RecyclerView中通过pos获取的是ViewHolder,即pos->(view,ViewHolder,flag);
+从流程上可以看出,标志flag的作用是判断view是否需要重新bindView,这也是RecyclerView实现局部刷新的一个核心.
+
+
+由上文可知,RecyclerView的缓存机制更加完善,但是还没有达到质变的程度,RecyclerView更大的亮点在于提供了局部刷新的接口,通过局部刷新,就能避免调用许多无用的bindView.
+
+以RecyclerView中的notifyItemRemoved(1)为例,最终会调用requestLayout(),使整个RecyclerView重绘,过程为
+
+
+
+
+相对于AbsListView的两个子类ListView以及GridView来讲，RecyclerView最大一个特性就是灵活，主要体现在以下两个方面
+
+多样式：可以对数据的展示进行自有定制，可以是列表，网格甚至是瀑布流，除此之外你还可以自定义样式
+定向刷新：可以对指定的Item数据进行刷新
+刷新动画：RecyclerView支持对Item的刷新添加动画
+添加装饰：相对于ListView以及GridView的单一的分割线，RecyclerView可以自定义添加分割样式
+今天我们的重点在于缓存，所以重点研究定向刷新，除了对整体数据进行刷新之外，RecyclerView还提供了很多定向刷新的方法。
+
+跟ListView的RecycleBin一样，Recycler也是RecyclerView设计的一个专门用于回收ViewHolder的类，其实RecyclerView的缓存机制是在ListView的缓存机制的基础上进一步的完善，所以在Recycler中能看到很多跟RecycleBin一样的设计思想，在缓存这个层面上，RecyclerView实际上并没有做出太大的创新，最大的创新来源于给每一个ViewHolder增加了一个UpdateOp，通过这个标志可以进行定向刷新指定的Item，并且通过Payload参数可以对Item进行局部刷新，我觉得这个是RecyclerView最厉害的地方，大大提高了刷新时候的性能，如果数据源需要经常变动，那么RecyclerView是你最好的选择，没有之一，下面看一下Recycler是如何进行缓存的。
+
+Recycler的缓存做了很多优化，实际上采用了LFU算法，也就是最少使用策略，
+
+
+定向刷新
+可以对指定的Item进行刷新，是RecyclerView的又一特点，RecyclerView在观察者模式中的Observer中新增了很多方法，用于定向刷新，这个在前面的观察者模式中已经提到过，下面从源码的角度分析一下原理，我们拿adapter.notifyItemChanged(0),最终会RecyclerViewDataObserver的方法

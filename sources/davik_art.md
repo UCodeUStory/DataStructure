@@ -1,0 +1,10 @@
+### Android两种虚拟机区别和联系
+
+
+1. Android 从5.0开始默认使用ART虚拟机执行程序,抛弃了Dalvik虚拟机.加快了Android的运行效率,提高系统的流畅性
+
+原因是Dalvik虚拟机执行的是dex字节码，ART虚拟机执行的是本地机器码, Dalvik虚拟机有一个解释器，用来执行dex字节码, Android从2.2开始,通过JIT（Just-In-Time）进行Dalvik虚拟机的优化,将使用频率较高的字节码翻译成机器码，就可以有效地提高Dalvik虚拟机的执行效率。但即使用采用了JIT，Dalvik虚拟机还是比不上ART虚拟机,因为Dalvik翻译工作是在程序运行时的,而ART在APK在安装时就对其包含的Dex字节码进行翻译，得到对应的本地机器指令，于是就可以在运行时直接执行了。
+
+
+
+2. Android系统通过PackageManagerService来安装APK，在安装的过程，PackageManagerService会通过另外一个类Installer的成员函数dexopt来对APK里面的dex字节码进行优化,对Dalvik虚拟机来说只进行dex字节码的优化,而ART虚拟机将dex字节码翻译成本地机器码,注意的是两种虚拟机不管事字节码的优化还是翻译成机器码都会生成一个后缀是odex文件,只不过ART的是一个oat类型文件,什么是oat文件(不清楚,好像是Linux的文件)

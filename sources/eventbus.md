@@ -53,7 +53,8 @@
 
 Step1：EventBus .getDefault() 创建了一个单例，采用双校验方式
 Step2: 调用EventBus构造方法创建4个集合,集合的命令通过 dataByKey的形式
-          //以事件类型作为Key，Subscription的List集合作为Value的Map集合
+
+          //以事件类型作为Key，Subscription的List集合作为Value的Map集合，后面post一个事件也就用到这个集合
           
           1. Map<Class<?>,CopyOnWriteArrayList<Subscription>> subscriptionsByEventType = new HashMap<>();
           //订阅者作为Key,订阅事件作为Value的Map集合
@@ -220,7 +221,7 @@ EventBusBuilder构建构造方法中 创建三个集合
       // 事件类型 查找  订阅者   Subscription
       CopyOnWriteArrayList<Subscription> subscriptions;
        synchronized (this) {
-              subscriptions = subscriptionsByEventType.get(eventClass);/?这集合中的数据从哪里来，是编译器注解解析器获取的？
+              subscriptions = subscriptionsByEventType.get(eventClass);
        }
 
      
