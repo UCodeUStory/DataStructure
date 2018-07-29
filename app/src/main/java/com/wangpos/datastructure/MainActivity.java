@@ -47,9 +47,18 @@ import com.wangpos.datastructure.sort.SpaceComplexityActivity;
 import com.wangpos.datastructure.sort.TimeComplexityActivity;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Collections;
+import java.util.concurrent.TimeUnit;
+
+import okhttp3.Cache;
+import okhttp3.ConnectionPool;
+import okhttp3.Dispatcher;
+import okhttp3.Interceptor;
+import okhttp3.OkHttpClient;
+import okhttp3.Response;
 
 import static com.wangpos.datastructure.core.BaseActivity.setWindowStatusBarColor;
 
@@ -153,6 +162,30 @@ public class MainActivity extends AppCompatActivity {
                 onClickItem(data);
             }
         });
+
+
+        OkHttpClient okHttpClient = new OkHttpClient.Builder()
+                .readTimeout(60, TimeUnit.SECONDS)
+                .writeTimeout(60,TimeUnit.SECONDS)
+                .connectTimeout(60,TimeUnit.SECONDS)
+                .addInterceptor(new Interceptor() {
+                    @Override
+                    public Response intercept(Chain chain) throws IOException {
+                        return null;
+                    }
+                })
+                .addNetworkInterceptor(new Interceptor() {
+                    @Override
+                    public Response intercept(Chain chain) throws IOException {
+                        return null;
+                    }
+                })
+                .cache(new Cache(new File("sd")))
+                .connectionPool(new ConnectionPool())
+                .dispatcher(new Dispatcher())
+                .build()
+
+                ;
 
     }
 
