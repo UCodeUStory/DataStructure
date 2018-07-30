@@ -54,6 +54,9 @@
 - [synchronized 和 Lock区别](https://github.com/UCodeUStory/DataStructure/blob/master/sources/synchronized_lock.md)
 - [wait 和 sleep区别](https://github.com/UCodeUStory/DataStructure/blob/master/sources/wait_sleep.md)
 - [yield()和join()](https://github.com/UCodeUStory/DataStructure/blob/master/sources/yield_join.md)
+- [HashMap冲突](https://github.com/UCodeUStory/DataStructure/blob/master/sources/hash_confict.md)
+
+
 #### Android
 1. [Volley源码分析经典算法](https://github.com/UCodeUStory/DataStructure/blob/master/sources/volley_algorithm.md)
 2. [Android Design Support Library包含内容](https://github.com/UCodeUStory/DataStructure/blob/master/sources/adsl.md)
@@ -62,7 +65,7 @@
 5. [Android网络数据安全](https://github.com/UCodeUStory/DataStructure/blob/master/sources/netsafe.md)
 6. [Binder 原理](https://github.com/UCodeUStory/DataStructure/blob/master/sources/Binder.md)
 7. [Android应用架构设计](https://github.com/UCodeUStory/DataStructure/blob/master/sources/frame.md)
-8. [热修复技术和原理]
+8. [热修复技术和原理](https://github.com/UCodeUStory/DataStructure/blob/master/sources/hotfix.md)
 9. [Android 8.0 WorkManager后台任务可以保活](https://github.com/UCodeUStory/GradlePluginDevelop/tree/master/source/workmanager.md)
 10. [JNI双进程保活]
 11. [Android 应用启动流程]
@@ -74,6 +77,10 @@
 17. [Android两种虚拟机区别和联系](https://github.com/UCodeUStory/GradlePluginDevelop/tree/master/source/davik_art.md)
 18. [View的源码分析(绘制流程以及刷新机制)](https://github.com/UCodeUStory/GradlePluginDevelop/tree/master/source/view_root.md)
 19. [RecyclerView 和ListView区别](https://github.com/UCodeUStory/GradlePluginDevelop/tree/master/source/recyclerView_listview.md)
+20. [volatile原理]
+21. [Fragment的懒加载实现](https://github.com/UCodeUStory/GradlePluginDevelop/tree/master/source/fragment_lazy_load.md)
+22. [requestlayout，invalidate,postInvalidate 区别于联系](https://github.com/UCodeUStory/GradlePluginDevelop/tree/master/source/requestlayout_invalidate_postInvalidate.md)
+23. [OnMeasure多次调用问题](https://github.com/UCodeUStory/GradlePluginDevelop/tree/master/source/onMeasure.md)
 
 ##### Android框架源码分析
 1. [EventBus源码分析](https://github.com/UCodeUStory/DataStructure/blob/master/sources/eventbus.md)

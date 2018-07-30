@@ -84,6 +84,23 @@ public class MergeSortActivity extends BaseActivity {
     }
 
 
+    /**
+     *
+     * 算法为三个方法
+     *
+     * 归并排序是先拆分，按照2分或者3分等等，然后将最小不可分的
+     *
+     * 然后需要一个辅助控件
+     * 和辅助的cIndex = left 以便后面拷贝
+     * 需要一个tmpIndex临时变量
+     * 和rightIndex作为右边判断
+     *
+     *
+     * @param a
+     * @param left
+     * @param mid
+     * @param right
+     */
     private static void merge(int[] a, int left, int mid, int right) {
 
         int[] tmp = new int[a.length];
