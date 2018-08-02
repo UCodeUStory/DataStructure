@@ -82,6 +82,10 @@
 22. [requestlayout，invalidate,postInvalidate 区别于联系](https://github.com/UCodeUStory/DataStructure/blob/master/sources/requestlayout_invalidate_postInvalidate.md)
 23. [OnMeasure多次调用问题](https://github.com/UCodeUStory/DataStructure/blob/master/sources/onMeasure.md)
 24. [ViewPager缓存原理]
+25. [多进程Application初始化问题](https://github.com/UCodeUStory/DataStructure/blob/master/sources/application.md)
+
+#### 设计模式
+
 
 ##### Android框架源码分析
 1. [EventBus源码分析](https://github.com/UCodeUStory/DataStructure/blob/master/sources/eventbus.md)
