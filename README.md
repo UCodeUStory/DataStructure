@@ -42,6 +42,7 @@
 - 两个排序数组的中值it 
 
 #### Java 
+- [Java 基础面试题](https://github.com/UCodeUStory/DataStructure/blob/master/sources/javabasic.md)
 - [Java垃圾回收机制](https://github.com/UCodeUStory/DataStructure/blob/master/sources/JavaGarbageCollection.md)
 - [Java 强、软、弱、虚引用](https://github.com/UCodeUStory/DataStructure/blob/master/sources/reference.md)
 - [Java 线程池实现原理](https://github.com/UCodeUStory/DataStructure/blob/master/sources/thread_principle.md)

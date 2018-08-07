@@ -36,7 +36,7 @@
    
    - 2. System.exit(0) 只能退出当前进程，如果进程中启动了一个服务，在新的进程，新的服务不会被杀死，此服务只能通过StopService停止
    
-   - 3. System.exit(0)时当程序中有startService启动一个服务，服务没有开启新的进程，此时，服务会被重启，重新走onCreate等生命周期方法
+   - 3. System.exit(0) 时当程序中有startService启动一个服务，服务没有开启新的进程，此时，服务会被重启，重新走onCreate等生命周期方法,并且应用进程也会被重启，Application也会重新onCreate初始化
    
  
 
