@@ -85,6 +85,7 @@
 24. [ViewPager缓存原理]
 25. [多进程Application初始化问题](https://github.com/UCodeUStory/DataStructure/blob/master/sources/application.md)
 26. [Application可以开线程替换Service处理后台任务吗](https://github.com/UCodeUStory/DataStructure/blob/master/sources/application_service.md)
+27. [android.os.killProcess和System.exit(0)区别](https://github.com/UCodeUStory/DataStructure/blob/master/sources/killprocess_system_exit.md)
 #### 设计模式
 
 
