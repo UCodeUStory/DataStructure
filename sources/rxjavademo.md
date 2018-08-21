@@ -1,7 +1,9 @@
 ### rxjava 
 
 
-1. rxjava 2.0 新要求
+    https://github.com/ReactiveX/RxJava
+
+1. rxjava 2.0 新要求 
 
 RxJava2.X中，Observeable用于订阅Observer，是不支持背压的，而Flowable用于订阅Subscriber，是支持背压(Backpressure)的。
 
@@ -458,7 +460,7 @@ RxJava2.X中，Observeable用于订阅Observer，是不支持背压的，而Flow
  
   创建一个会发出一个error事件的Observable
       
-      Observable.error(new RuntimeException("fuck!"))
+      Observable.error(new RunftimeException("fuck!"))
               .subscribe(new Action1<Object>() {
                   @Override
                   public void call(Object o) {
@@ -917,4 +919,8 @@ RxJava2.X中，Observeable用于订阅Observer，是不支持背压的，而Flow
           onNext--> 9
           onComplete
   通过观察以上例子可以发现我们的发射规则是如果发射的第一个数据小于第二个数则发射第三个数据，否则发射第四个数据（我们来验证一下，1确实是小于2的，随意发射的是3；8并不小于5，所以发射的是9，又因为四个发射箱，最少的之后两项，所以最后只发射了两项数据
-  
+ 
+21. doOnNext()的执行在订阅者调用onNext()之前执行，做一些缓存方法
+
+
+#### map filter doOnNext等方法 执行顺序和设置的顺序一样，他们的操作都是基于上一个结果

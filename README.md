@@ -89,6 +89,7 @@
 26. [Application可以开线程替换Service处理后台任务吗](https://github.com/UCodeUStory/DataStructure/blob/master/sources/application_service.md)
 27. [android.os.killProcess和System.exit(0)区别](https://github.com/UCodeUStory/DataStructure/blob/master/sources/killprocess_system_exit.md)
 28. 线程通信
+29. [ConstraintLayout 完全解析 快来优化你的布局](https://blog.csdn.net/lmj623565791/article/details/78011599?utm_source=tuicool&utm_medium=referral)
 #### 设计模式
 
 #### Android 框架使用说明
