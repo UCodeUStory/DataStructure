@@ -90,6 +90,8 @@
 27. [android.os.killProcess和System.exit(0)区别](https://github.com/UCodeUStory/DataStructure/blob/master/sources/killprocess_system_exit.md)
 28. 线程通信
 29. [ConstraintLayout 完全解析 快来优化你的布局](https://blog.csdn.net/lmj623565791/article/details/78011599?utm_source=tuicool&utm_medium=referral)
+30. [Android 匿名共享内存原理](https://www.jianshu.com/p/d9bc9c668ba6)
+
 #### 设计模式
 
 #### Android 框架使用说明

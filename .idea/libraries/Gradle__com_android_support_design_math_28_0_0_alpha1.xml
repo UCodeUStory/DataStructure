@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.support:design-math-28.0.0-alpha1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-math-28.0.0-alpha1.aar/f2f92fe2c48cedac68371e91a5cd2fc0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-math-28.0.0-alpha1.aar/f2f92fe2c48cedac68371e91a5cd2fc0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/design-math/28.0.0-alpha1/1221465c819da499562da0a7a337f43f643ac10a/design-math-28.0.0-alpha1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
