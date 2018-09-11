@@ -91,8 +91,11 @@
 28. 线程通信
 29. [ConstraintLayout 完全解析 快来优化你的布局](https://blog.csdn.net/lmj623565791/article/details/78011599?utm_source=tuicool&utm_medium=referral)
 30. [Android 匿名共享内存原理](https://www.jianshu.com/p/d9bc9c668ba6)
+31. [Binder 原理深度剖析]
 
 #### 设计模式
+1. [面向对象的七种设计原则](https://github.com/UCodeUStory/DataStructure/blob/master/sources/seven_design_principles.md)
+
 
 #### Android 框架使用说明
 1. [rxjava使用](https://github.com/UCodeUStory/DataStructure/blob/master/sources/rxjavademo.md)
