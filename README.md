@@ -95,7 +95,7 @@
 
 #### 设计模式
 1. [面向对象的七种设计原则](https://github.com/UCodeUStory/DataStructure/blob/master/sources/seven_design_principles.md)
-
+2. [建造者模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/kotlin/builderModel.kt)
 
 #### Android 框架使用说明
 1. [rxjava使用](https://github.com/UCodeUStory/DataStructure/blob/master/sources/rxjavademo.md)
