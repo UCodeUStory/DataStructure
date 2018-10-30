@@ -58,7 +58,7 @@
 - [HashMap冲突](https://github.com/UCodeUStory/DataStructure/blob/master/sources/hash_confict.md)
 - [Java 8十大特性](https://github.com/UCodeUStory/DataStructure/blob/master/sources/java8.md)
 - [Java 克隆](https://github.com/UCodeUStory/DataStructure/blob/master/sources/javaCopy.md)
-
+- [Java foreach原理](https://github.com/UCodeUStory/DataStructure/blob/master/sources/foreach.md)
 
 #### Android 常见问题
 1. [Volley源码分析经典算法](https://github.com/UCodeUStory/DataStructure/blob/master/sources/volley_algorithm.md)
