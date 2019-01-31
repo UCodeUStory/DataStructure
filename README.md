@@ -83,7 +83,7 @@
 20. [volatile原理](https://github.com/UCodeUStory/DataStructure/blob/master/sources/volatile.md)
 21. [Fragment的懒加载实现](https://github.com/UCodeUStory/DataStructure/blob/master/sources/fragment_lazy_load.md)
 22. [requestlayout，invalidate,postInvalidate 区别于联系](https://github.com/UCodeUStory/DataStructure/blob/master/sources/requestlayout_invalidate_postInvalidate.md)
-23. [OnMeasure多次调用问题](https://github.com/UCodeUStory/DataStructure/blob/master/sources/onMeasure.md)
+23. [OnMeasure多次调用问题](https://github.com/UCodeUStory/DataStrucgitture/blob/master/sources/onMeasure.md)
 24. ViewPager缓存原理
 25. [多进程Application初始化问题](https://github.com/UCodeUStory/DataStructure/blob/master/sources/application.md)
 26. [Application可以开线程替换Service处理后台任务吗](https://github.com/UCodeUStory/DataStructure/blob/master/sources/application_service.md)
@@ -115,6 +115,7 @@
 9. [Blockcanary 源码分析]
 10. [lifeRecycler源码分析]
 11. [RxJava 源码分析]
+12. [ViewModel 源码分析](https://github.com/UCodeUStory/DataStructure/blob/master/sources/viewmodel.md)
 
 
 

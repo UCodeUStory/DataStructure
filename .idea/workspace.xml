@@ -13,7 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c36b3d7-82fb-4da1-98f5-8345655eb5e3" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/sources/workManager.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/sources/viewmodel.md" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
@@ -72,12 +72,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="336">
-                <caret line="71" column="113" lean-forward="false" selection-start-line="71" selection-start-column="113" selection-end-line="71" selection-end-column="113" />
+              <first_editor relative-caret-position="491">
+                <caret line="117" column="86" lean-forward="false" selection-start-line="117" selection-start-column="86" selection-end-line="117" selection-end-column="95" />
+                <folding />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewmodel.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sources/viewmodel.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="574">
+                <caret line="104" column="132" lean-forward="false" selection-start-line="104" selection-start-column="132" selection-end-line="104" selection-end-column="132" />
+                <folding />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="volatile.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sources/volatile.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -116,8 +146,8 @@
         <entry file="file://$PROJECT_DIR$/sources/workManager.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1641">
-                <caret line="114" column="0" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+              <first_editor relative-caret-position="2052">
+                <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -3026,7 +3056,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/java/CJThreadPool.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/java/JavaThreadPrincipleActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/other/MyStack.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/other/GetMinActivity.java" />
@@ -3077,6 +3106,7 @@
         <option value="$PROJECT_DIR$/sources/media_player.md" />
         <option value="$PROJECT_DIR$/sources/workManager.md" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/sources/viewmodel.md" />
       </list>
     </option>
   </component>
@@ -3100,10 +3130,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -3195,7 +3225,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
-    <property name="sync.plugin.last.upgrade.timestamp" value="1544584485722" />
+    <property name="sync.plugin.last.upgrade.timestamp" value="1548904426870" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="device.picker.selection" value="0123abcd" />
     <property name="extract.method.default.visibility" value="private" />
@@ -3205,7 +3235,7 @@
     <property name="ExportApk.ApkPath" value="$PROJECT_DIR$/app" />
     <property name="ExportApk.Flavors" value="" />
     <property name="ExportApk.BuildType" value="release" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548381850771" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548919776372" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -3866,7 +3896,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sources/imagedownload.md" />
     <entry file="file://$PROJECT_DIR$/sources/davik_art.md" />
     <entry file="file://$PROJECT_DIR$/sources/view_root.md" />
     <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-28/android.jar!/android/os/AsyncTask.class">
@@ -3938,7 +3967,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/volatile.md" />
     <entry file="file://$PROJECT_DIR$/sources/application_service.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="411">
@@ -4116,8 +4144,8 @@
     <entry file="file://$PROJECT_DIR$/sources/workManager.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1641">
-            <caret line="114" column="0" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <first_editor relative-caret-position="2052">
+            <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor>
@@ -4135,8 +4163,34 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="336">
-            <caret line="71" column="113" lean-forward="false" selection-start-line="71" selection-start-column="113" selection-end-line="71" selection-end-column="113" />
+          <first_editor relative-caret-position="491">
+            <caret line="117" column="86" lean-forward="false" selection-start-line="117" selection-start-column="86" selection-end-line="117" selection-end-column="95" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/volatile.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/viewmodel.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="574">
+            <caret line="104" column="132" lean-forward="false" selection-start-line="104" selection-start-column="132" selection-end-line="104" selection-end-column="132" />
             <folding />
           </first_editor>
           <second_editor>
