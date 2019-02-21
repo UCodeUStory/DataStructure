@@ -93,6 +93,7 @@
 30. [Android 匿名共享内存原理](https://www.jianshu.com/p/d9bc9c668ba6)
 31. [Binder 原理深度剖析](https://github.com/UCodeUStory/DataStructure/blob/master/sources/binder.md)
 32. [MediaPlayer生命周期](https://github.com/UCodeUStory/DataStructure/blob/master/sources/media_player.md)
+33. [TransactionTooLargeException解决方法](https://github.com/UCodeUStory/DataStructure/blob/master/sources/transactiontoolargeexception.md)
 
 #### 设计模式
 1. [面向对象的七种设计原则](https://github.com/UCodeUStory/DataStructure/blob/master/sources/seven_design_principles.md)
@@ -106,7 +107,7 @@
 ##### Android框架源码分析
 1. [EventBus源码分析](https://github.com/UCodeUStory/DataStructure/blob/master/sources/eventbus.md)
 2. [Bufferknife源码分析](https://github.com/UCodeUStory/DataStructure/blob/master/sources/butterknife.md)
-3. [Glide 源码分析]
+3. [Glide 源码分析](https://github.com/UCodeUStory/DataStructure/blob/master/sources/glide.md)
 4. [Picasso 源码分析]
 5. [OKHttp 源码分析](https://github.com/UCodeUStory/DataStructure/blob/master/sources/okhttp.md)
 6. [Retrofit 源码分析](https://github.com/UCodeUStory/DataStructure/blob/master/sources/retrofit.md)
