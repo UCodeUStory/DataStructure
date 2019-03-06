@@ -17,7 +17,7 @@
    主要类：
    1. ViewModelProviders  提供不同种类方法创建ViewModelProvider
    2. ViewModelProvider  用来创建ViewModel的，里面持有 Factory  和ViewModelStore
-   3. Factory  一个抽象类，实现类决定如果创建ViewModel,有一个默认实现ViewModelProvider里，如果我们自己的ViewModel参数不仅仅一个application,就需要自定义工厂方法
+   3. Factory  一个抽象类，实现类决定如何创建ViewModel,有一个默认实现ViewModelProvider里，如果我们实现的ViewModel参数不仅仅一个application,就需要自定义工厂方法
    4. ViewModel 我们最终需要的对象
    5. ViewModelStores 用来创建ViewModelStore,但首先要先创建HoldFragment
    6. HoldFragmentManager 维护两个Map
@@ -43,7 +43,7 @@
 
         HolderFragment holderFragmentFor(FragmentActivity activity) {
             FragmentManager fm = activity.getSupportFragmentManager();
-            // 有没有已经attach的, 有直接放回 HolderFragment，这个放在就是再Activity重建的时候，并且HolderFrament 设置 setRetainInstance(true)时，才会有值，否者其他情况都为Null
+            // 有没有已经attach的, 有就直接返回 HolderFragment，这个放在就是再Activity重建的时候，并且HolderFrament 设置 setRetainInstance(true)时，才会有值，否者其他情况都为Null
             HolderFragment holder = findHolderFragment(fm);
             if (holder != null) {
                 return holder;
