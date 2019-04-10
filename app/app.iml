@@ -21,6 +21,37 @@
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
       </configuration>
     </facet>
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.6" useProjectSettings="false">
+        <compilerSettings />
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/build/tmp/kotlin-classes/debug" />
+          <option name="classpath" value="$USER_HOME$/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/1463fcbadf0ef668b6aafc25341dd029/jars/classes.jar:/Users/qiyue/GitProject/DataStructure/codeview/build/intermediates/intermediate-jars/debug/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-28.0.0-alpha1.aar/4306d54be17a37d180395d2de0b49e2c/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-bottomappbar-28.0.0-alpha1.aar/65e0eeb026c8622b99aec398b9ec4401/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-theme-28.0.0-alpha1.aar/c5db9435a8a1f0881b7485b3deae6995/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-transformation-28.0.0-alpha1.aar/6c386642b987066919547dec33033687/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-widget-28.0.0-alpha1.aar/42143702ed9f03e7435693b299b8d7b3/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-bottomsheet-28.0.0-alpha1.aar/d24fe2f94d6edaeefd11c9721307da5d/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-dialog-28.0.0-alpha1.aar/0a293c38104a5e46f8121718f14a34f4/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-button-28.0.0-alpha1.aar/c277a8c2afdf9a11335021be48adb6eb/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-card-28.0.0-alpha1.aar/c5ff75ee4e2cf5f04d90f69df544a86c/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-chip-28.0.0-alpha1.aar/cbeaf4f828739c967a264c0e784ef6c8/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-internal-28.0.0-alpha1.aar/10d0bb185b0cda1351f85ebf23b89e75/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-bottomnavigation-28.0.0-alpha1.aar/33fbdd5543be7b5169379f257f7983cc/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-floatingactionbutton-28.0.0-alpha1.aar/56faea7879ac0e97379c7ef9ef4e4e9d/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-navigation-28.0.0-alpha1.aar/ee48618e3224dba4d56315278a70f9ca/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-resources-28.0.0-alpha1.aar/22e93cfe5d054825113bbae02145e5a5/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-tabs-28.0.0-alpha1.aar/cadc1b4fb8622c81241abfd2ea4ed1c7/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-textfield-28.0.0-alpha1.aar/32afb61a54213d889deeb4b97aa43713/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-typography-28.0.0-alpha1.aar/cb060f1e178524a9c2675b38320324f7/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-shape-28.0.0-alpha1.aar/30ab9fc6feca6a991329d00e1eccfaf1/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha1.aar/4af7ac185dde04a37013fb4c067cdd42/jars/classes.jar:/Users/qiyue/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.11.0/75966e05a49046ca2ae734e5626f28837a8d1e82/okhttp-3.11.0.jar:/Users/qiyue/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.21/d207ce2c9bcf17dc8e51bab4dbfdac4d013e7138/kotlin-stdlib-jdk7-1.3.21.jar:/Users/qiyue/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar:/Users/qiyue/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.9.2/5e3bda828a80c7a21dfbe2308d1755759c2fd7b4/jsoup-1.9.2.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-alpha1.aar/b61756590008a649f6640a3c0b1e108b/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0-alpha1.aar/a0dfbe6a8aa1acbaecdae97025f6a18b/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-animation-28.0.0-alpha1.aar/0966b341b99707e683651904891061d6/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-circularreveal-coordinatorlayout-28.0.0-alpha1.aar/0acd7c545783f46c6397bbc3e238a66e/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-expandable-28.0.0-alpha1.aar/e33d35d7e10f7298b8bd820314d86d74/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-stateful-28.0.0-alpha1.aar/ff58b75ec933947f354dd5496fbc098f/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-alpha1.aar/64a1df59e6c6088c42b7fb89748c38e3/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-alpha1.aar/75bfc0cc05ec2f35a0ee3451ae54657f/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-ripple-28.0.0-alpha1.aar/846774ba8b1e93296e6b9aa3ee5602ca/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-alpha1.aar/3cb2dba084c98c733668d0d698d39d71/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/transition-28.0.0-alpha1.aar/9cab129917c2bce829131f97b8ad3844/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-alpha1.aar/e2dfae97781eb7221550691ae3a5a402/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-alpha1.aar/639035a5a5db9bc236bff692fab0d1e5/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-alpha1.aar/7c82bfbf05707a2c0393d2fa11812107/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-alpha1.aar/744673653d397503f2337b3667128ddb/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-alpha1.aar/167aeb4694fe4093da104272c0f86a93/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-alpha1.aar/2180ec08e2d7b72d99515121de89398d/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-alpha1.aar/589d6b7e36c2e2355bdec17621812c54/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-alpha1.aar/fdd161d566a00e29b15c6df56bd2ef9a/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-alpha1.aar/a39b8249a3f49e38eaac39ea2b3098d2/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-alpha1.aar/a78f56f3b157b69dd7729276f08be467/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-canvas-28.0.0-alpha1.aar/4cdec7647afe1e8786a7d3c513441122/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-circularreveal-cardview-28.0.0-alpha1.aar/4cbf09c5899b10f083db590ca88c4e97/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-circularreveal-28.0.0-alpha1.aar/19ac9a10bc9f56b4743ee66c76076b32/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-drawable-28.0.0-alpha1.aar/ff3ecccf39cce6216162624b5fe13386/jars/classes.jar:/Users/qiyue/.gradle/caches/modules-2/files-2.1/com.android.support/collections/28.0.0-alpha1/ec466d024148ba1bb325181625c9bb92e461d39b/collections-28.0.0-alpha1.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-alpha1.aar/5db3c8d0483d15a030ec7b67b5ba9832/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-alpha1.aar/190b761ca1a6a338b37f7089c99df8a7/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-alpha1.aar/469cfec5731d71d99459d74b1065c17c/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-alpha1.aar/bfdd587dcd463fdfe12c7accdeb04933/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/print-28.0.0-alpha1.aar/365e3eb096d2b4bc5e26ad4a3f6750d4/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0-alpha1.aar/54c2c123ac991f98dedc0cf82a064b8d/jars/classes.jar:/Users/qiyue/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/28.0.0-alpha1/39ded76b5e1ce1c5b2688e1d25cdc20ecee32007/support-annotations-28.0.0-alpha1.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-color-28.0.0-alpha1.aar/c907780436d883339df2f85c770915d0/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-math-28.0.0-alpha1.aar/a5abd9e7eadcea7177d6915449ef6457/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/design-snackbar-28.0.0-alpha1.aar/9e1dce52cc49e2a77e30902f91a1051e/jars/classes.jar:/Users/qiyue/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.14.0/102d7be47241d781ef95f1581d414b0943053130/okio-1.14.0.jar:/Users/qiyue/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.21/4bcc2012b84840e19e1e28074284cac908be0295/kotlin-stdlib-1.3.21.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/acfbd5dc5992a668cb2ee3cba84bb6b2/jars/classes.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/4cc64363b55d2b48592bf9a6d044484d/jars/classes.jar:/Users/qiyue/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.21/f30e4a9897913e53d778f564110bafa1fef46643/kotlin-stdlib-common-1.3.21.jar:/Users/qiyue/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/c583a4c6bb8a6b3a96a331242f5de344/jars/classes.jar:/Users/qiyue/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.0/edf3f7bfb84a7521d0599efa3b0113a0ee90f85/common-1.1.0.jar:/Users/qiyue/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/d485d07a8fcf0e2ce80978e035d8313a/jars/classes.jar:/Users/qiyue/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.0/8007981f7d7540d89cd18471b8e5dcd2b4f99167/common-1.1.0.jar:/Users/qiyue/Library/Android/sdk/platforms/android-28/android.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="app_debug" />
+          <option name="addCompilerBuiltIns" value="true" />
+          <option name="loadBuiltInsFromDependencies" value="true" />
+          <option name="languageVersion" value="1.3" />
+          <option name="apiVersion" value="1.3" />
+          <option name="pluginOptions">
+            <array>
+              <option value="plugin:org.jetbrains.kotlin.android:experimental=false" />
+              <option value="plugin:org.jetbrains.kotlin.android:enabled=true" />
+              <option value="plugin:org.jetbrains.kotlin.android:defaultCacheImplementation=hashMap" />
+            </array>
+          </option>
+          <option name="pluginClasspaths">
+            <array>
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.3.21/311c0d1cbb0a194e8712edaef7b92a8f0919ca26/kotlin-android-extensions-1.3.21.jar" />
+            </array>
+          </option>
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
     <output url="file://$MODULE_DIR$/build/intermediates/classes/debug" />
@@ -103,99 +134,23 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/symbols" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/transforms" />
+      <excludeFolder url="file://$MODULE_DIR$/build/kotlin" />
       <excludeFolder url="file://$MODULE_DIR$/build/outputs" />
       <excludeFolder url="file://$MODULE_DIR$/build/tmp" />
     </content>
     <orderEntry type="jdk" jdkName="Android API 28 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: com.android.support.constraint:constraint-layout-solver:1.0.2@jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test.espresso:espresso-idling-resource-2.2.2" level="project" />
-    <orderEntry type="library" name="Gradle: android.arch.lifecycle:common:1.1.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-drawable-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-dialog-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:print-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-annotations:28.0.0-alpha1@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-bottomsheet-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-tabs-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test.espresso:espresso-core-2.2.2" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-core-ui-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup:javawriter:2.1.1@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-card-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:animated-vector-drawable-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:collections:28.0.0-alpha1@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:transition-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:rules-0.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-expandable-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-floatingactionbutton-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-bottomnavigation-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-chip-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-resources-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.squareup.okio:okio:1.14.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: javax.inject:javax.inject:1@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-animation-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-navigation-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:cardview-v7-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:cursoradapter-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:interpolator-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: android.arch.core:runtime-1.1.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-core-utils-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:runner-0.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-transformation-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-stateful-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: org.jsoup:jsoup:1.9.2@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-snackbar-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:exposed-instrumentation-api-publish-0.5" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-color-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:loader-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:recyclerview-v7-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:viewpager-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-circularreveal-coordinatorlayout-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: android.arch.lifecycle:runtime-1.1.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-ripple-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-typography-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-shape-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:documentfile-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-internal-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:appcompat-v7-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-vector-drawable-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.squareup.okhttp3:okhttp:3.11.0@jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: javax.annotation:javax.annotation-api:1.2@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:asynclayoutinflater-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-circularreveal-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: android.arch.lifecycle:viewmodel-1.1.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-textfield-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:coordinatorlayout-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-canvas-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:customview-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-compat-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: com.google.code.findbugs:jsr305:2.0.1@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:drawerlayout-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:support-fragment-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support.constraint:constraint-layout-1.0.2" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.12@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-math-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-widget-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:slidingpanelayout-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: android.arch.lifecycle:livedata-core-1.1.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-button-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-integration:1.3@jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-library:1.3@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-circularreveal-cardview-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: android.arch.core:common:1.1.0@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-bottomappbar-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:swiperefreshlayout-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:design-theme-28.0.0-alpha1" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support:localbroadcastmanager-28.0.0-alpha1" level="project" />
-    <orderEntry type="module" module-name="codeview" />
     <orderEntry type="library" name="Gradle: com.android.support:design-transformation:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design-chip:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design-typography:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:livedata-core:1.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:print:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:runtime:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.21@jar" level="project" />
+    <orderEntry type="library" name="Gradle: android.arch.lifecycle:common:1.1.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:viewmodel:1.1.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:support-annotations:28.0.0-alpha1@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design-shape:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design-widget:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design-expandable:28.0.0-alpha1@aar" level="project" />
@@ -204,23 +159,31 @@
     <orderEntry type="library" name="Gradle: com.android.support:design-theme:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:documentfile:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test.espresso:espresso-idling-resource:2.2.2@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup:javawriter:2.1.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design-snackbar:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:swiperefreshlayout:28.0.0-alpha1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.support:collections:28.0.0-alpha1@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:appcompat-v7:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:animated-vector-drawable:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design-circularreveal-coordinatorlayout:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design-textfield:28.0.0-alpha1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design-animation:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:cardview-v7:28.0.0-alpha1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.okio:okio:1.14.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support.constraint:constraint-layout:1.0.2@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: javax.inject:javax.inject:1@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:coordinatorlayout:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design-floatingactionbutton:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:slidingpanelayout:28.0.0-alpha1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: org.jsoup:jsoup:1.9.2@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:viewpager:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design-drawable:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design-color:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-compat:28.0.0-alpha1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.3.21@jar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:exposed-instrumentation-api-publish:0.5@aar" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.21@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:drawerlayout:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:interpolator:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:customview:28.0.0-alpha1@aar" level="project" />
@@ -228,6 +191,8 @@
     <orderEntry type="library" name="Gradle: com.android.support:design-stateful:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:localbroadcastmanager:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:loader:28.0.0-alpha1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.squareup.okhttp3:okhttp:3.11.0@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: javax.annotation:javax.annotation-api:1.2@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:asynclayoutinflater:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-core-utils:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:transition:28.0.0-alpha1@aar" level="project" />
@@ -235,12 +200,15 @@
     <orderEntry type="library" name="Gradle: com.android.support:support-vector-drawable:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:rules:0.5@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design-canvas:28.0.0-alpha1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.code.findbugs:jsr305:2.0.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-fragment:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design-navigation:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design-resources:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design-circularreveal-cardview:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.android.support.test:runner:0.5@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-core-ui:28.0.0-alpha1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.12@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design-bottomappbar:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design-ripple:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design-dialog:28.0.0-alpha1@aar" level="project" />
@@ -248,9 +216,12 @@
     <orderEntry type="library" name="Gradle: com.android.support:design-circularreveal:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design-internal:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design-bottomsheet:28.0.0-alpha1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-integration:1.3@jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-library:1.3@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design-bottomnavigation:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design-button:28.0.0-alpha1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: android.arch.core:common:1.1.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:cursoradapter:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:design-tabs:28.0.0-alpha1@aar" level="project" />
     <orderEntry type="module" module-name="codeview" />

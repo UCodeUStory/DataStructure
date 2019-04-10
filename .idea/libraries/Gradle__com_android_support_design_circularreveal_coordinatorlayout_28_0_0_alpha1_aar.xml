@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.android.support:design-circularreveal-coordinatorlayout:28.0.0-alpha1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-circularreveal-coordinatorlayout-28.0.0-alpha1.aar/a6c319edfcb2c64d328fb61048a22791/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-circularreveal-coordinatorlayout-28.0.0-alpha1.aar/a6c319edfcb2c64d328fb61048a22791/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-circularreveal-coordinatorlayout-28.0.0-alpha1.aar/0acd7c545783f46c6397bbc3e238a66e/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-circularreveal-coordinatorlayout-28.0.0-alpha1.aar/0acd7c545783f46c6397bbc3e238a66e/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -39,10 +39,20 @@
 - [求最大不重复子串](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/other/MaxSubStringActivity.java)
 - [死锁](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/java/DeadLockDemo.java)
 - [两个线程交替输出1010](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/java/ThreadOneZero.java)
+
+#### 算法设计常用思想
 - [贪婪算法之找零钱问题](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/algorithm/Greedy.java)
 - [贪婪算法之01背包问题](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/algorithm/Greedy01Bag.java)
+- [分治算法之二分法查找](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/algorithm/BinearySearch.kt)
+- [分治算法之字符串全排列](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/algorithm/StringFullArrangement.kt)
+- [分治算法之快速排序](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/algorithm/QuickSort.kt)
+- [分治算法之合并排序]
+- [迭代算法之欧几里得算法](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/algorithm/IterationGCD.kt)
+- [迭代算法和递归算法区别](https://github.com/UCodeUStory/DataStructure/blob/master/sources/iterationAndroidrecursion.md)
+- [动态规划法](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/algorithm/DynamicProgram.kt)
 
-#### Java 
+
+#### Java 常见问题
 - [Java 基础面试题](https://github.com/UCodeUStory/DataStructure/blob/master/sources/javabasic.md)
 - [Java垃圾回收机制](https://github.com/UCodeUStory/DataStructure/blob/master/sources/JavaGarbageCollection.md)
 - [Java 强、软、弱、虚引用](https://github.com/UCodeUStory/DataStructure/blob/master/sources/reference.md)
