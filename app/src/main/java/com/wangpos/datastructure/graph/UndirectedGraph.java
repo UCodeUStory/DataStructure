@@ -145,8 +145,11 @@ public class UndirectedGraph {
     }
 
 
-
-
+    /**
+     * 深度优先搜索
+     * @param i
+     * @param visited
+     */
     private void DFS(int i, boolean[] visited) {
         ENode node;
 
