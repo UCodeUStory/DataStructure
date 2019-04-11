@@ -49,7 +49,10 @@
 - [分治算法之合并排序]
 - [迭代算法之欧几里得算法](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/algorithm/IterationGCD.kt)
 - [迭代算法和递归算法区别](https://github.com/UCodeUStory/DataStructure/blob/master/sources/iterationAndroidrecursion.md)
-- [动态规划法](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/algorithm/DynamicProgram.kt)
+- [迭代算法之二分逼近法](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/algorithm/TwoSeparate.kt)
+- [动态规划法之01背包问题](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/algorithm/DynamicProgram.kt)
+- [穷举算法之百钱买鸡](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/algorithm/exhaustion100buychicken.kt)
+- [穷举算法之鸡兔同笼](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/algorithm/exhaustionchickenrabbit.kt)
 
 
 #### Java 常见问题
