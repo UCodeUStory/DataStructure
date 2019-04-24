@@ -51,9 +51,10 @@
 - [迭代算法和递归算法区别](https://github.com/UCodeUStory/DataStructure/blob/master/sources/iterationAndroidrecursion.md)
 - [迭代算法之二分逼近法](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/algorithm/TwoSeparate.kt)
 - [动态规划法之01背包问题](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/algorithm/DynamicProgram.kt)
+- [动态规划法之装配站问题]
 - [穷举算法之百钱买鸡](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/algorithm/exhaustion100buychicken.kt)
 - [穷举算法之鸡兔同笼](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/algorithm/exhaustionchickenrabbit.kt)
-
+- [穷举算法之853桶分4升水的分法有多少种](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/algorithm/exhaustionbucket.kt)
 
 #### Java 常见问题
 - [Java 基础面试题](https://github.com/UCodeUStory/DataStructure/blob/master/sources/javabasic.md)
