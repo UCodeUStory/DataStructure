@@ -14,6 +14,7 @@ package com.wangpos.datastructure.algorithm
  *
  *  数据模型为了方便最查找，每个状态包含一个parent
  *
+ *  我们针对已经遍历过的状态进行剪枝操作，否者会死循环
  *
  */
 fun main() {

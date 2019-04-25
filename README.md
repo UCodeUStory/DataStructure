@@ -55,6 +55,7 @@
 - [穷举算法之百钱买鸡](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/algorithm/exhaustion100buychicken.kt)
 - [穷举算法之鸡兔同笼](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/algorithm/exhaustionchickenrabbit.kt)
 - [穷举算法之853桶分4升水的分法有多少种](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/algorithm/exhaustionbucket.kt)
+- [穷举算法之爱因斯坦的思考](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/algorithm/exhaustionAlbertEinstein.kt)
 
 #### Java 常见问题
 - [Java 基础面试题](https://github.com/UCodeUStory/DataStructure/blob/master/sources/javabasic.md)
