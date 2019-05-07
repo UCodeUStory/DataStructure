@@ -29,7 +29,7 @@
     
 4. 性能	
     - synchronized少量同步	
-    - Lock大量同步
+    - Lock大量同步，可以更细粒度控制
     
 5. 锁类型	
     - synchronized可重入 不可中断 非公平	

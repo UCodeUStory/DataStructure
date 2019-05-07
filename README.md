@@ -56,6 +56,7 @@
 - [穷举算法之鸡兔同笼](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/algorithm/exhaustionchickenrabbit.kt)
 - [穷举算法之853桶分4升水的分法有多少种](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/algorithm/exhaustionbucket.kt)
 - [穷举算法之爱因斯坦的思考](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/algorithm/exhaustionAlbertEinstein.kt)
+- [穷举加分治算法之24点计算](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/algorithm/exhaustion24.kt)
 
 #### Java 常见问题
 - [Java 基础面试题](https://github.com/UCodeUStory/DataStructure/blob/master/sources/javabasic.md)
@@ -75,6 +76,8 @@
 - [Java 8十大特性](https://github.com/UCodeUStory/DataStructure/blob/master/sources/java8.md)
 - [Java 克隆](https://github.com/UCodeUStory/DataStructure/blob/master/sources/javaCopy.md)
 - [Java foreach原理](https://github.com/UCodeUStory/DataStructure/blob/master/sources/foreach.md)
+- [BlockingQueue和BlockingDequeu详解](https://github.com/UCodeUStory/DataStructure/blob/master/sources/blockqueue.md)
+- [锁类型详解](https://github.com/UCodeUStory/DataStructure/blob/master/sources/locktype.md)
 
 #### Android 常见问题
 1. [Volley源码分析经典算法](https://github.com/UCodeUStory/DataStructure/blob/master/sources/volley_algorithm.md)

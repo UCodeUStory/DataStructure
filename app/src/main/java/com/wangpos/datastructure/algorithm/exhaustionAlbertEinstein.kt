@@ -61,6 +61,9 @@ var tobaccos = arrayOf(1, 2, 3, 4, 5)
 
 var cnt: Long = 0
 
+/**
+ * 先填表，最后在赛选，也可以用递归实现
+ */
 fun main() {
 
     var groups = arrayOf(Person(), Person(), Person(), Person(), Person())

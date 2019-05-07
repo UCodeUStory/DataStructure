@@ -5,8 +5,6 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-animation-28.0.0-alpha1.aar/0966b341b99707e683651904891061d6/res" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/design-animation/28.0.0-alpha1/a7bc2b1c7808d68cd6660ac73e668e822d912a6b/design-animation-28.0.0-alpha1-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>

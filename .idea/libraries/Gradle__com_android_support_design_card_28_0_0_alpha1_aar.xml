@@ -5,8 +5,6 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-card-28.0.0-alpha1.aar/c5ff75ee4e2cf5f04d90f69df544a86c/res" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/design-card/28.0.0-alpha1/be23f56ca6622f85765deac2c1e6be39083af4d9/design-card-28.0.0-alpha1-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>
