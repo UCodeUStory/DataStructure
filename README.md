@@ -79,6 +79,7 @@
 - [BlockingQueue和BlockingDequeu详解](https://github.com/UCodeUStory/DataStructure/blob/master/sources/blockqueue.md)
 - [锁类型详解](https://github.com/UCodeUStory/DataStructure/blob/master/sources/locktype.md)
 - [Condition实现对锁进行更精确的控制](https://github.com/UCodeUStory/DataStructure/blob/master/sources/condition.md)
+- [LinkBlockQueue原理](https://github.com/UCodeUStory/DataStructure/blob/master/sources/linkblockingqueue.md)
 
 #### Android 常见问题
 1. [Volley源码分析经典算法](https://github.com/UCodeUStory/DataStructure/blob/master/sources/volley_algorithm.md)
