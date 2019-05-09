@@ -80,4 +80,7 @@
         java6增加了两种容器类型，Deque和BlockingDeque,它们分别对Queue和BlockingQueue进行了扩展。
      　　Deque是一个双端队列，deque(双端队列) 是 "Double Ended Queue" 的缩写。因此，双端队列是一个你可以从任意一端插入或者抽取元素的队列。实现了在队列头和队列尾的高效插入和移除。
      　　BlockingDeque 类是一个双端队列，在不能够插入元素时，它将阻塞住试图插入元素的线程；在不能够抽取元素时，它将阻塞住试图抽取的线程。
-     
+ 
+
+
+

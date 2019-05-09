@@ -1,7 +1,5 @@
 package com.wangpos.datastructure.algorithm
 
-import android.support.annotation.CheckResult
-
 
 /**
  * （1）英国人住在红色的房子里
@@ -66,7 +64,7 @@ var cnt: Long = 0
  */
 fun main() {
 
-    var groups = arrayOf(Person(), Person(), Person(), Person(), Person())
+    var groups = arrayOf(Person_E(), Person_E(), Person_E(), Person_E(), Person_E())
 
     assignedColor(roomColors, groups)
 }
@@ -76,7 +74,7 @@ fun main() {
  */
 private fun assignedColor(
     roomColors: Array<Int>,
-    groups: Array<Person>
+    groups: Array<Person_E>
 ) {
     for (i in roomColors.indices) {
         for (j in roomColors.indices) {
@@ -114,7 +112,7 @@ private fun assignedColor(
 /**
  * 分配国家
  */
-fun assignedCountry(groups: Array<Person>) {
+fun assignedCountry(groups: Array<Person_E>) {
     /*应用规则(9)：挪威人住在第一个房子里面；*/
     groups[0].country = nuowei;
 
@@ -143,7 +141,7 @@ fun assignedCountry(groups: Array<Person>) {
 /**
  * 分配喝的
  */
-fun assigndDrink(groups: Array<Person>) {
+fun assigndDrink(groups: Array<Person_E>) {
     /*应用规则(8)：住在中间那个房子里的人喝牛奶；*/
     groups[2].drink = milk
     for (i in drinks.indices) {
@@ -171,7 +169,7 @@ fun assigndDrink(groups: Array<Person>) {
 /**
  * 分配宠物
  */
-fun assigndPet(groups: Array<Person>) {
+fun assigndPet(groups: Array<Person_E>) {
 
     for (i in pets.indices) {
         for (j in pets.indices) {
@@ -196,7 +194,7 @@ fun assigndPet(groups: Array<Person>) {
     }
 }
 
-fun assignedTabacco(groups: Array<Person>) {
+fun assignedTabacco(groups: Array<Person_E>) {
     for (i in tobaccos.indices) {
         for (j in tobaccos.indices) {
             if (i == j) continue
@@ -224,7 +222,7 @@ fun assignedTabacco(groups: Array<Person>) {
  */
 
 
-fun DoGroupsfinalCheck(groups: Array<Person>) {
+fun DoGroupsfinalCheck(groups: Array<Person_E>) {
 //    cnt++
 //    println(cnt)
 
@@ -254,7 +252,7 @@ fun DoGroupsfinalCheck(groups: Array<Person>) {
 （15）抽 Blends 牌香烟的人和喝矿泉水的人相邻
 
  */
-fun checkResult(groups: Array<Person>): Boolean {
+fun checkResult(groups: Array<Person_E>): Boolean {
 
     for (i in groups.indices) {
         var it = groups[i]
@@ -419,7 +417,7 @@ fun checkResult(groups: Array<Person>): Boolean {
 房间颜色：绿 国家：德国 宠物：鱼 饮料：咖啡 抽烟：Prince
 房间颜色：白 国家：瑞典 宠物：狗 饮料：啤酒 抽烟：BlueMaster
  */
-fun PrintAllGroupsResult(groups: Array<Person>) {
+fun PrintAllGroupsResult(groups: Array<Person_E>) {
 
     groups.forEach {
         print("房间颜色：${getColorName(it.room_color)} ")
@@ -499,7 +497,7 @@ fun getTabaccoName(room_color: Int): String {
 /**
  * 房子颜色	国籍	饮料	宠物	烟
  */
-class Person(
+class Person_E(
     var room_color: Int = -1,
     var country: Int = -1,
     var drink: Int = -1,

@@ -18,4 +18,3 @@ fun main() {
 }
 
 
-class Person(var numStair:Int,)

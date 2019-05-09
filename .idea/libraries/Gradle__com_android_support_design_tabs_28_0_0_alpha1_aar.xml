@@ -1,10 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.android.support:design-tabs:28.0.0-alpha1@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-tabs-28.0.0-alpha1.aar/cadc1b4fb8622c81241abfd2ea4ed1c7/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-tabs-28.0.0-alpha1.aar/cadc1b4fb8622c81241abfd2ea4ed1c7/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-tabs-28.0.0-alpha1.aar/85119bde68ee4d8f4fee2c36bdbecaa3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-tabs-28.0.0-alpha1.aar/85119bde68ee4d8f4fee2c36bdbecaa3/res" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/design-tabs/28.0.0-alpha1/c4dcdefb08dda3a13e450963cfb048f72f82afe4/design-tabs-28.0.0-alpha1-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

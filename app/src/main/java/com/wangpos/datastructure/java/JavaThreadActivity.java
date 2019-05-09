@@ -195,8 +195,8 @@ public class JavaThreadActivity extends AppCompatActivity implements View.OnClic
 //        t2.start();
 
 
-        codeView2.showCode("        Person person = new Person(\"AAAAA\");\n" +
-                "        Person person2 = new Person(\"YYYYYY\");\n" +
+        codeView2.showCode("        Person_E person = new Person_E(\"AAAAA\");\n" +
+                "        Person_E person2 = new Person_E(\"YYYYYY\");\n" +
                 "        TestObjectLockThread t3 = new TestObjectLockThread(person);\n" +
                 "        TestObjectLockThread t4 = new TestObjectLockThread(person2);\n" +
                 "        t3.start();\n" +
