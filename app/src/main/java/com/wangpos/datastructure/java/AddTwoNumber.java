@@ -4,6 +4,8 @@ import com.wangpos.datastructure.R;
 import com.wangpos.datastructure.core.BaseActivity;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * Created by qiyue on 2017/12/7.
@@ -54,7 +56,7 @@ public class AddTwoNumber extends BaseActivity {
 
     public ListNode addTwoNumber(ListNode l1,ListNode l2){
 
-
+        CopyOnWriteArrayList<String> list = new CopyOnWriteArrayList<String>();
         return null;
 
     }

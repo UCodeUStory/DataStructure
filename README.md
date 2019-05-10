@@ -79,7 +79,11 @@
 - [BlockingQueue和BlockingDequeu详解](https://github.com/UCodeUStory/DataStructure/blob/master/sources/blockqueue.md)
 - [锁类型详解](https://github.com/UCodeUStory/DataStructure/blob/master/sources/locktype.md)
 - [Condition实现对锁进行更精确的控制](https://github.com/UCodeUStory/DataStructure/blob/master/sources/condition.md)
-- [LinkBlockQueue原理](https://github.com/UCodeUStory/DataStructure/blob/master/sources/linkblockingqueue.md)
+- [LinkBlockingQueue原理](https://github.com/UCodeUStory/DataStructure/blob/master/sources/linkblockingqueue.md)
+- [多个线程安全的原子化操作组合将不再是安全的](https://github.com/UCodeUStory/DataStructure/blob/master/sources/automizationoperation.md)
+- [CopyOnWriteArrayList原理](https://github.com/UCodeUStory/DataStructure/blob/master/sources/copyOnWriteArrayList.md)
+- [ConcurrentHashMap原理]
+- [Java NIO]
 
 #### Android 常见问题
 1. [Volley源码分析经典算法](https://github.com/UCodeUStory/DataStructure/blob/master/sources/volley_algorithm.md)
@@ -115,7 +119,7 @@
 31. [Binder 原理深度剖析](https://github.com/UCodeUStory/DataStructure/blob/master/sources/binder.md)
 32. [MediaPlayer生命周期](https://github.com/UCodeUStory/DataStructure/blob/master/sources/media_player.md)
 33. [TransactionTooLargeException解决方法](https://github.com/UCodeUStory/DataStructure/blob/master/sources/transactiontoolargeexception.md)
-
+34. [谈一下Http请求过程](https://github.com/UCodeUStory/DataStructure/blob/master/sources/http.md)
 #### 设计模式
 1. [面向对象的七种设计原则](https://github.com/UCodeUStory/DataStructure/blob/master/sources/seven_design_principles.md)
 2. [建造者模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/kotlin/builderModel.kt)
