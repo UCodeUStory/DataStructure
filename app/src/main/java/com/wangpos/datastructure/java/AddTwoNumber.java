@@ -5,6 +5,7 @@ import com.wangpos.datastructure.core.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
@@ -57,6 +58,7 @@ public class AddTwoNumber extends BaseActivity {
     public ListNode addTwoNumber(ListNode l1,ListNode l2){
 
         CopyOnWriteArrayList<String> list = new CopyOnWriteArrayList<String>();
+        ConcurrentHashMap map = new ConcurrentHashMap(10);
         return null;
 
     }

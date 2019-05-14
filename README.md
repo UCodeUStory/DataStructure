@@ -69,21 +69,22 @@
 - [Java 实现LRU缓存3种方式 ](https://github.com/UCodeUStory/DataStructure/blob/master/sources/lru.md)
 - [LinkHashMap 实现FIFO](https://github.com/UCodeUStory/DataStructure/blob/master/sources/fifo.md)
 - [Java 集合原理](http://wiki.jikexueyuan.com/project/java-collection/hashset.html)
-- [synchronized 和 Lock区别](https://github.com/UCodeUStory/DataStructure/blob/master/sources/synchronized_lock.md)
 - [wait 和 sleep区别](https://github.com/UCodeUStory/DataStructure/blob/master/sources/wait_sleep.md)
 - [yield()和join()](https://github.com/UCodeUStory/DataStructure/blob/master/sources/yield_join.md)
 - [HashMap冲突](https://github.com/UCodeUStory/DataStructure/blob/master/sources/hash_confict.md)
 - [Java 8十大特性](https://github.com/UCodeUStory/DataStructure/blob/master/sources/java8.md)
 - [Java 克隆](https://github.com/UCodeUStory/DataStructure/blob/master/sources/javaCopy.md)
 - [Java foreach原理](https://github.com/UCodeUStory/DataStructure/blob/master/sources/foreach.md)
+- [synchronized 和 Lock区别](https://github.com/UCodeUStory/DataStructure/blob/master/sources/synchronized_lock.md)
 - [BlockingQueue和BlockingDequeu详解](https://github.com/UCodeUStory/DataStructure/blob/master/sources/blockqueue.md)
 - [锁类型详解](https://github.com/UCodeUStory/DataStructure/blob/master/sources/locktype.md)
 - [Condition实现对锁进行更精确的控制](https://github.com/UCodeUStory/DataStructure/blob/master/sources/condition.md)
 - [LinkBlockingQueue原理](https://github.com/UCodeUStory/DataStructure/blob/master/sources/linkblockingqueue.md)
 - [多个线程安全的原子化操作组合将不再是安全的](https://github.com/UCodeUStory/DataStructure/blob/master/sources/automizationoperation.md)
 - [CopyOnWriteArrayList原理](https://github.com/UCodeUStory/DataStructure/blob/master/sources/copyOnWriteArrayList.md)
-- [ConcurrentHashMap原理]
-- [Java NIO]
+- [ConcurrentHashMap原理](https://github.com/UCodeUStory/DataStructure/blob/master/sources/concurrentHashMap.md)
+- [分布式锁-分段锁思想]()
+- Java NIO
 
 #### Android 常见问题
 1. [Volley源码分析经典算法](https://github.com/UCodeUStory/DataStructure/blob/master/sources/volley_algorithm.md)
@@ -91,7 +92,7 @@
 3. [Android v4 v7 v8 v13区别](https://github.com/UCodeUStory/DataStructure/blob/master/sources/v4_v7_v8_v13.md)
 4. [Android Design Support Library V28 新增加内容](https://github.com/UCodeUStory/DataStructure/blob/master/sources/design_v28.md)
 5. [Android网络数据安全](https://github.com/UCodeUStory/DataStructure/blob/master/sources/netsafe.md)
-6. [Binder 原理](https://github.com/UCodeUStory/DataStructure/blob/master/sources/Binder.md)
+6. [Android Binder 原理](https://github.com/UCodeUStory/DataStructure/blob/master/sources/binder.md)
 7. [Android应用架构设计](https://github.com/UCodeUStory/DataStructure/blob/master/sources/frame.md)
 8. [热修复技术和原理](https://github.com/UCodeUStory/DataStructure/blob/master/sources/hotfix.md)
 9. [Android 8.0 WorkManager后台任务可以保活](https://github.com/UCodeUStory/DataStructure/blob/master/sources/workManager.md)
@@ -113,21 +114,22 @@
 25. [多进程Application初始化问题](https://github.com/UCodeUStory/DataStructure/blob/master/sources/application.md)
 26. [Application可以开线程替换Service处理后台任务吗](https://github.com/UCodeUStory/DataStructure/blob/master/sources/application_service.md)
 27. [android.os.killProcess和System.exit(0)区别](https://github.com/UCodeUStory/DataStructure/blob/master/sources/killprocess_system_exit.md)
-28. 线程通信
+28. [线程通信有哪些方式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/thread_communication_way.md)
 29. [ConstraintLayout 完全解析 快来优化你的布局](https://blog.csdn.net/lmj623565791/article/details/78011599?utm_source=tuicool&utm_medium=referral)
 30. [Android 匿名共享内存原理](https://www.jianshu.com/p/d9bc9c668ba6)
 31. [Binder 原理深度剖析](https://github.com/UCodeUStory/DataStructure/blob/master/sources/binder.md)
 32. [MediaPlayer生命周期](https://github.com/UCodeUStory/DataStructure/blob/master/sources/media_player.md)
 33. [TransactionTooLargeException解决方法](https://github.com/UCodeUStory/DataStructure/blob/master/sources/transactiontoolargeexception.md)
 34. [谈一下Http请求过程](https://github.com/UCodeUStory/DataStructure/blob/master/sources/http.md)
+35. [Android 进程通信种类](https://github.com/UCodeUStory/DataStructure/blob/master/sources/androidipc.md)
 #### 设计模式
 1. [面向对象的七种设计原则](https://github.com/UCodeUStory/DataStructure/blob/master/sources/seven_design_principles.md)
 2. [建造者模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/kotlin/builderModel.kt)
 
 #### Android 框架使用说明
-1. [rxjava使用](https://github.com/UCodeUStory/DataStructure/blob/master/sources/rxjavademo.md)
-2. [liveData](https://github.com/UCodeUStory/DataStructure/blob/master/sources/livedata.md)
-3. [rxCache]
+1. [Rxjava使用](https://github.com/UCodeUStory/DataStructure/blob/master/sources/rxjavademo.md)
+2. [LiveData](https://github.com/UCodeUStory/DataStructure/blob/master/sources/livedata.md)
+3. [RxCache]
 
 ##### Android框架源码分析
 1. [EventBus源码分析](https://github.com/UCodeUStory/DataStructure/blob/master/sources/eventbus.md)
