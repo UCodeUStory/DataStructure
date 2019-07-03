@@ -18,40 +18,41 @@ RxJava2.X中，Observeable用于订阅Observer，是不支持背压的，而Flow
 3. Observable 、Observer正确使用
 
     
-    Observable mObservable=Observable.create(new ObservableOnSubscribe<Integer>() {
-                @Override
-                public void subscribe(ObservableEmitter<Integer> e) throws Exception {
-                    e.onNext(1);
-                    e.onNext(2);
-                    e.onComplete();
-                }
-            });
-            
-    Observer mObserver=new Observer<Integer>() {
-                //这是新加入的方法，在订阅后发送数据之前，
-                //回首先调用这个方法，而Disposable可用于取消订阅
-                @Override
-                public void onSubscribe(Disposable d) {
     
-                }
-    
-                @Override
-                public void onNext(Integer value) {
-    
-                }
-    
-                @Override
-                public void onError(Throwable e) {
-    
-                }
-    
-                @Override
-                public void onComplete() {
-    
-                }
-            };
-            
-    mObservable.subscribe(mObserver);
+        Observable mObservable=Observable.create(new ObservableOnSubscribe<Integer>() {
+                    @Override
+                    public void subscribe(ObservableEmitter<Integer> e) throws Exception {
+                        e.onNext(1);
+                        e.onNext(2);
+                        e.onComplete();
+                    }
+                });
+                
+        Observer mObserver=new Observer<Integer>() {
+                    //这是新加入的方法，在订阅后发送数据之前，
+                    //回首先调用这个方法，而Disposable可用于取消订阅
+                    @Override
+                    public void onSubscribe(Disposable d) {
+        
+                    }
+        
+                    @Override
+                    public void onNext(Integer value) {
+        
+                    }
+        
+                    @Override
+                    public void onError(Throwable e) {
+        
+                    }
+        
+                    @Override
+                    public void onComplete() {
+        
+                    }
+                };
+                
+        mObservable.subscribe(mObserver);
 
 
 4. Flowable 处理被压问题
@@ -208,64 +209,66 @@ RxJava2.X中，Observeable用于订阅Observer，是不支持背压的，而Flow
    - 1. Single使用
    
    
-       Single.create(new SingleOnSubscribe<Integer>() {
-                   @Override
-                   public void subscribe(SingleEmitter<Integer> e) throws Exception {
-                       e.onError(new Exception("自定义异常"));//只会走一个，其他的就会被无效
-                       e.onSuccess(12);
-                       e.onSuccess(12);
-                       e.onError(new Exception("自定义异常"));
-                   }
-               }).subscribe(new SingleObserver<Integer>() {
-                   @Override
-                   public void onSubscribe(Disposable d) {
        
-                   }
-       
-                   @Override
-                   public void onSuccess(Integer integer) {
-       
-                       Log.i(tag,"onSuccess integer="+integer);
-                   }
-       
-                   @Override
-                   public void onError(Throwable e) {
-                       Log.i(tag,"onError");
-                       e.printStackTrace();
-                   }
-               });
-           }
+           Single.create(new SingleOnSubscribe<Integer>() {
+                       @Override
+                       public void subscribe(SingleEmitter<Integer> e) throws Exception {
+                           e.onError(new Exception("自定义异常"));//只会走一个，其他的就会被无效
+                           e.onSuccess(12);
+                           e.onSuccess(12);
+                           e.onError(new Exception("自定义异常"));
+                       }
+                   }).subscribe(new SingleObserver<Integer>() {
+                       @Override
+                       public void onSubscribe(Disposable d) {
+           
+                       }
+           
+                       @Override
+                       public void onSuccess(Integer integer) {
+           
+                           Log.i(tag,"onSuccess integer="+integer);
+                       }
+           
+                       @Override
+                       public void onError(Throwable e) {
+                           Log.i(tag,"onError");
+                           e.printStackTrace();
+                       }
+                   });
+               }
        
    - 2. Completable 使用
    
          
-         Completable.create(new CompletableOnSubscribe() {
-                     @Override
-                     public void subscribe(CompletableEmitter e) throws Exception {
-                         e.onComplete();//后面的都不会发送
-                         e.onError(new Exception("自定义异常"));
+             
+             Completable.create(new CompletableOnSubscribe() {
+                         @Override
+                         public void subscribe(CompletableEmitter e) throws Exception {
+                             e.onComplete();//后面的都不会发送
+                             e.onError(new Exception("自定义异常"));
+             
+             
+                         }
+             
+                     }).subscribe(new CompletableObserver() {
+                         @Override
+                         public void onSubscribe(Disposable d) {
+             
+                         }
+             
+                         @Override
+                         public void onComplete() {
+                             Log.i(tag,"onComplete");
+                         }
+             
+                         @Override
+                         public void onError(Throwable e) {
+                             Log.i(tag,"onError");
+                         }
+                     });
          
-         
-                     }
-         
-                 }).subscribe(new CompletableObserver() {
-                     @Override
-                     public void onSubscribe(Disposable d) {
-         
-                     }
-         
-                     @Override
-                     public void onComplete() {
-                         Log.i(tag,"onComplete");
-                     }
-         
-                     @Override
-                     public void onError(Throwable e) {
-                         Log.i(tag,"onError");
-                     }
-                 });
-     
-    方法onComplete与onError只可调用一个，若先调用onError则会导致onComplete无效
+        方法onComplete与onError只可调用一个，若先调用onError则会导致onComplete无效
     
    - 3. MayBe 使用
    

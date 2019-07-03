@@ -125,6 +125,15 @@
 #### 设计模式
 1. [面向对象的七种设计原则](https://github.com/UCodeUStory/DataStructure/blob/master/sources/seven_design_principles.md)
 2. [建造者模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/kotlin/builderModel.kt)
+3. [命令模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/commandPattern.md)
+4. [享元模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/flyweightpattern.md)
+5. [模板方法模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/templateMethod.md)
+6. [责任链模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/chainofResponsibility.md)
+7. [建造者模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/builder.md)
+8. [原型模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/prototype.md)
+9. [观察者模式]RxJava
+10. [策略模式与命令模式区别](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/stragetyAndcommanddiff.md)
+
 
 #### Android 框架使用说明
 1. [Rxjava使用](https://github.com/UCodeUStory/DataStructure/blob/master/sources/rxjavademo.md)

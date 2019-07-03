@@ -45,147 +45,150 @@
   1. 第一步创建OKHttpClient
   
   
-      // OKhttpClient.java
-      public class OkHttpClient implements Cloneable, Call.Factory, WebSocket.Factory {
-      
-        final Dispatcher dispatcher;//处理异步请求分发策略
-        final @Nullable Proxy proxy;
-        final List<Protocol> protocols;
-        final List<ConnectionSpec> connectionSpecs;//连接机构
-        final List<Interceptor> interceptors;//应用拦截器
-        final List<Interceptor> networkInterceptors;//网络拦截器
-        final EventListener.Factory eventListenerFactory;
-        final ProxySelector proxySelector;
-        final CookieJar cookieJar;
-        final @Nullable Cache cache;//缓存
-        final @Nullable InternalCache internalCache;
-        final SocketFactory socketFactory;
-        final @Nullable SSLSocketFactory sslSocketFactory;
-        final @Nullable CertificateChainCleaner certificateChainCleaner;
-        final HostnameVerifier hostnameVerifier;
-        final CertificatePinner certificatePinner;
-        final Authenticator proxyAuthenticator;
-        final Authenticator authenticator;
-        final ConnectionPool connectionPool;
-        final Dns dns;
-        final boolean followSslRedirects;
-        final boolean followRedirects;
-        final boolean retryOnConnectionFailure;
-        final int connectTimeout;
-        final int readTimeout;
-        final int writeTimeout;
-        final int pingInterval;
-      
-        public OkHttpClient() {
-          this(new Builder());
-        }
-      
-        OkHttpClient(Builder builder) {
-          this.dispatcher = builder.dispatcher;
-          this.proxy = builder.proxy;
-          this.protocols = builder.protocols;
-          this.connectionSpecs = builder.connectionSpecs;
-          this.interceptors = Util.immutableList(builder.interceptors);
-          this.networkInterceptors = Util.immutableList(builder.networkInterceptors);
-          this.eventListenerFactory = builder.eventListenerFactory;
-          this.proxySelector = builder.proxySelector;
-          this.cookieJar = builder.cookieJar;
-          this.cache = builder.cache;
-          this.internalCache = builder.internalCache;
-          this.socketFactory = builder.socketFactory;
-      
-          boolean isTLS = false;
-          for (ConnectionSpec spec : connectionSpecs) {
-            isTLS = isTLS || spec.isTls();
-          }
-      
-          if (builder.sslSocketFactory != null || !isTLS) {
-            this.sslSocketFactory = builder.sslSocketFactory;
-            this.certificateChainCleaner = builder.certificateChainCleaner;
-          } else {
-            X509TrustManager trustManager = Util.platformTrustManager();
-            this.sslSocketFactory = newSslSocketFactory(trustManager);
-            this.certificateChainCleaner = CertificateChainCleaner.get(trustManager);
-          }
-      
-          if (sslSocketFactory != null) {
-            Platform.get().configureSslSocketFactory(sslSocketFactory);
-          }
-      
-          this.hostnameVerifier = builder.hostnameVerifier;
-          this.certificatePinner = builder.certificatePinner.withCertificateChainCleaner(
-              certificateChainCleaner);
-          this.proxyAuthenticator = builder.proxyAuthenticator;
-          this.authenticator = builder.authenticator;
-          this.connectionPool = builder.connectionPool;
-          this.dns = builder.dns;
-          this.followSslRedirects = builder.followSslRedirects;
-          this.followRedirects = builder.followRedirects;
-          this.retryOnConnectionFailure = builder.retryOnConnectionFailure;
-          this.connectTimeout = builder.connectTimeout;
-          this.readTimeout = builder.readTimeout;
-          this.writeTimeout = builder.writeTimeout;
-          this.pingInterval = builder.pingInterval;
-      
-          if (interceptors.contains(null)) {
-            throw new IllegalStateException("Null interceptor: " + interceptors);
-          }
-          if (networkInterceptors.contains(null)) {
-            throw new IllegalStateException("Null network interceptor: " + networkInterceptors);
-          }
-        }
-      ....
-      ....
-      }
-      
-      //Call.java
-      public interface Call extends Cloneable {
-      
-        Request request();
-      
-        Response execute() throws IOException;
-      
-        void enqueue(Callback responseCallback);
-      
-        void cancel();
   
-        boolean isExecuted();
-      
-        boolean isCanceled();
-      
-        Call clone();
-      
-        interface Factory {
-          Call newCall(Request request);
-        }
-      }
-      
-      //WebSocket.java
-      public interface WebSocket {
-      
-          Request request();
-        
-          long queueSize();
-        
-          boolean send(String text);
-        
-          boolean send(ByteString bytes);
-        
-          boolean close(int code, @Nullable String reason);
-        
-          void cancel();
-        
-          interface Factory {
-     
-            WebSocket newWebSocket(Request request, WebSocketListener listener);
+  
+          // OKhttpClient.java
+          public class OkHttpClient implements Cloneable, Call.Factory, WebSocket.Factory {
+          
+            final Dispatcher dispatcher;//处理异步请求分发策略
+            final @Nullable Proxy proxy;
+            final List<Protocol> protocols;
+            final List<ConnectionSpec> connectionSpecs;//连接机构
+            final List<Interceptor> interceptors;//应用拦截器
+            final List<Interceptor> networkInterceptors;//网络拦截器
+            final EventListener.Factory eventListenerFactory;
+            final ProxySelector proxySelector;
+            final CookieJar cookieJar;
+            final @Nullable Cache cache;//缓存
+            final @Nullable InternalCache internalCache;
+            final SocketFactory socketFactory;
+            final @Nullable SSLSocketFactory sslSocketFactory;
+            final @Nullable CertificateChainCleaner certificateChainCleaner;
+            final HostnameVerifier hostnameVerifier;
+            final CertificatePinner certificatePinner;
+            final Authenticator proxyAuthenticator;
+            final Authenticator authenticator;
+            final ConnectionPool connectionPool;
+            final Dns dns;
+            final boolean followSslRedirects;
+            final boolean followRedirects;
+            final boolean retryOnConnectionFailure;
+            final int connectTimeout;
+            final int readTimeout;
+            final int writeTimeout;
+            final int pingInterval;
+          
+            public OkHttpClient() {
+              this(new Builder());
+            }
+          
+            OkHttpClient(Builder builder) {
+              this.dispatcher = builder.dispatcher;
+              this.proxy = builder.proxy;
+              this.protocols = builder.protocols;
+              this.connectionSpecs = builder.connectionSpecs;
+              this.interceptors = Util.immutableList(builder.interceptors);
+              this.networkInterceptors = Util.immutableList(builder.networkInterceptors);
+              this.eventListenerFactory = builder.eventListenerFactory;
+              this.proxySelector = builder.proxySelector;
+              this.cookieJar = builder.cookieJar;
+              this.cache = builder.cache;
+              this.internalCache = builder.internalCache;
+              this.socketFactory = builder.socketFactory;
+          
+              boolean isTLS = false;
+              for (ConnectionSpec spec : connectionSpecs) {
+                isTLS = isTLS || spec.isTls();
+              }
+          
+              if (builder.sslSocketFactory != null || !isTLS) {
+                this.sslSocketFactory = builder.sslSocketFactory;
+                this.certificateChainCleaner = builder.certificateChainCleaner;
+              } else {
+                X509TrustManager trustManager = Util.platformTrustManager();
+                this.sslSocketFactory = newSslSocketFactory(trustManager);
+                this.certificateChainCleaner = CertificateChainCleaner.get(trustManager);
+              }
+          
+              if (sslSocketFactory != null) {
+                Platform.get().configureSslSocketFactory(sslSocketFactory);
+              }
+          
+              this.hostnameVerifier = builder.hostnameVerifier;
+              this.certificatePinner = builder.certificatePinner.withCertificateChainCleaner(
+                  certificateChainCleaner);
+              this.proxyAuthenticator = builder.proxyAuthenticator;
+              this.authenticator = builder.authenticator;
+              this.connectionPool = builder.connectionPool;
+              this.dns = builder.dns;
+              this.followSslRedirects = builder.followSslRedirects;
+              this.followRedirects = builder.followRedirects;
+              this.retryOnConnectionFailure = builder.retryOnConnectionFailure;
+              this.connectTimeout = builder.connectTimeout;
+              this.readTimeout = builder.readTimeout;
+              this.writeTimeout = builder.writeTimeout;
+              this.pingInterval = builder.pingInterval;
+          
+              if (interceptors.contains(null)) {
+                throw new IllegalStateException("Null interceptor: " + interceptors);
+              }
+              if (networkInterceptors.contains(null)) {
+                throw new IllegalStateException("Null network interceptor: " + networkInterceptors);
+              }
+            }
+          ....
+          ....
           }
-        }
-        
+          
+          //Call.java
+          public interface Call extends Cloneable {
+          
+            Request request();
+          
+            Response execute() throws IOException;
+          
+            void enqueue(Callback responseCallback);
+          
+            void cancel();
+      
+            boolean isExecuted();
+          
+            boolean isCanceled();
+          
+            Call clone();
+          
+            interface Factory {
+              Call newCall(Request request);
+            }
+          }
+          
+          //WebSocket.java
+          public interface WebSocket {
+          
+              Request request();
+            
+              long queueSize();
+            
+              boolean send(String text);
+            
+              boolean send(ByteString bytes);
+            
+              boolean close(int code, @Nullable String reason);
+            
+              void cancel();
+            
+              interface Factory {
+         
+                WebSocket newWebSocket(Request request, WebSocketListener listener);
+              }
+            }
+            
   
   
   总结：通过Build创建一个OKHttpClient对象，并根据配置，初始化一些缓存策略，创建一个Dispatcher对象
   
 2. 第二步发送请求调用 OkHttpClient newCall
+
 
 
         //OKHttpClient.java
@@ -200,31 +203,36 @@
         
         }
         
+        
  总结 创建一个RealCall对象，这个对象实现了Call接口，Call接口主要包含request、execute、enqueue
 3. 第三部执行异步请求
-       final class RealCall implements Call {
-         final OkHttpClient client;
-         final RetryAndFollowUpInterceptor retryAndFollowUpInterceptor;
-         private EventListener eventListener;
-       
-        ....
-        ....
-        ....
-       
-         @Override public void enqueue(Callback responseCallback) {
-           synchronized (this) {
-             if (executed) throw new IllegalStateException("Already Executed");
-             executed = true;
-           }
-           captureCallStackTrace();
-           eventListener.callStart(this);
-           client.dispatcher().enqueue(new AsyncCall(responseCallback));
-         }
-         
-         ....
-         ....
 
-        }
+
+
+    
+           final class RealCall implements Call {
+             final OkHttpClient client;
+             final RetryAndFollowUpInterceptor retryAndFollowUpInterceptor;
+             private EventListener eventListener;
+           
+            ....
+            ....
+            ....
+           
+             @Override public void enqueue(Callback responseCallback) {
+               synchronized (this) {
+                 if (executed) throw new IllegalStateException("Already Executed");
+                 executed = true;
+               }
+               captureCallStackTrace();
+               eventListener.callStart(this);
+               client.dispatcher().enqueue(new AsyncCall(responseCallback));
+             }
+             
+             ....
+             ....
+    
+           }
 
   
   
@@ -232,6 +240,7 @@
   
   
 4. 第四部 添加到Dispatcher中
+
 
 
      
@@ -251,6 +260,7 @@
 
 
 5. 第五部 AsyncCall
+
 
 
        //AsyncCall.java

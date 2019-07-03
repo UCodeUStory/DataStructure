@@ -95,6 +95,8 @@ private fun assignedColor(
                         // 再分配国家
                         for (groupIdx in groups.indices) {
                             if (groupIdx + 1 < groups.size) {
+                                var ad = "sd"
+                                ad.isEmpty()
                                 if (groups[groupIdx].room_color === green
                                     && groups[groupIdx + 1].room_color == white
                                 ) {
