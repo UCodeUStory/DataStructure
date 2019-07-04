@@ -133,7 +133,10 @@
 8. [原型模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/prototype.md)
 9. [观察者模式]RxJava
 10. [策略模式与命令模式区别](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/stragetyAndcommanddiff.md)
-
+11. [桥接模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/bridge.md)
+12. [组合模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/composite.md)
+13. [适配器模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/adapter.md)
+14. [装饰者模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/decorator.md)
 
 #### Android 框架使用说明
 1. [Rxjava使用](https://github.com/UCodeUStory/DataStructure/blob/master/sources/rxjavademo.md)
