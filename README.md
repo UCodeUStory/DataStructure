@@ -131,12 +131,24 @@
 6. [责任链模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/chainofResponsibility.md)
 7. [建造者模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/builder.md)
 8. [原型模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/prototype.md)
-9. [观察者模式]RxJava
+9. [观察者模式]()
 10. [策略模式与命令模式区别](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/stragetyAndcommanddiff.md)
 11. [桥接模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/bridge.md)
 12. [组合模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/composite.md)
 13. [适配器模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/adapter.md)
 14. [装饰者模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/decorator.md)
+15. [外观模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/facade.md)
+16. [状态模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/state.md)
+17. [状态模式与策略模式区别](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/state.md)
+18. [迭代器模式]基本用不到
+19. [备忘模式]很简单、就是有个管理员保存一些对象
+20. [访问者模式] 不常用，不好用，不信你擦擦
+21. [中介模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/mediator.md)
+22. [解释器模式]
+23. [代理模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/proxy.md)
+24. [简单工厂模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/simpleFactory.md)
+25. [工厂模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/factory.md)
+26. [抽象工厂](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/abstractfactory.md)
 
 #### Android 框架使用说明
 1. [Rxjava使用](https://github.com/UCodeUStory/DataStructure/blob/master/sources/rxjavademo.md)
