@@ -131,7 +131,7 @@
 6. [责任链模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/chainofResponsibility.md)
 7. [建造者模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/builder.md)
 8. [原型模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/prototype.md)
-9. [观察者模式]()
+9. [观察者模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/observer.md)
 10. [策略模式与命令模式区别](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/stragetyAndcommanddiff.md)
 11. [桥接模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/bridge.md)
 12. [组合模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/composite.md)
