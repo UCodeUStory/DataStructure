@@ -62,6 +62,41 @@
     在模块之间只通过接口来通信
     
     
+    
+    只和朋友交流。迪米特还有一个英文解释叫做“Only talk to your immedate friends”，只和直接 的朋友通信，什么叫做直接的朋友呢？每个对象都必然会和其他对象有耦合关系，两个对象之间的耦合就 成为朋友关系，这种关系有很多比如组合、聚合、依赖等等
+    
+   
+    /**
+    * 
+    * 首先来看 Teacher 有几个朋友，就一个 GroupLeader 类，这个 就是朋友类，朋友类是怎么定义的呢？
+     出现在成员变量、方法的输入输出参数中的类被称为成员朋友类， 迪米特法则说是一个类只和朋友类交流，
+     但是 commond 方法中我们与 Girl 类有了交流，声明了一个 List动态数组，也就是与一个陌生的类 Girl 有了交流，这个不好，
+    */
+    public class Teacher {
+    //老师对学生发布命令, 清一下女生
+        public void commond(GroupLeader groupLeader){
+         List<Girl> listGirls = new ArrayList() ;
+         //初始化女生
+         for(int i=0;i<20;i++){
+            listGirls.add(new Girl());
+         }
+         //告诉体育委员开始执行清查任务
+         groupLeader.countGirls(listGirls);
+     }
+    
+    // 修改后
+    public class Teacher {
+    //老师对学生发布命令, 清一下女生
+        public void commond(GroupLeader groupLeader){
+             //告诉体育委员开始执行清查任务
+             groupLeader.countGirls();
+        }
+    }
+    
+    不要出现 getA().getB().getC().getD() 这种情况（在一种极端的情况下是允许出现这种访问：每一个点号后面的返回类型都相同）
+    
+    迪米特法则的核心观念就是类间解耦，弱耦合，只有弱耦合了以后，类的复用率才可以提高，其要求 的结果就是产生了大量的中转或跳转类，类只能和朋友交流，朋友少了你业务跑不起来，朋友多了，你项 目管理就复杂，大家在使用的时候做相互权衡吧
+    
 7、组合/聚合复用原则
 
 

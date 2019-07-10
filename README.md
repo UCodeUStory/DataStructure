@@ -149,6 +149,7 @@
 24. [简单工厂模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/simpleFactory.md)
 25. [工厂模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/factory.md)
 26. [抽象工厂](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/abstractfactory.md)
+27. [委托设计模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/delegation.md)
 
 #### Android 框架使用说明
 1. [Rxjava使用](https://github.com/UCodeUStory/DataStructure/blob/master/sources/rxjavademo.md)
