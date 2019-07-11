@@ -150,6 +150,9 @@
 25. [工厂模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/factory.md)
 26. [抽象工厂](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/abstractfactory.md)
 27. [委托设计模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/delegation.md)
+28. [适配器模式 与（装饰者、代理模式）区别](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/adapterdiffdecorator.md)
+29. [装饰器模式和代理模式区别](https://github.com/UCodeUStory/DataStructure/blob/master/sources/designpattern/proxyidiffdecorator.md)
+
 
 #### Android 框架使用说明
 1. [Rxjava使用](https://github.com/UCodeUStory/DataStructure/blob/master/sources/rxjavademo.md)
@@ -167,7 +170,7 @@
 8. [LeakCanary 源码分析]
 9. [Blockcanary 源码分析]
 10. [lifeRecycler源码分析]
-11. [RxJava 源码分析]
+11. [RxJava 源码分析](https://github.com/UCodeUStory/DataStructure/blob/master/sources/androidopensources/rxjavasource.md)
 12. [ViewModel 源码分析](https://github.com/UCodeUStory/DataStructure/blob/master/sources/viewmodel.md)
 
 

@@ -167,3 +167,155 @@
             d.eventAll(d, "要美女的联系方式");
         }
     }
+    
+    
+### Java 的委托机制
+
+
+java委托机制与观察者模式：委托机制的实现不再需要提取观察者抽象类，观察者和通知者互不依赖。java利用反射即可实现，代码实例如下:
+
+
+        public class Event {
+            private Object object;
+            
+            private String methodName;
+            
+            private Object[] params;
+            
+            private Class[] paramTypes;
+            
+            public Event(Object object,String method,Object...args)
+            {
+                this.object = object;
+                this.methodName = method;
+                this.params = args;
+                contractParamTypes(this.params);
+            }
+            
+            private void contractParamTypes(Object[] params)
+            {
+                this.paramTypes = new Class[params.length];
+                for (int i=0;i<params.length;i++)
+                {
+                    this.paramTypes[i] = params[i].getClass();
+                }
+            }
+        
+            public void invoke() throws Exception
+            {
+                Method method = object.getClass().getMethod(this.methodName, this.paramTypes);//判断是否存在这个函数
+                if (null == method)
+                {
+                    return;
+                }
+                method.invoke(this.object, this.params);//利用反射机制调用函数
+            }
+        }
+        
+        public class EventHandler {
+        
+            private List<Event> objects;
+            
+            public EventHandler()
+            {
+                objects = new ArrayList<Event>();
+            }
+            
+            public void addEvent(Object object, String methodName, Object...args)
+            {
+                objects.add(new Event(object, methodName, args));
+            }
+            
+            public void notifyX() throws Exception
+            {
+                for (Event event : objects)
+                {
+                    event.invoke();
+                }
+            }
+        }
+        
+        
+        
+        public abstract class Notifier {
+            private EventHandler eventHandler = new EventHandler();
+            
+            public EventHandler getEventHandler()
+            {
+                return eventHandler;
+            }
+            
+            public void setEventHandler(EventHandler eventHandler)
+            {
+                this.eventHandler = eventHandler;
+            }
+            
+            public abstract void addListener(Object object,String methodName, Object...args);
+            
+            public abstract void notifyX();
+        
+        }
+        
+        
+        public class ConcreteNotifier extends Notifier{
+        
+            @Override
+            public void addListener(Object object, String methodName, Object... args) {
+                this.getEventHandler().addEvent(object, methodName, args);
+            }
+        
+            @Override
+            public void notifyX() {
+                try {
+                    this.getEventHandler().notifyX();
+                } catch (Exception e) {
+                    // TODO: handle exception
+                    e.printStackTrace();
+                }
+            }
+        }
+        
+        // 具体观察者不在依赖任何接口 抽象
+        public class WatchingTVListener {
+        
+            public WatchingTVListener()
+            {
+                System.out.println("watching TV");
+            }
+            
+            public void stopWatchingTV(Date date) 
+            {
+                System.out.println("stop watching" + date);
+            }
+        }
+        // 具体观察者不在依赖任何接口 抽象
+        public class PlayingGameListener {
+            public PlayingGameListener()
+            {
+                System.out.println("playing");
+            }
+            
+            public void stopPlayingGame(Date date)
+            {
+                System.out.println("stop playing" + date);
+            }
+        }
+        
+        public class Test {
+            
+            public static void main (String[] args)
+            {
+                Notifier goodNotifier = new ConcreteNotifier();
+                
+                PlayingGameListener playingGameListener = new PlayingGameListener();
+                
+                WatchingTVListener watchingTVListener = new WatchingTVListener();
+                
+                goodNotifier.addListener(playingGameListener, "stopPlayingGame", new Date());
+                
+                goodNotifier.addListener(watchingTVListener, "stopWatchingTV", new Date());
+                
+                goodNotifier.notifyX();
+            }
+        
+        }
