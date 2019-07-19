@@ -5,8 +5,6 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-canvas-28.0.0-alpha1.aar/13fcf10ea8181dd857a33eb825a5329a/res" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/design-canvas/28.0.0-alpha1/3cecbaccb1bf478db1028e841576512649d965a0/design-canvas-28.0.0-alpha1-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>

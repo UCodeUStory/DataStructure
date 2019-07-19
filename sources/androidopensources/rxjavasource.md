@@ -93,6 +93,30 @@
           }
    
  
+      
+      public final void subscribe(Observer<? super T> observer) {
+             ObjectHelper.requireNonNull(observer, "observer is null");
+             try {
+                 observer = RxJavaPlugins.onSubscribe(this, observer);
+     
+                 ObjectHelper.requireNonNull(observer, "Plugin returned null Observer");
+     
+                 subscribeActual(observer);
+             } catch (NullPointerException e) { // NOPMD
+                 throw e;
+             } catch (Throwable e) {
+                 Exceptions.throwIfFatal(e);
+                 // can't call onError because no way to know if a Disposable has been set or not
+                 // can't call onSubscribe because the call might have set a Subscription already
+                 RxJavaPlugins.onError(e);
+     
+                 NullPointerException npe = new NullPointerException("Actually not, but can't throw other exceptions due to RS");
+                 npe.initCause(e);
+                 throw npe;
+             }
+       }
+     
+     
 2. 同时我们适配方法调用，重写subscribeActual方法，当调用Obserable.subscribe时，再传递给subscribeActual，将Observer 传递ObservableOnSubscribe
 
   但ObservableOnSubscribe 的OnSubscribe 需要ObserverEmitter(因为我们要，使用onNext,OnError,OnComplete方法，去传递数据，并且我们要在每一种操作判断
@@ -258,10 +282,6 @@
          
          // map 后会重新返回一个Observable<R> 这个观察的数据是新的map装换后的数据R
          
-         
-         
-         
-         
          public final class ObservableMap<T, U> extends AbstractObservableWithUpstream<T, U> {
              final Function<? super T, ? extends U> function;
          
@@ -319,3 +339,115 @@
                  }
              }
          }
+
+
+
+#### 自定义产生数据源可以使用Observable.create,RxJava内部提供了一些默认的方法
+
+1. Observable.fromArray
+
+        
+        public static <T> Observable<T> fromArray(T... items) {
+                ObjectHelper.requireNonNull(items, "items is null");
+                if (items.length == 0) {
+                    return empty();
+                } else
+                if (items.length == 1) {
+                    return just(items[0]);
+                }
+                return RxJavaPlugins.onAssembly(new ObservableFromArray<T>(items));
+            }
+            
+        ObservableFromArray
+        
+        public final class ObservableFromArray<T> extends Observable<T> {
+            final T[] array;
+            public ObservableFromArray(T[] array) {
+                this.array = array;
+            }
+            @Override
+            public void subscribeActual(Observer<? super T> s) {
+                FromArrayDisposable<T> d = new FromArrayDisposable<T>(s, array);
+        
+                s.onSubscribe(d);
+        
+                if (d.fusionMode) {
+                    return;
+                }
+        
+                d.run();
+            }
+        
+            static final class FromArrayDisposable<T> extends BasicQueueDisposable<T> {
+        
+                final Observer<? super T> actual;
+        
+                final T[] array;
+        
+                int index;
+        
+                boolean fusionMode;
+        
+                volatile boolean disposed;
+        
+                FromArrayDisposable(Observer<? super T> actual, T[] array) {
+                    this.actual = actual;
+                    this.array = array;
+                }
+                 /
+                 .
+                 .
+                 .
+                 省略部分代码
+                 .
+                 /
+        
+                void run() {
+                    T[] a = array;
+                    int n = a.length;
+        
+                    for (int i = 0; i < n && !isDisposed(); i++) {
+                        T value = a[i];
+                        if (value == null) {
+                            actual.onError(new NullPointerException("The " + i + "th element is null"));
+                            return;
+                        }
+                        actual.onNext(value);
+                    }
+                    if (!isDisposed()) {
+                        actual.onComplete();
+                    }
+                }
+            }
+        } 
+        
+        
+      // 核心还是通过  ObservableFromArray 实现一个适配器，将数组数据包装起来，
+      // 调用subscribe 会调用subscribeActual ，先将传递的Observer进行包装适配，然后订阅建立关联，同时调用FromArrayDisposable 的run方法
+      
+      // 还是两个适配器，一个是ObservableFromArray适配传递过来数据，一个是FromArrayDisposable适配接收的Observer，同时封装分发逻辑对应run实现
+      
+      
+     
+- doOnNext doOnError 是增强实现，在onNext前面执行      
+ 
+### RxJava 设计理念（套娃的设计和组装）
+
+     操作组合设计是从上到下的，即所谓的套娃制作设计（先确定最外层，也就是源的实现，然后层层向内设计，产生订阅的那一刻结束设计）。
+     而在执行的时候（产生订阅的时候），就相当于套娃的组装，先放最小的（即我们常见的LambdaObserver的封装），然后放第二小的，以此类推，直至最后放最大的，这里其实是将之前的操作进行逆向拼接（拼接的是Observer），拼接完成后接触下发元素。
+  
+  
+- 简单回顾一下前面的源码间设计
+
+     - Observable.create - ObservableOnSubscribe接口 -> ObservableCreate适配器(继承Observable) -> 外部调用subscribe ->真实调用subscribeActual 
+       ->CreateEmitter(适配) -> Observer
+       
+     - Observable.fromArray -> ObservableFromArray适配器(继承Observable) ->  外部调用subscribe ->真实调用subscribeActual 
+       ->FromArrayDisposable() -> Observer
+       
+     - Observable.map -> ObservableMap适配器(继承Observable)-> 外部调用subscribe ->真实调用subscribeActual ->MapObserver
+     
+     - Observable.filter ->ObservableFilter -> 外部调用subscribe ->真实调用subscribeActual ->FilterObserver 
+     
+     
+       
