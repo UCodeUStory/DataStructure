@@ -5,8 +5,6 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-chip-28.0.0-alpha1.aar/0fdab7387919eebc03c1f6591f39a60e/res" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/design-chip/28.0.0-alpha1/65125cd44e2078371119caf5edcb9c0b96ba7ecd/design-chip-28.0.0-alpha1-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>

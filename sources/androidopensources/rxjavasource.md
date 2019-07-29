@@ -12,6 +12,7 @@
     例子 Observable.create(new ObservableOnSubscribe<String>() {
                    @Override
                    public void subscribe(ObservableEmitter<String> emitter) throws Exception {
+                       //源数据的分法逻辑
                        emitter.onNext("Android");
                        emitter.onNext("ios");
                        emitter.onNext("Other");
@@ -27,7 +28,7 @@
                        .subscribe(new Observer<String>() {
                            @Override
                            public void onSubscribe(Disposable d) {
-                               
+                               // 提供取消钩子
                            }
        
                            @Override
@@ -56,9 +57,32 @@
   
   所以通过ObservableCreate进行包装适配，先让ObservableCreate继承Observable，再关联ObservableOnSubscribe，然后返回ObservableCreate，
   
+  当观察者调用subscribe 方法 会调用 subscribeActual，同时绑定观察者和被观察者，并执行ObservableOnSubscribe重写subscribe方法
+  
+  source（ObservableEmitter）.subscribe(parent)，这里就是调我们create传入的接口
   
   
-  
+    1. public final void subscribe(Observer<? super T> observer) {
+    2. subscribeActual
+    3. protected void subscribeActual(Observer<? super T> observer) {
+               CreateEmitter<T> parent = new CreateEmitter<T>(observer);
+               observer.onSubscribe(parent);
+       
+               try {
+                   //source就是ObservableOnSubscribe
+                   source.subscribe(parent);
+               } catch (Throwable ex) {
+                   Exceptions.throwIfFatal(ex);
+                   parent.onError(ex);
+               }
+       }
+    4. 观察者，调用OnSubscrible实际上就是想获得观察者代理，这样就能通过代理做取消操作
+    5. 调用数据源的subscribe
+    6. 数据源通过观察者适配器传递给观察者
+    
+    总结：数据源（是一个接口的实现，用来发射数据，以及怎么发射，单发射的实际是由别人决定的，这里就相当于实现了一个onsubscribe方法直接）
+    观察者：想要获取数据源的数据，但是却不能直接去获取，需要一个中间人可能是像CreateEmitter这种发射器；而为什么不直接产生订阅关系，
+    因为我们需要加一些取消的逻辑，这样可以减少用户的编写逻辑
   
       //ObservableOnSubscribe 作为上层使用
       public interface ObservableOnSubscribe<T> {
@@ -85,6 +109,7 @@
               observer.onSubscribe(parent);
       
               try {
+                  //产生订阅后开始调用源数据的处理
                   source.subscribe(parent);
               } catch (Throwable ex) {
                   Exceptions.throwIfFatal(ex);
@@ -429,13 +454,117 @@
       
       
      
-- doOnNext doOnError 是增强实现，在onNext前面执行      
+- doOnNext doOnError 是增强实现，在onNext前面执行 ；通常做一些输出，打印日志，数据存储，备份    
+
+
+     doOnNext  
+     
+     private Observable<T> doOnEach(Consumer<? super T> onNext, Consumer<? super Throwable> onError, Action onComplete, Action onAfterTerminate) {
+             ObjectHelper.requireNonNull(onNext, "onNext is null");
+             ObjectHelper.requireNonNull(onError, "onError is null");
+             ObjectHelper.requireNonNull(onComplete, "onComplete is null");
+             ObjectHelper.requireNonNull(onAfterTerminate, "onAfterTerminate is null");
+             return RxJavaPlugins.onAssembly(new ObservableDoOnEach<T>(this, onNext, onError, onComplete, onAfterTerminate));
+         }
+         
+     public final class ObservableDoOnEach<T> extends AbstractObservableWithUpstream<T, T> { 
+     
+     source.subscribe(new DoOnEachObserver<T>(t, onNext, onError, onComplete, onAfterTerminate))
+     
+     @Override
+     public void onNext(T t) {
+         if (done) {
+             return;
+         }
+         try {
+             //这里相当于AOP思想，起到一个拦截，增强扩展功能,执行时机就是在本次Observable的onNext方法后执行
+             onNext.accept(t);
+         } catch (Throwable e) {
+             Exceptions.throwIfFatal(e);
+             s.dispose();
+             onError(e);
+             return;
+         }
+
+         actual.onNext(t);
+     }
+     
  
 ### RxJava 设计理念（套娃的设计和组装）
 
-     操作组合设计是从上到下的，即所谓的套娃制作设计（先确定最外层，也就是源的实现，然后层层向内设计，产生订阅的那一刻结束设计）。
-     而在执行的时候（产生订阅的时候），就相当于套娃的组装，先放最小的（即我们常见的LambdaObserver的封装），然后放第二小的，以此类推，直至最后放最大的，这里其实是将之前的操作进行逆向拼接（拼接的是Observer），拼接完成后接触下发元素。
+       操作组合设计是从上到下的，即所谓的套娃制作设计,从里到外（这种装饰者模式一层一层就是套娃的设计思想）
+     
+       这种设计把第一个Observable想象成第一个最小的套娃，把第二个Observable比第一个大一点套娃，第三个Observable比第二个还要大一点，这就是套娃的设计思想
+       想象每个套娃都那么几个洞；每层组装都会顺着洞放下一个钩子滑轮（钩子在下，绕滑轮一圈）一层勾着一层，当第一个层被第二层嵌套是，就将准备好的东西放到勾着上，所以每层之间就有了钩子滑轮着作为桥梁；
+       
+       当最外层产生订阅的时候我们相当，上面的人通知下一层，下一次同样通知下一次，最终底层接到通知，的钩子被拉动，东西顺着钩子到达上面一层，然后一层一层往上，
+       
+       钩子相当于Observer, 通知者相当于 subscribe 调用Observer onNext, （subscribe相当于另一个绳子东西，可以通知下一层）
+       
+       通过另一个根绳子subscribe通知下一次，直到底层的Observable，接到命令后，调用Observer OnNext，相当于拉动滑轮一层往上一层传递
+      
+       //每一层调用这样的方法将Observer传递给subscribe方法，再传递给subscribeActual,再调用下一层的 source.subscribe(parent)，同时parent,相当于有封装了一层
+       source.subscribe(parent);
   
+  
+### 订阅后产生的执行，还是很复杂的一件事，我们继续探讨
+
+   先看一个简单的例子：模拟延迟5秒发送一个"HelloWorold",在5秒内点击按钮取消订阅
+   
+       fun testSimple() {
+               val observable = Observable.create<String> {
+                   Log.i("rxjava", "oncreate")
+                   Handler().postDelayed({
+                       it.onNext("HelloWorld")
+                   }, 5000)
+       
+               }
+               var disposeObserver = observable.subscribeWith(DisposableObserverImpl())
+               btn_cancel.setOnClickListener {
+                   disposeObserver.dispose()
+               }
+       }
+       
+       public static boolean dispose(AtomicReference<Disposable> field) {
+              Disposable current = field.get();
+              Disposable d = DISPOSED;
+              if (current != d) {
+                  current = field.getAndSet(d);
+                  if (current != d) {
+                      if (current != null) {
+                          current.dispose();
+                      }
+                      return true;
+                  }
+              }
+              return false;
+       }
+                  
+                  
+  - 执行流程
+  1. subscribeWith 
+  2. ObservableCreate.subscribe  --> subscribeActual  -->创建一个Disposable(CreateEmitter) -->observer.onSubscribe(CreateEmitter);
+  3. DisposableObserver onSubscribe 收到ObservableCreate传递过来的Disposable，更新自己的value(因为自己本身也是一个Disposable)
+  4. ObservableCreate.source.subscribe(CreateEmitter);产生实际订阅，开始按照要就发射数据，这里做了5秒延迟
+  5. 此时延迟时间内调用 DisposableObserver.dispose()
+  6. DisposableHelper.dispose(s); 这个s 就是DisposableObserver内部的AtomicReference<Disposable> s = new AtomicReference<Disposable>();
+  7. 提醒一句，之前这个s 通过onSubscribe已经被赋值成CreateEmitter，因为CreateEmitter本身也实现了Disposable
+  8. Disposable current = field.get();  此时current 值 CreateEmitter
+  9. current!=DISPOSED 开始更新  field.getAndSet(d)  更新成功返回旧值
+  10. 判断一下旧值不等于null，而是CreateEmitter,所以继续调用CreateEmitter.dispose()
+  11. CreateEmitter.dispose() -->  DisposableHelper.dispose(this)
+  12. field.get() 当前的的value默认是null的，然后阐释更新成DISPOSED
+  13. CreateEmitter在OnNext过来的时候就会验证这个值，已经DISPOSED就不再传递
+  
+  所以多层嵌套也是如此，通过每个外层套娃Disposable 的 AtomicReference<Disposable>储存下一层套娃的Disposable；
+  当外层出发dispose就一层一层的更新AtomicReference<Disposable>为DESTORY,并且返回下一层的Disposable,如果不为空就证明没有到达最底层，
+  所以继续调用disposable，直到返回的数据为null为止，从而控制了整个流程的取消订阅
+  
+  //核心方法 subscribe 用来向底层套娃通知，通知到最后底层时，底层套娃通过 OnNext 等方法开始通知上一层观察者，上一层再通过OnNext通知上一层
+  //onSubscribe 在通知底层过程中，每一层告知上一层一个Dispose对象
+  
+  - 套娃的设计其实就是装饰者模式，Observable一层嵌套一层，同时在订阅观察者也会被一层一层嵌套发送到底部
+      
   
 - 简单回顾一下前面的源码间设计
 
@@ -449,5 +578,141 @@
      
      - Observable.filter ->ObservableFilter -> 外部调用subscribe ->真实调用subscribeActual ->FilterObserver 
      
+     - Observable 的所有操作方法都是通过包装自己来实现的，所以设计就像是套娃的设计，当我们执行的时候通过subscrible
      
+     - 看一个例子
+     
+     
+      val observable = Observable.create<String> {
+                 Log.i("rxjava", "oncreate")
+                 it.onNext("HelloWorld")
+             }.doOnNext {
+     
+             }.filter { it == "HelloWorld" }.map { "AAA$it" }
+             
+
+      
+      // 创建数据源的时候相当于套娃组装
+      // 订阅执行的时候相当于Observer 一层一层向下传递，每到一层包装一层，最终到达最下层
+              CreateEmitter<T> parent = new CreateEmitter<T>(observer);
+              observer.onSubscribe(parent);
+              
+               final SubscribeOnObserver<T> parent = new SubscribeOnObserver<T>(s);
+               s.onSubscribe(parent);
+      // 到达最下层，会先调用 上一层Observer.onSubscribe(传递本层的Disposable)，
+      
+      
+      // 产生订阅后执行逻辑比较复杂，
+      
+      从最外层调用subscrible开始 会调用 Observer开始调用
+      ObservableObserveOn.subscribe(DisposableObserver)
+      
+      ObservableObserveOn.subscribeActual  source.subscribe()
+      
+      ObservableSubscribeOn.subscribeActual  s.onSubscribe(SubscribeOnObserver);
+      
+      ObservableObserveOn.ObserveOnObserver.onSubscribe() actual.onSubscribe(ObserveOnObserver)
+      
+      DisposableObserver.onSubscribe  AtomicReference<Disposable> s 得到 Disposable(ObserveOnObserver)
+      
+      //开始提交任务，此时的任务就可能是异步的了，之前都是同步任务
+      ObservableSubscribeOn -> 在任务中执行   source.subscribe(parent);
+      
+      ObservableCreate.subscribeActual   observer.onSubscribe(CreateEmitter);
+      
+      SubscribeOnObserver.onSubscribe  
+
+- Observable.cache()方法，当多个观察者订阅后，被订阅的观察者只会执行一次，然后缓存到内存中       
+
+      cache() -> ObservableCache.from(this)-> from(source, 16) ->CacheState<T>(source, capacityHint) ->ObservableCache ->
+      
+      CacheState(CacheState<T> extends LinkedArrayList implements Observer<T>)
        
+      这里这么实现，比平时创建多了一层，Observer，当订阅者产生订阅的时候，调用subscrible时，会想通过CacheState这个Observer做一层代理，
+      
+      其中 CacheState 中 有一个集合  final AtomicReference<ReplayDisposable<T>[]> observers; 在addChild添加进去；这里
+      ReplayDisposable装饰了cacheState,和最终的Observer， 当调用replay 时，从state中取到元素o,然后通过NotificationLite.accept(o, child)
+      回调onNext等方法
+  
+      每一个观察者订阅时，都会先包装成ReplayDisposable ，并且addChild保存到CacheState中，接着调用ReplayDisposable的replay处理数据回调
+      
+      
+      
+      
+      - 这里会有个问题，ObservableCache里的subscribeActual方法为什么不是用的CreateEmitter实现的，而是通过state.connect ,
+        这里this 其实就是一个Observer； 因为我们ObservableCache是通过包装扩展来的，所以前一个Observable，
+        产生订阅的地方一定是需要一个Observer，而不是需要一个Emitter(如果是原始对象，那是Emitter,但现在不是），但这里我们同样需要一个实现Disposable
+        接口的一个对象，这样可以做取消操作。
+        
+     
+     
+     - Code
+     
+          public void connect() {
+                  source.subscribe(this);
+                  isConnected = true;
+          }
+    
+          @Override
+          protected void subscribeActual(Observer<? super T> t) {
+              // we can connect first because we replay everything anyway
+              ReplayDisposable<T> rp = new ReplayDisposable<T>(t, state);
+              t.onSubscribe(rp);
+      
+              state.addChild(rp);
+      
+              // we ensure a single connection here to save an instance field of AtomicBoolean in state.
+              if (!once.get() && once.compareAndSet(false, true)) {
+                  state.connect();
+              }
+      
+              rp.replay();
+          }
+                  
+          
+          
+- Observer 设计详解
+
+
+      public interface Observer<T> {
+          //产生订阅后回传一个Disposable
+          void onSubscribe(@NonNull Disposable d);
+      
+          void onNext(@NonNull T t);
+       
+          void onComplete();
+      
+      }
+     
+      
+      
+- Disposable 设计详解
+
+   - 目的：
+      
+      
+          
+           主要功能是管理一个状态值。下面再来回顾一下Observable的作用，即其发布数据并由Observer消费。作为消费者，
+           我很可能不需要每次都对接收的数据进行处理，也就是消费者应该有一个可以放弃操作资源的可选项，
+           而我们在Observer接口定义中并没有找到相关的方法。在这里可以拓展一个设计理念：一切为了解耦。我们在做表设计的时候，尽量保证表符合三范式，
+           以达到表的单一性，用生活中的话说就是请专注于自己的领域。
+          
+      
+    
+    
+          // 一次性的 用完即可丢弃的，每个Observer适配器都会实现一个Disposable
+          public interface Disposable {
+              //处理，用来解除订阅，防止内存泄露
+              void dispose();
+              //判断是否已经被处理了
+              boolean isDisposed();
+          }
+          
+          
+          // 上面讲到的 CreateEmitter 在调用真实Observer 前都做了isDispose判断
+          
+          static final class CreateEmitter<T> extends AtomicReference<Disposable>
+                             implements ObservableEmitter<T>, Disposable {
+                             
+                             
+                   
