@@ -590,18 +590,6 @@
      
              }.filter { it == "HelloWorld" }.map { "AAA$it" }
              
-
-      
-      // 创建数据源的时候相当于套娃组装
-      // 订阅执行的时候相当于Observer 一层一层向下传递，每到一层包装一层，最终到达最下层
-              CreateEmitter<T> parent = new CreateEmitter<T>(observer);
-              observer.onSubscribe(parent);
-              
-               final SubscribeOnObserver<T> parent = new SubscribeOnObserver<T>(s);
-               s.onSubscribe(parent);
-      // 到达最下层，会先调用 上一层Observer.onSubscribe(传递本层的Disposable)，
-      
-      
       // 产生订阅后执行逻辑比较复杂，
       
       从最外层调用subscrible开始 会调用 Observer开始调用
@@ -715,4 +703,9 @@
                              implements ObservableEmitter<T>, Disposable {
                              
                              
-                   
+- 线程切换
+
+
+- ConnectableObservable
+
+- subject                                                
