@@ -13,10 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c36b3d7-82fb-4da1-98f5-8345655eb5e3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sources/androidopensources/rxjavasource.md" beforeDir="false" afterPath="$PROJECT_DIR$/sources/androidopensources/rxjavasource.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/volatile.md" beforeDir="false" afterPath="$PROJECT_DIR$/sources/volatile.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/javaconcurrent/selfRotate.md" beforeDir="false" afterPath="$PROJECT_DIR$/sources/javaconcurrent/selfRotate.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +105,7 @@
           <entry key="java" value="102" />
           <entry key="kt" value="19401" />
           <entry key="linkblockingqueue" value="30" />
-          <entry key="md" value="15172" />
+          <entry key="md" value="16430" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -115,7 +113,7 @@
           <entry key="Groovy" value="5" />
           <entry key="JAVA" value="102" />
           <entry key="Kotlin" value="19401" />
-          <entry key="Markdown" value="15172" />
+          <entry key="Markdown" value="16430" />
           <entry key="PLAIN_TEXT" value="30" />
         </counts>
       </usages-collector>
@@ -129,11 +127,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sources/androidopensources/rxjavasource.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="704" column="29" lean-forward="true" selection-start-line="704" selection-start-column="29" selection-end-line="704" selection-end-column="29" />
+            <state relative-caret-position="723">
+              <caret line="956" column="3" selection-start-line="956" selection-start-column="3" selection-end-line="956" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -157,11 +155,11 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="87" column="102" selection-start-line="87" selection-start-column="102" selection-end-line="87" selection-end-column="102" />
+            <state relative-caret-position="543">
+              <caret line="88" column="10" lean-forward="true" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -187,8 +185,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sources/javaconcurrent/selfRotate.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="637">
-              <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+            <state relative-caret-position="202">
+              <caret line="83" column="9" lean-forward="true" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -196,8 +194,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+            <state relative-caret-position="664">
+              <caret line="169" column="5" lean-forward="true" selection-start-line="169" selection-start-column="5" selection-end-line="169" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -3533,18 +3531,17 @@
         <option value="$PROJECT_DIR$/sources/designpattern/adapterdiffdecorator.md" />
         <option value="$PROJECT_DIR$/sources/designpattern/proxyidiffdecorator.md" />
         <option value="$PROJECT_DIR$/sources/designpattern/bridge.md" />
-        <option value="$PROJECT_DIR$/sources/androidopensources/rxjavasource.md" />
         <option value="$PROJECT_DIR$/sources/volatile.md" />
         <option value="$PROJECT_DIR$/sources/javaconcurrent/atomic.md" />
-        <option value="$PROJECT_DIR$/sources/javaconcurrent/selfRotate.md" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/sources/javaconcurrent/selfRotate.md" />
+        <option value="$PROJECT_DIR$/sources/androidopensources/rxjavasource.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="y" value="23" />
     <option name="width" value="1680" />
-    <option name="height" value="958" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -3626,7 +3623,7 @@
               <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataStructure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="sources" type="462c0819:PsiDirectoryNode" />
-              <item name="javaconcurrent" type="462c0819:PsiDirectoryNode" />
+              <item name="androidopensources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -4779,6 +4776,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="88" column="10" lean-forward="true" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sources/javaconcurrent/java_core_semaphore.md">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -4786,20 +4790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="14" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/androidopensources/rxjavasource.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="704" column="29" lean-forward="true" selection-start-line="704" selection-start-column="29" selection-end-line="704" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -4812,15 +4802,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sources/javaconcurrent/selfRotate.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+        <state relative-caret-position="202">
+          <caret line="83" column="9" lean-forward="true" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="87" column="102" selection-start-line="87" selection-start-column="102" selection-end-line="87" selection-end-column="102" />
+        <state relative-caret-position="664">
+          <caret line="169" column="5" lean-forward="true" selection-start-line="169" selection-start-column="5" selection-end-line="169" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/androidopensources/rxjavasource.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="723">
+          <caret line="956" column="3" selection-start-line="956" selection-start-column="3" selection-end-line="956" selection-end-column="3" />
         </state>
       </provider>
     </entry>

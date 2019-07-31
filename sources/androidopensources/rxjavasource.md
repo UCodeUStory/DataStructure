@@ -708,4 +708,250 @@
 
 - ConnectableObservable
 
-- subject                                                
+ 
+
+- Subject模式  
+
+   Subject实际上还是Observable，只不过它继承了Observer接口，可以通过onNext、onComplete、onError方法发射和终止发射数据。  
+   
+   
+  1. PublishSubject 这个是主动的推送的 ,之前作为被观察者只能在订阅的时候出发，现在自己本身实现了Observer，所以可以主动去发送数据给订阅者
+  
+     PublishSubject 是最直接的一个 Subject。当一个数据发射到 PublishSubject 中时，PublishSubject 将立刻把这个数据发射到订阅到该 subject 上的所有 subscriber 中。    
+     
+     同时：PublishSubject特性，先发射的数据，后来的观者者是不会收到任何数据的
+     
+     
+     public final class PublishSubject<T> extends Subject<T> {
+     
+     PublishSubject() {
+             //内部保存一个观察者列表
+             subscribers = new AtomicReference<PublishDisposable<T>[]>(EMPTY);
+     }
+     
+     当有新的订阅者订阅的时候
+     @Override
+         public void subscribeActual(Observer<? super T> t) {
+             PublishDisposable<T> ps = new PublishDisposable<T>(t, this);
+             t.onSubscribe(ps);
+             //保存订阅者到列表中
+             if (add(ps)) {
+                 // if cancellation happened while a successful add, the remove() didn't work
+                 // so we need to do it again
+                 //添加成功后，因为添加过程也是一个自旋的过程，在这个过程中ps可能会被更改，被取消了就会移除
+                 if (ps.isDisposed()) {
+                     remove(ps);
+                 }
+             } else {
+                 Throwable ex = error;
+                 if (ex != null) {
+                     t.onError(ex);
+                 } else {
+                     t.onComplete();
+                 }
+             }
+         }
+         
+          void remove(PublishDisposable<T> ps) {
+                 for (;;) {
+                     PublishDisposable<T>[] a = subscribers.get();
+                     if (a == TERMINATED || a == EMPTY) {
+                         return;
+                     }
+         
+                     int n = a.length;
+                     int j = -1;
+                     for (int i = 0; i < n; i++) {
+                         if (a[i] == ps) {
+                             j = i;
+                             break;
+                         }
+                     }
+         
+                     if (j < 0) {
+                         return;
+                     }
+         
+                     PublishDisposable<T>[] b;
+         
+                     if (n == 1) {
+                         b = EMPTY;
+                     } else {
+                         b = new PublishDisposable[n - 1];
+                         //a旧数组，b新数组
+                         //src表示源数组，srcPos表示源数组要复制的起始位置，desc表示目标数组，destPos表示目标数组放入的起始位置，
+                         //length表示要复制的长度。
+                         //当前j表示找到了需要移除的位置
+                         System.arraycopy(a, 0, b, 0, j);
+                         //丢弃j位置袁术，所以从j+1开始复制剩余元素
+                         System.arraycopy(a, j + 1, b, j, n - j - 1);
+                     }
+                     //原子化操作，判断这个操作的集合还是不是之前的集合，这里比较的是地址，证明没人操作过，
+                     //如果多线程，有人操作过就会返回false，就会重新循环获取被改动的集合，继续操作
+                     if (subscribers.compareAndSet(a, b)) {
+                         return;
+                     }
+                 }
+             }
+             
+             
+           boolean add(PublishDisposable<T> ps) {
+                  for (;;) {
+                      PublishDisposable<T>[] a = subscribers.get();
+                      if (a == TERMINATED) {
+                          return false;
+                      }
+          
+                      int n = a.length;
+                      @SuppressWarnings("unchecked")
+                      PublishDisposable<T>[] b = new PublishDisposable[n + 1];
+                      System.arraycopy(a, 0, b, 0, n);
+                      b[n] = ps;
+                      //同样判断当前集合有没有更改过，如果没有就赋值，有就修改
+                      if (subscribers.compareAndSet(a, b)) {
+                          return true;
+                      }
+                  }
+              }
+     
+     
+        总结：PublishSubject很好的使用了CAS自旋来保证线程安全，因为数组不会很大所以使用arraycopy这种内存抖动也不会很大，实现原理类似CopyonWriteArray
+        
+  2. ReplaySubject 可以缓存所有发射给他的数据。当一个新的订阅者订阅的时候，缓存的所有数据都会发射给这个订阅者。 由于使用了缓存，所以每个订阅者都会收到所以的数据：     
+     
+     
+      public static <T> ReplaySubject<T> create() {
+              return new ReplaySubject<T>(new UnboundedReplayBuffer<T>(16));
+      }
+      
+      @Override
+          protected void subscribeActual(Observer<? super T> observer) {
+              ReplayDisposable<T> rs = new ReplayDisposable<T>(observer, this);
+              observer.onSubscribe(rs);
+      
+              if (!rs.cancelled) {
+              //存储观察者
+                  if (add(rs)) {
+                      if (rs.cancelled) {
+                          remove(rs);
+                          return;
+                      }
+                  }
+                  //开始将存储数据发送
+                  buffer.replay(rs);
+              }
+          }
+          
+          
+        @Override
+            public void onNext(T t) {
+                if (t == null) {
+                    onError(new NullPointerException("onNext called with null. Null values are generally not allowed in 2.x operators and sources."));
+                    return;
+                }
+                if (done) {
+                    return;
+                }
+        
+                ReplayBuffer<T> b = buffer;
+                //存储发送数据
+                b.add(t);
+        
+                for (ReplayDisposable<T> rs : observers.get()) {
+                    //发送
+                    b.replay(rs);
+                }
+            }
+      //其中每次订阅和发送数据，都会把之前的发给观察者，观察者自身有个index,默认是0,存储的是数据的位置，如果已经收到过的数据index也跟着1+，
+      public void replay(ReplayDisposable<T> rs) {
+                 // 多个线程进入这个值让后续的线程等待
+                 if (rs.getAndIncrement() != 0) {
+                     return;
+                 }
+     
+                 int missed = 1;
+                 final List<Object> b = buffer;
+                 final Observer<? super T> a = rs.actual;
+     
+                 Integer indexObject = (Integer)rs.index;
+                 int index;
+                 if (indexObject != null) {
+                     index = indexObject;
+                 } else {
+                     index = 0;
+                     rs.index = 0;
+                 }
+     
+                 for (;;) {
+     
+                     if (rs.cancelled) {
+                         rs.index = null;
+                         return;
+                     }
+     
+                     int s = size;
+     
+                     while (s != index) {
+     
+                         if (rs.cancelled) {
+                             rs.index = null;
+                             return;
+                         }
+     
+                         Object o = b.get(index);
+     
+                         if (done) {
+                             if (index + 1 == s) {
+                                 s = size;
+                                 if (index + 1 == s) {
+                                     if (NotificationLite.isComplete(o)) {
+                                         a.onComplete();
+                                     } else {
+                                         a.onError(NotificationLite.getError(o));
+                                     }
+                                     rs.index = null;
+                                     rs.cancelled = true;
+                                     return;
+                                 }
+                             }
+                         }
+     
+                         a.onNext((T)o);
+                         index++;
+                     }
+     
+                     if (index != size) {
+                         continue;
+                     }
+     
+                     rs.index = index;
+                     //如果还有新的线程没有执行，继续执行
+                     missed = rs.addAndGet(-missed);
+                     if (missed == 0) {
+                         break;
+                     }
+                 }
+             }
+             
+        总结：非常巧妙的使用CAS实现了线程安全的操作
+        
+  3. BehaviorSubject 只保留最后一个值。 等同于限制 ReplaySubject 的个数为 1 的情况。在创建的时候可以指定一个初始值，这样可以确保党订阅者订阅的时候可以立刻收到一个值        
+  
+  4. AsyncSubject 
+     AsyncSubject 也缓存最后一个数据。区别是 AsyncSubject 只有当数据发送完成时（onCompleted 调用的时候）才发射这个缓存的最后一个数据。可以使用 AsyncSubject 发射一个数据并立刻结束。
+     
+     AsyncSubject<Integer> s = AsyncSubject.create();
+     s.subscribe(v -> System.out.println(v));
+     s.onNext(0);
+     s.onCompleted();
+     s.onNext(1);
+     s.onNext(2);
+  
+   
+     结果：
+     
+     0
+#### 异步任务切换
+     
+    subscribeOn 将subscribe方法切换到指定线程
+    observeOn  将OnNext调用的数据切换线程，也就是观察者回调方法                             
