@@ -954,4 +954,16 @@
 #### 异步任务切换
      
     subscribeOn 将subscribe方法切换到指定线程
-    observeOn  将OnNext调用的数据切换线程，也就是观察者回调方法                             
+    observeOn  将OnNext调用的数据切换线程，也就是观察者回调方法      
+    
+    
+#### compose
+
+     //自定义transform ，封装公共的操作变换
+     //.compose(customTransformer())
+     fun <T> customTransformer(): ObservableTransformer<T, T> {
+            return ObservableTransformer { upstream ->
+                upstream.subscribeOn(Schedulers.io())
+                    .observeOn(AndroidSchedulers.mainThread())
+            }
+     }                       

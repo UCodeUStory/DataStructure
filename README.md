@@ -85,7 +85,7 @@
 - [ConcurrentHashMap原理](https://github.com/UCodeUStory/DataStructure/blob/master/sources/concurrentHashMap.md)
 - [分布式锁-分段锁思想]()
 - [Atomic包的原理及分析](https://github.com/UCodeUStory/DataStructure/blob/master/sources/javaconcurrent/atomic.md)
-- [CAS实现自旋](https://github.com/UCodeUStory/DataStructure/blob/master/sources/javaconcurrent/selfRotate.md)
+- [CAS实现自旋线程安全](https://github.com/UCodeUStory/DataStructure/blob/master/sources/javaconcurrent/selfRotate.md)
 - Java NIO
 
 #### Android 常见问题
