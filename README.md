@@ -86,6 +86,7 @@
 - [分布式锁-分段锁思想]()
 - [Atomic包的原理及分析](https://github.com/UCodeUStory/DataStructure/blob/master/sources/javaconcurrent/atomic.md)
 - [CAS实现自旋线程安全](https://github.com/UCodeUStory/DataStructure/blob/master/sources/javaconcurrent/selfRotate.md)
+- [Java泛型使用]()
 - Java NIO
 
 #### Android 常见问题
@@ -124,6 +125,7 @@
 33. [TransactionTooLargeException解决方法](https://github.com/UCodeUStory/DataStructure/blob/master/sources/transactiontoolargeexception.md)
 34. [谈一下Http请求过程](https://github.com/UCodeUStory/DataStructure/blob/master/sources/http.md)
 35. [Android 进程通信种类](https://github.com/UCodeUStory/DataStructure/blob/master/sources/androidipc.md)
+
 #### 设计模式
 1. [面向对象的七种设计原则](https://github.com/UCodeUStory/DataStructure/blob/master/sources/seven_design_principles.md)
 2. [建造者模式](https://github.com/UCodeUStory/DataStructure/blob/master/sources/kotlin/builderModel.kt)
@@ -171,7 +173,7 @@
 7. [ARouter 源码分析]
 8. [LeakCanary 源码分析]
 9. [Blockcanary 源码分析]
-10. [lifeRecycler源码分析]
+10. [Lifecycler源码分析]
 11. [RxJava 源码分析](https://github.com/UCodeUStory/DataStructure/blob/master/sources/androidopensources/rxjavasource.md)
 12. [ViewModel 源码分析](https://github.com/UCodeUStory/DataStructure/blob/master/sources/viewmodel.md)
 

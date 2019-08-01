@@ -13,9 +13,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c36b3d7-82fb-4da1-98f5-8345655eb5e3" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/sources/javageneric.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/androidopensources/rxjavasource.md" beforeDir="false" afterPath="$PROJECT_DIR$/sources/androidopensources/rxjavasource.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +77,7 @@
           <entry key="java_core_semaphore" value="1" />
           <entry key="kt" value="97" />
           <entry key="linkblockingqueue" value="1" />
-          <entry key="md" value="127" />
+          <entry key="md" value="128" />
           <entry key="png" value="3" />
           <entry key="pro" value="2" />
           <entry key="properties" value="1" />
@@ -93,7 +93,7 @@
           <entry key="Image" value="3" />
           <entry key="JAVA" value="73" />
           <entry key="Kotlin" value="97" />
-          <entry key="Markdown" value="127" />
+          <entry key="Markdown" value="128" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="ProGuard File" value="2" />
           <entry key="Properties" value="1" />
@@ -106,7 +106,7 @@
           <entry key="java" value="102" />
           <entry key="kt" value="19401" />
           <entry key="linkblockingqueue" value="30" />
-          <entry key="md" value="16556" />
+          <entry key="md" value="16845" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -114,7 +114,7 @@
           <entry key="Groovy" value="5" />
           <entry key="JAVA" value="102" />
           <entry key="Kotlin" value="19401" />
-          <entry key="Markdown" value="16556" />
+          <entry key="Markdown" value="16845" />
           <entry key="PLAIN_TEXT" value="30" />
         </counts>
       </usages-collector>
@@ -128,11 +128,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sources/androidopensources/rxjavasource.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="601">
-              <caret line="968" column="1" selection-start-line="968" selection-start-column="1" selection-end-line="968" selection-end-column="1" />
+              <caret line="968" column="8" selection-start-line="968" selection-start-column="8" selection-end-line="968" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -156,15 +156,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/menu.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="701">
-              <caret line="158" column="19" selection-start-line="158" selection-start-column="19" selection-end-line="158" selection-end-column="19" />
+            <state relative-caret-position="355">
+              <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sources/javageneric.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="485">
+              <caret line="67" column="1" selection-start-line="67" selection-start-column="1" selection-end-line="74" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -3495,7 +3499,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/core/aa.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/java/thread/automizationoperation.kt" />
         <option value="$PROJECT_DIR$/sources/automizationoperation.md" />
         <option value="$PROJECT_DIR$/sources/copyOnWriteArrayList.md" />
@@ -3544,8 +3547,9 @@
         <option value="$PROJECT_DIR$/sources/volatile.md" />
         <option value="$PROJECT_DIR$/sources/javaconcurrent/atomic.md" />
         <option value="$PROJECT_DIR$/sources/javaconcurrent/selfRotate.md" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/sources/androidopensources/rxjavasource.md" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/sources/javageneric.md" />
       </list>
     </option>
   </component>
@@ -3571,75 +3575,7 @@
             <path>
               <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataStructure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="wangpos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="wangpos" type="462c0819:PsiDirectoryNode" />
-              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="sources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="sources" type="462c0819:PsiDirectoryNode" />
-              <item name="androidopensources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="sources" type="462c0819:PsiDirectoryNode" />
-              <item name="javaconcurrent" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -4098,7 +4034,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48902822" visible="true" weight="0.25824177" />
       <window_info id="Structure" order="1" weight="0.24969475" />
@@ -4512,9 +4447,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sources/onMeasure.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/sources/synchronized_lock.md">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -4791,13 +4723,6 @@
     <entry file="file://$PROJECT_DIR$/sources/weakHashMap.md">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="701">
-          <caret line="158" column="19" selection-start-line="158" selection-start-column="19" selection-end-line="158" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sources/javaconcurrent/atomic.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1116">
@@ -4829,7 +4754,21 @@
     <entry file="file://$PROJECT_DIR$/sources/androidopensources/rxjavasource.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="601">
-          <caret line="968" column="1" selection-start-line="968" selection-start-column="1" selection-end-line="968" selection-end-column="1" />
+          <caret line="968" column="8" selection-start-line="968" selection-start-column="8" selection-end-line="968" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/javageneric.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="67" column="1" selection-start-line="67" selection-start-column="1" selection-end-line="74" selection-end-column="9" />
         </state>
       </provider>
     </entry>
