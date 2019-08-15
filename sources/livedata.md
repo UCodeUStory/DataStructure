@@ -1,12 +1,36 @@
 ### LiveData使用介绍
 
 - LiveData 可以观察数据变化的框架
+- LiveData 内部维护一个Observers列表
 
+     private SafeIterableMap<Observer<T>, LifecycleBoundObserver> mObservers =
+                new SafeIterableMap<>();
 
 - 如果一个Observer的生命周期处于STARTED或RESUMED状态，那么LiveData将认为这个Observer处于活跃状态.LiveData仅通知活跃的Observer去更新UI。非活跃状态的Observer，即使订阅了LiveData，也不会收到更新的通知。
-结合一个实现了LifecycleOwner接口的对象，你能注册一个Observer。这种结合关系使得当具有生命周期的对象的状态变为DESTROYED时，Observer将被取消订阅。这对于活和片段尤其有用，因为它们可以安全地订阅LiveData对象，而不必担心内存泄漏 - 当活和片段生命周期为DESTROYED时，它们立即会被取消订阅。
 
+- observe 观察数据会注入一个LifecycleOwner，和一个observer,同时使用装饰者模式，将二者封装到一个新的Observer，添加到Observers列表中
+  然后使用lifecycle 添加这个wrapper用来监测生命周期，当有新的数据的时候，会遍历列表，先判断owner的状态是否可用，然后进行分发
 
+    
+        public void observe(@NonNull LifecycleOwner owner, @NonNull Observer<T> observer) {
+            if (owner.getLifecycle().getCurrentState() == DESTROYED) {
+                // ignore
+                return;
+            }
+            LifecycleBoundObserver wrapper = new LifecycleBoundObserver(owner, observer);
+            LifecycleBoundObserver existing = mObservers.putIfAbsent(observer, wrapper);
+            if (existing != null && existing.owner != wrapper.owner) {
+                throw new IllegalArgumentException("Cannot add the same observer"
+                        + " with different lifecycles");
+            }
+            if (existing != null) {
+                return;
+            }
+            owner.getLifecycle().addObserver(wrapper);
+        }
+
+- LiveData内部没有任何线程安全控制，那么线程安全吗？ 答案当然是安全的
+        如果event 发时所在的线程是主线程，并且是onStart OnResume onPause状态时，数据就会被执行，而不会考虑再次过程中关闭页面，导致onStop,onDestroy,因为，我们知道UI线程是一个一个回调的，比如想想一下onResume发出一个耗时事件，0.01秒，点击返回键使之结束;实际情况也会先执行耗时任务，执行完后再执行结束函数，最后再回调onStop onDestory等方法
 
 #### LiveData的优点
 在项目中使用LiveData，会有以下优点：
