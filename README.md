@@ -83,10 +83,10 @@
 - [多个线程安全的原子化操作组合将不再是安全的](https://github.com/UCodeUStory/DataStructure/blob/master/sources/automizationoperation.md)
 - [CopyOnWriteArrayList原理](https://github.com/UCodeUStory/DataStructure/blob/master/sources/copyOnWriteArrayList.md)
 - [ConcurrentHashMap原理](https://github.com/UCodeUStory/DataStructure/blob/master/sources/concurrentHashMap.md)
-- [分布式锁-分段锁思想]()
+- [分布式锁-分段锁思想]
 - [Atomic包的原理及分析](https://github.com/UCodeUStory/DataStructure/blob/master/sources/javaconcurrent/atomic.md)
 - [CAS实现自旋线程安全](https://github.com/UCodeUStory/DataStructure/blob/master/sources/javaconcurrent/selfRotate.md)
-- [Java泛型使用]()
+- [Java泛型使用](https://github.com/UCodeUStory/DataStructure/blob/master/sources/javageneric.md)
 - Java NIO
 
 #### Android 常见问题
@@ -125,7 +125,8 @@
 33. [TransactionTooLargeException解决方法](https://github.com/UCodeUStory/DataStructure/blob/master/sources/transactiontoolargeexception.md)
 34. [谈一下Http请求过程](https://github.com/UCodeUStory/DataStructure/blob/master/sources/http.md)
 35. [Android 进程通信种类](https://github.com/UCodeUStory/DataStructure/blob/master/sources/androidipc.md)
-36. [面试题如何计算View的深度，写一段成程序]()
+36. [面试题如何计算View的深度，写一段成程序](https://github.com/UCodeUStory/DataStructure/blob/master/sources/androidinterview/viewdeep.md)
+37. [统计一个ViewGroup中包含的子View的个数（递归和非递归实现）](https://github.com/UCodeUStory/DataStructure/blob/master/sources/androidinterview/viewcount.md)
 
 #### 设计模式
 1. [面向对象的七种设计原则](https://github.com/UCodeUStory/DataStructure/blob/master/sources/seven_design_principles.md)
