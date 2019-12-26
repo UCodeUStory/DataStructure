@@ -73,3 +73,80 @@ List<? super T>表示List中存放的都是T或者T的父类型
                 } 
            }
         }
+
+？表示不确定的 java 类型,通配符其实在声明局部变量时是没有什么意义的
+
+    List<? extends Animal> listAnimals 这种局部变量无意义
+    
+    
+    
+    static int countLegs (List<? extends Animal > animals ) {
+        int retVal = 0;
+        for ( Animal animal : animals )
+        {
+            retVal += animal.countLegs();
+        }
+        return retVal;
+    }
+    
+    static int countLegs1 (List< Animal > animals ){
+        int retVal = 0;
+        for ( Animal animal : animals )
+        {
+            retVal += animal.countLegs();
+        }
+        return retVal;
+    }
+    
+    public static void main(String[] args) {
+        List<Dog> dogs = new ArrayList<>();
+         // 不会报错，因为使用了通配符，表示任何Animal子类都可以
+        countLegs( dogs );
+        // 报错 ，这里就会报错，因为参数接收类型是 List<Animal>
+        countLegs1(dogs);
+    }
+    
+    上界通配符 < ? extends E>
+    上界：用 extends 关键字声明，表示参数化的类型可能是所指定的类型，或者是此类型的子类。
+    
+    下界通配符 < ? super E>
+    下界: 用 super 进行声明，表示参数化的类型可能是所指定的类型，或者是此类型的父类型，直至 Object
+    
+    
+    
+### ？和 T 的区别(这里的T可以是任何定义的字母)
+   
+   - 通配符在局部变量使用无意义
+    
+    //这里表示 集合可以放入T类型元素
+    List<T> = ArrayList<T>();
+    //这里表示 集合可以放入任何类型元素，但这样没意义；使用时还得强转；通配符一般使用在方法参数中
+    List<?> = ArrayList<?>();
+    
+    
+   - ？和 T 都表示不确定的类型，区别在于我们可以对 T 进行操作，但是对 ？不行，比如如下这种 ：、
+   
+    // 可以
+    T t = operate();
+    // 不可以
+    ？car = operate();
+    
+    T extends A
+    
+   - 通配符可以使用超类限定而类型参数不行
+    
+    T extends A
+    
+    ? extends A
+    ? super A
+    
+    
+    Class< T > 和 Class< ? > 区别
+    前面介绍了 ？和 T 的区别，那么对于，Class<T> 和 <Class<?> 又有什么区别呢？
+    
+    Class<T> 在实例化的时候，T 要替换成具体类。Class<?> 它是个通配泛型，? 可以代表任何类型，所以主要用于声明时的限制情况。比如，我们可以这样做申明：
+    
+    // 可以
+    public Class<?> clazz;
+    // 不可以，因为 T 需要指定类型
+    public Class<T> clazzT;

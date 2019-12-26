@@ -15,6 +15,8 @@
 - [线程与锁详解](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/java/JavaThreadActivity.java)
 - 二叉树的遍历
 - 二叉排序树
+- 红黑树
+- AVL树
 - [图的详解](https://github.com/UCodeUStory/DataStructure/blob/master/sources/tu.md)
 - 图的邻接表存储构成图
 - [无向图的邻接表存储-深度优先搜索](https://github.com/UCodeUStory/DataStructure/blob/master/app/src/main/java/com/wangpos/datastructure/graph/UndirectedGraph.java)
@@ -127,6 +129,7 @@
 35. [Android 进程通信种类](https://github.com/UCodeUStory/DataStructure/blob/master/sources/androidipc.md)
 36. [面试题如何计算View的深度，写一段成程序](https://github.com/UCodeUStory/DataStructure/blob/master/sources/androidinterview/viewdeep.md)
 37. [统计一个ViewGroup中包含的子View的个数（递归和非递归实现）](https://github.com/UCodeUStory/DataStructure/blob/master/sources/androidinterview/viewcount.md)
+38. [返回一个在ViewGroup下面的一个View，id为方法的第二个参数](https://github.com/UCodeUStory/DataStructure/blob/master/sources/androidinterview/viewgroupfindview.md)
 
 #### 设计模式
 1. [面向对象的七种设计原则](https://github.com/UCodeUStory/DataStructure/blob/master/sources/seven_design_principles.md)

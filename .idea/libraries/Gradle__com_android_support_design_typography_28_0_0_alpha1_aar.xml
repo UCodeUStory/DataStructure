@@ -1,10 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.android.support:design-typography:28.0.0-alpha1@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-typography-28.0.0-alpha1.aar/ede535481fad965dbfab6024a7eae571/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-typography-28.0.0-alpha1.aar/ede535481fad965dbfab6024a7eae571/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-typography-28.0.0-alpha1.aar/71b7abbd148c291d227d3e5e4eb843c6/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-typography-28.0.0-alpha1.aar/71b7abbd148c291d227d3e5e4eb843c6/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/design-typography/28.0.0-alpha1/c4dcdefb08dda3a13e450963cfb048f72f82afe4/design-typography-28.0.0-alpha1-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>
