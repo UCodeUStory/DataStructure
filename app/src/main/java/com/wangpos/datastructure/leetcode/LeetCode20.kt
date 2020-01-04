@@ -1,4 +1,4 @@
-package com.wangpos.datastructure.base
+package com.wangpos.datastructure.leetcode
 
 import java.util.*
 

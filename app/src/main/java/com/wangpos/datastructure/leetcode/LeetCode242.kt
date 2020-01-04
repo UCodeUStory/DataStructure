@@ -1,4 +1,4 @@
-package com.wangpos.datastructure.base
+package com.wangpos.datastructure.leetcode
 
 /**
  * 给定一个字符串 s 和 t

@@ -1,8 +1,5 @@
 <component name="libraryTable">
   <library name="Gradle: com.android.support:design-internal:28.0.0-alpha1@aar">
-    <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-internal-28.0.0-alpha1.aar/c4df4753f8ab70ed163180a83188757b/annotations.zip!/" />
-    </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-internal-28.0.0-alpha1.aar/c4df4753f8ab70ed163180a83188757b/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-internal-28.0.0-alpha1.aar/c4df4753f8ab70ed163180a83188757b/res" />

@@ -1,6 +1,4 @@
-package com.wangpos.datastructure.base
-
-import com.wangpos.datastructure.java.AddTwoNumber.ListNode
+package com.wangpos.datastructure.leetcode
 
 
 /**

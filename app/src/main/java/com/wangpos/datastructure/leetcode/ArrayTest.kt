@@ -1,7 +1,4 @@
-package com.wangpos.datastructure.base
-
-import com.wangpos.datastructure.algorithm.swap
-import java.util.*
+package com.wangpos.datastructure.leetcode
 
 
 /**
