@@ -6,11 +6,11 @@ import java.util.List;
 class NumArray4 {
 
     public static void main(String[] args) {
-        int value[] = new int[]{1, 2, 3, 4, 5};
+        int value[] = new int[]{0,-3,-3,1,1,2};
         NumArray4 numArray = new NumArray4(value);
-//        System.out.println("sumRange结果=" + numArray.sumRange(0, 1));
+        System.out.println("sumRange结果=" + numArray.sumRange(3, 5));
 
-        System.out.println("区间数量=" + numArray.countRange(0, 1));
+//        System.out.println("" + numArray.countRange(0, 1));
 
     }
 

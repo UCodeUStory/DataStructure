@@ -13,10 +13,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c36b3d7-82fb-4da1-98f5-8345655eb5e3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode307_4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode327.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode1272.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode315.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode327.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode493.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCodeTreeArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/Solution1288.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode2/TestSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_common_1_1_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_common_1_1_0_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_common_1_1_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_common_1_1_0_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_23_4_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_23_4_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_bottomappbar_28_0_0_alpha1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_bottomappbar_28_0_0_alpha1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_bottomnavigation_28_0_0_alpha1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_bottomnavigation_28_0_0_alpha1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_chip_28_0_0_alpha1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_chip_28_0_0_alpha1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_internal_28_0_0_alpha1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_internal_28_0_0_alpha1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_theme_28_0_0_alpha1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_theme_28_0_0_alpha1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_transformation_28_0_0_alpha1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_transformation_28_0_0_alpha1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_widget_28_0_0_alpha1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_widget_28_0_0_alpha1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_rules_0_5_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_rules_0_5_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_annotation_javax_annotation_api_1_2_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_annotation_javax_annotation_api_1_2_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode307.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode307.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode307_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode307_4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode319.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode319.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode327.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode327.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/readme.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,21 +75,23 @@
     <session id="1958794864">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="46" />
+          <entry key="project.closed" value="49" />
           <entry key="project.open.time.0" value="6" />
-          <entry key="project.open.time.1" value="25" />
+          <entry key="project.open.time.1" value="26" />
           <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="6" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.300" value="1" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="3" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="51" />
+          <entry key="project.opened" value="54" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -84,12 +106,12 @@
           <entry key="gitignore" value="3" />
           <entry key="gradle" value="16" />
           <entry key="iml" value="3" />
-          <entry key="java" value="111" />
+          <entry key="java" value="121" />
           <entry key="java_core_semaphore" value="1" />
           <entry key="kotlin_builtins" value="2" />
-          <entry key="kt" value="161" />
+          <entry key="kt" value="175" />
           <entry key="linkblockingqueue" value="1" />
-          <entry key="md" value="153" />
+          <entry key="md" value="154" />
           <entry key="png" value="3" />
           <entry key="pro" value="2" />
           <entry key="properties" value="1" />
@@ -105,9 +127,9 @@
           <entry key="Groovy" value="16" />
           <entry key="IDEA_MODULE" value="3" />
           <entry key="Image" value="3" />
-          <entry key="JAVA" value="111" />
-          <entry key="Kotlin" value="161" />
-          <entry key="Markdown" value="153" />
+          <entry key="JAVA" value="121" />
+          <entry key="Kotlin" value="175" />
+          <entry key="Markdown" value="154" />
           <entry key="PLAIN_TEXT" value="13" />
           <entry key="ProGuard File" value="2" />
           <entry key="Properties" value="1" />
@@ -117,22 +139,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="10" />
+          <entry key="dummy" value="34" />
           <entry key="gradle" value="5" />
-          <entry key="java" value="8309" />
-          <entry key="kt" value="45231" />
+          <entry key="java" value="10498" />
+          <entry key="kt" value="48670" />
           <entry key="linkblockingqueue" value="30" />
-          <entry key="md" value="18867" />
+          <entry key="md" value="18893" />
           <entry key="readme" value="72" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="5" />
-          <entry key="JAVA" value="8309" />
-          <entry key="Kotlin" value="45231" />
-          <entry key="Markdown" value="18867" />
-          <entry key="PLAIN_TEXT" value="112" />
+          <entry key="JAVA" value="10498" />
+          <entry key="Kotlin" value="48670" />
+          <entry key="Markdown" value="18893" />
+          <entry key="PLAIN_TEXT" value="136" />
         </counts>
       </usages-collector>
     </session>
@@ -146,89 +168,55 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode207.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode327.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-707">
-              <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+            <state relative-caret-position="74682">
+              <caret line="4149" selection-start-line="4149" selection-end-line="4174" selection-end-column="1" />
+              <folding>
+                <element signature="e#44#112#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode207.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode1272.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode307_4.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="221" selection-start-line="221" selection-end-line="221" />
+            <state relative-caret-position="-1302">
+              <caret line="40" column="53" lean-forward="true" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#591#747#0" expanded="true" />
-                <element signature="e#746#747#0" expanded="true" />
-                <element signature="e#895#896#0" expanded="true" />
-                <element signature="e#934#935#0" expanded="true" />
-                <element signature="e#1232#1233#0" expanded="true" />
-                <element signature="e#1271#1272#0" expanded="true" />
-                <element signature="e#6158#6167#0" expanded="true" />
+                <element signature="e#3114#3123#0" expanded="true" />
+                <element signature="e#3350#3974#0" expanded="true" />
+                <element signature="e#3973#3974#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode327.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#584#740#0" expanded="true" />
-                <element signature="e#739#740#0" expanded="true" />
-                <element signature="e#1240#1241#0" expanded="true" />
-                <element signature="e#1287#1288#0" expanded="true" />
-                <element signature="e#2810#2811#0" expanded="true" />
-                <element signature="e#2854#2855#0" expanded="true" />
-                <element signature="e#4973#4974#0" expanded="true" />
-                <element signature="e#5017#5018#0" expanded="true" />
-                <element signature="e#6563#6572#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/readme.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+            <state relative-caret-position="457">
+              <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode210.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCodeTreeArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+            <state relative-caret-position="547">
+              <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode210.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/ArrayTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1084">
-              <caret line="61" column="59" selection-start-line="61" selection-start-column="59" selection-end-line="61" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="420">
+              <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -236,29 +224,43 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/Test17.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="716">
+            <state relative-caret-position="1044">
               <caret line="58" column="15" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode329.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/Solution1288.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-63">
-              <caret line="85" selection-start-line="85" selection-end-line="86" selection-end-column="9" />
+            <state relative-caret-position="54">
+              <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1051#1638#0" expanded="true" />
+                <element signature="e#1637#1638#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode347.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode327.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="57" column="34" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
+            <state relative-caret-position="378">
+              <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
               <folding>
-                <element signature="e#45#133#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode319.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -279,7 +281,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>notFull</find>
       <find>notFull.signal()</find>
       <find>count</find>
       <find>take()</find>
@@ -309,6 +310,7 @@
       <find>source</find>
       <find>leftChildIndex</find>
       <find>MAX_VALUE</find>
+      <find>search</find>
     </findStrings>
     <replaceStrings>
       <replace>protected</replace>
@@ -3536,17 +3538,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sources/androidinterview/viewgroupfindview.md" />
-        <option value="$PROJECT_DIR$/sources/javageneric.md" />
-        <option value="$PROJECT_DIR$/sources/androidinterview/constraintLayout.md" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/base/ArrayTest.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/base/leetCode242.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/base/linklistTest.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/base/leetCode25.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/base/LeetCode25.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/base/LeetCode20.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/base/LeetCode739.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode739.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode239.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode230.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode347.kt" />
@@ -3567,7 +3558,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode1214.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode292.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode1214.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode319.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode207.kt" />
         <option value="$PROJECT_DIR$/sources/matrix_table.md" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode210.kt" />
@@ -3584,9 +3574,21 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode307.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode307_2.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode307_3.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/readme.md" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode307_4.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode327.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode307_4.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode2/TestSort.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode327.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode493.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode493.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode315.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCodeTreeArray.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode319.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCodeTreeArray.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode1288.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode1288.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/Solution1288.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode1272.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/readme.md" />
       </list>
     </option>
   </component>
@@ -3601,6 +3603,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -3670,6 +3673,42 @@
               <item name="DataStructure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="wangpos" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStructure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="wangpos" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStructure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="wangpos" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStructure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -3677,13 +3716,13 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ExportApk.ApkPath" value="$PROJECT_DIR$/app" />
     <property name="ExportApk.BuildType" value="release" />
     <property name="ExportApk.Flavors" value="" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/qiyue/GitProject/DataStructure/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode319.kt" />
     <property name="add_unversioned_files" value="true" />
     <property name="android.profiler.active" value="true" />
     <property name="android.project.structure.last.selected" value="app" />
@@ -3696,9 +3735,10 @@
     <property name="ignore_missing_gitignore" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/test/java/com/wangpos/datastructure" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
-    <property name="sync.plugin.last.upgrade.timestamp" value="1579055676433" />
+    <property name="sync.plugin.last.upgrade.timestamp" value="1579399247984" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -3711,6 +3751,10 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sources" />
+      <recent name="$PROJECT_DIR$/app/src/main" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.wangpos.datastructure.leetcode" />
       <recent name="com.wangpos.datastructure.java" />
@@ -3722,10 +3766,6 @@
       <recent name="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/algorithm" />
       <recent name="$PROJECT_DIR$/app/src/main/assets" />
       <recent name="$PROJECT_DIR$/app/src/assets" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/sources" />
-      <recent name="$PROJECT_DIR$/app/src/main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -3740,7 +3780,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LeetCode327">
+  <component name="RunManager" selected="Application.LeetCode1272">
     <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="HTML_FILE_NAME" />
@@ -3942,8 +3982,8 @@
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" />
       </method>
     </configuration>
-    <configuration name="LeetCode307_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wangpos.datastructure.leetcode.LeetCode307_3" />
+    <configuration name="LeetCode1272" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wangpos.datastructure.leetcode.LeetCode1272" />
       <module name="app" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -3956,8 +3996,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeetCode327" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wangpos.datastructure.leetcode.LeetCode327" />
+    <configuration name="LeetCodeTreeArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wangpos.datastructure.leetcode.LeetCodeTreeArray" />
       <module name="app" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -3970,13 +4010,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumArray4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wangpos.datastructure.leetcode.NumArray4" />
+    <configuration name="TestSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wangpos.datastructure.leetcode2.TestSort" />
       <module name="app" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wangpos.datastructure.leetcode.*" />
+          <option name="PATTERN" value="com.wangpos.datastructure.leetcode2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -3990,27 +4030,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.wangpos.datastructure.leetcode.LeetCode307Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="com.wangpos.datastructure.leetcode.LeetCode327Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.wangpos.datastructure.leetcode.LeetCode307Kt" />
+      <option name="MAIN_CLASS_NAME" value="com.wangpos.datastructure.leetcode.LeetCode327Kt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.wangpos.datastructure.leetcode.LeetCode307_2Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="com.wangpos.datastructure.leetcode.LeetCode493Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.wangpos.datastructure.leetcode.LeetCode307_2Kt" />
+      <option name="MAIN_CLASS_NAME" value="com.wangpos.datastructure.leetcode.LeetCode493Kt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -4062,19 +4102,19 @@
     </configuration>
     <list>
       <item itemvalue="Android App.app" />
-      <item itemvalue="Kotlin.com.wangpos.datastructure.leetcode.LeetCode307Kt" />
-      <item itemvalue="Kotlin.com.wangpos.datastructure.leetcode.LeetCode307_2Kt" />
-      <item itemvalue="Application.LeetCode307_3" />
-      <item itemvalue="Application.NumArray4" />
-      <item itemvalue="Application.LeetCode327" />
+      <item itemvalue="Kotlin.com.wangpos.datastructure.leetcode.LeetCode327Kt" />
+      <item itemvalue="Application.TestSort" />
+      <item itemvalue="Kotlin.com.wangpos.datastructure.leetcode.LeetCode493Kt" />
+      <item itemvalue="Application.LeetCodeTreeArray" />
+      <item itemvalue="Application.LeetCode1272" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LeetCode327" />
-        <item itemvalue="Application.NumArray4" />
-        <item itemvalue="Application.LeetCode307_3" />
-        <item itemvalue="Kotlin.com.wangpos.datastructure.leetcode.LeetCode307_2Kt" />
-        <item itemvalue="Kotlin.com.wangpos.datastructure.leetcode.LeetCode307Kt" />
+        <item itemvalue="Application.LeetCode1272" />
+        <item itemvalue="Application.LeetCodeTreeArray" />
+        <item itemvalue="Kotlin.com.wangpos.datastructure.leetcode.LeetCode493Kt" />
+        <item itemvalue="Kotlin.com.wangpos.datastructure.leetcode.LeetCode327Kt" />
+        <item itemvalue="Application.TestSort" />
       </list>
     </recent_temporary>
   </component>
@@ -4134,6 +4174,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4860627" visible="true" weight="0.25824177" />
       <window_info id="Structure" order="1" weight="0.24969475" />
@@ -4146,8 +4187,8 @@
       <window_info id="simpleUML" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291536" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.496337" weight="0.3260188" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.05956113" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.496337" weight="0.31452456" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.33646813" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3291536" />
@@ -4157,12 +4198,12 @@
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32810867" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.3980464" weight="0.37513062" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.492674" weight="0.32635984" />
-      <window_info anchor="bottom" id="Build" order="13" sideWeight="0.4993895" weight="0.28526646" />
+      <window_info anchor="bottom" id="Build" order="13" sideWeight="0.4993895" weight="0.46603972" />
       <window_info anchor="bottom" id="Thumbnails" order="14" weight="0.3291536" />
-      <window_info anchor="bottom" id="Tool Output" order="15" />
-      <window_info anchor="bottom" id="DevEco Output" order="16" />
+      <window_info anchor="bottom" id="Tool Output" order="15" weight="0.3291536" />
+      <window_info anchor="bottom" id="DevEco Output" order="16" weight="0.3291536" />
       <window_info anchor="bottom" id="Flutter Performance" order="17" side_tool="true" />
-      <window_info anchor="bottom" id="ANTLR Preview" order="18" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="18" weight="0.3291536" />
       <window_info anchor="bottom" id="Android Profiler" order="19" show_stripe_button="false" weight="0.32897863" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -4643,6 +4684,90 @@
           <properties />
           <option name="timeStamp" value="154" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode327.kt</url>
+          <line>4187</line>
+          <properties />
+          <option name="timeStamp" value="247" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode327.kt</url>
+          <line>4191</line>
+          <properties />
+          <option name="timeStamp" value="249" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode327.kt</url>
+          <line>4237</line>
+          <properties />
+          <option name="timeStamp" value="251" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode327.kt</url>
+          <line>4238</line>
+          <properties />
+          <option name="timeStamp" value="252" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode327.kt</url>
+          <line>4206</line>
+          <properties />
+          <option name="timeStamp" value="253" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode327.kt</url>
+          <line>4217</line>
+          <properties />
+          <option name="timeStamp" value="254" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode327.kt</url>
+          <line>4218</line>
+          <properties />
+          <option name="timeStamp" value="255" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode327.kt</url>
+          <line>4202</line>
+          <properties />
+          <option name="timeStamp" value="256" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode327.kt</url>
+          <line>4203</line>
+          <properties />
+          <option name="timeStamp" value="257" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode327.kt</url>
+          <line>4205</line>
+          <properties />
+          <option name="timeStamp" value="258" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode493.kt</url>
+          <line>72</line>
+          <properties />
+          <option name="timeStamp" value="259" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode493.kt</url>
+          <line>73</line>
+          <properties />
+          <option name="timeStamp" value="260" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode493.kt</url>
+          <line>74</line>
+          <properties />
+          <option name="timeStamp" value="261" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode493.kt</url>
+          <line>77</line>
+          <properties />
+          <option name="timeStamp" value="262" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/Library/Android/sdk/sources/android-28/java/util/concurrent/LinkedBlockingQueue.java</url>
           <line>438</line>
@@ -4871,6 +4996,66 @@
           <properties />
           <option name="timeStamp" value="245" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCodeTreeArray.java</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="271" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCodeTreeArray.java</url>
+          <line>63</line>
+          <properties />
+          <option name="timeStamp" value="272" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCodeTreeArray.java</url>
+          <line>65</line>
+          <properties />
+          <option name="timeStamp" value="273" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode1272.java</url>
+          <line>93</line>
+          <properties />
+          <option name="timeStamp" value="274" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode1272.java</url>
+          <line>96</line>
+          <properties />
+          <option name="timeStamp" value="275" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode1272.java</url>
+          <line>85</line>
+          <properties />
+          <option name="timeStamp" value="276" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode1272.java</url>
+          <line>69</line>
+          <properties />
+          <option name="timeStamp" value="277" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode1272.java</url>
+          <line>104</line>
+          <properties />
+          <option name="timeStamp" value="278" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode1272.java</url>
+          <line>74</line>
+          <properties />
+          <option name="timeStamp" value="279" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode1272.java</url>
+          <line>72</line>
+          <properties />
+          <option name="timeStamp" value="280" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -4878,86 +5063,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode239.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="33" selection-start-line="33" selection-end-line="33" selection-end-column="34" />
-          <folding>
-            <element signature="e#44#148#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/java/util/PriorityQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="653" column="38" selection-start-line="653" selection-start-column="26" selection-end-line="653" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode3.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.21/4bcc2012b84840e19e1e28074284cac908be0295/kotlin-stdlib-1.3.21.jar!/kotlin/kotlin.kotlin_builtins">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode4.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode5.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode6.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.21/4bcc2012b84840e19e1e28074284cac908be0295/kotlin-stdlib-1.3.21.jar!/kotlin/text/StringsKt.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="337" column="25" selection-start-line="337" selection-start-column="25" selection-end-line="337" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode7.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="34" column="2" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode8.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode382.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -5019,12 +5124,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
         </state>
       </provider>
+      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode1214.kt">
       <provider selected="true" editor-type-id="text-editor">
@@ -5037,13 +5142,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="596">
           <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode319.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -5127,34 +5225,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode307_2.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4850">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode307_3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="47" selection-start-line="19" selection-start-column="10" selection-end-line="22" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode307.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="129" selection-start-line="129" selection-end-line="129" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode307_2.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode307_3.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode1203.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2312">
           <caret line="69" selection-start-line="69" selection-end-line="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -5172,27 +5248,6 @@
           <folding>
             <element signature="e#45#133#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode329.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-63">
-          <caret line="85" selection-start-line="85" selection-end-line="86" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/Test17.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="716">
-          <caret line="58" column="15" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -5227,10 +5282,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode307.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1385">
+          <caret line="129" selection-start-line="129" selection-end-line="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode2/TestSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode307_4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="221" selection-start-line="221" selection-end-line="221" />
+        <state relative-caret-position="162">
+          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#591#747#0" expanded="true" />
@@ -5244,22 +5313,113 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode329.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="85" selection-start-line="85" selection-end-line="86" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/algorithm/exhaustionbucket.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="87" column="4" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCodeTreeArray.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode493.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode315.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode1288.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode327.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74682">
+          <caret line="4149" selection-start-line="4149" selection-end-line="4174" selection-end-column="1" />
+          <folding>
+            <element signature="e#44#112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/Test17.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1044">
+          <caret line="58" column="15" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode327.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+        <state relative-caret-position="378">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#584#740#0" expanded="true" />
-            <element signature="e#739#740#0" expanded="true" />
-            <element signature="e#1240#1241#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#2810#2811#0" expanded="true" />
-            <element signature="e#2854#2855#0" expanded="true" />
-            <element signature="e#4973#4974#0" expanded="true" />
-            <element signature="e#5017#5018#0" expanded="true" />
-            <element signature="e#6563#6572#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode319.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/ArrayTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/Solution1288.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1051#1638#0" expanded="true" />
+            <element signature="e#1637#1638#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCodeTreeArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/LeetCode1272.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1302">
+          <caret line="40" column="53" lean-forward="true" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3114#3123#0" expanded="true" />
+            <element signature="e#3350#3974#0" expanded="true" />
+            <element signature="e#3973#3974#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
         </state>
       </provider>
     </entry>

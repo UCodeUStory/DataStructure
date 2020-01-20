@@ -7,6 +7,7 @@ fun main() {
 
     val result = bulbSwitch(3)
 
+
     println(result)
 }
 

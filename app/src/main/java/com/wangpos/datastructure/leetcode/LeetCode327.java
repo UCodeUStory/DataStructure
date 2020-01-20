@@ -3,23 +3,18 @@ package com.wangpos.datastructure.leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LeetCode327 {
 
-    public static void main(String[] args) {
-        int value[] = new int[]{1, 2, 3, 4, 5};
-        LeetCode327 numArray = new LeetCode327(value);
-//        System.out.println("sumRange结果=" + numArray.sumRange(0, 1));
-
-//        System.out.println("区间数量=" + numArray.countRange(0,0));
-        System.out.println("区间数量=" + numArray.countRange(0,1));
-        System.out.println("区间数量=" + numArray.countRange(0,2));
-        System.out.println("区间数量=" + numArray.countRange(-1,9));
-
+class Solution {
+    public int countRangeSum(int[] nums, int lower, int upper) {
+        if(nums.length==0){
+            return 0;
+        }
+        LeetCode327 leetCode327 = new LeetCode327(nums);
+        return leetCode327.countRange(lower, upper);
     }
+}
 
-    private int[] b;
-    private int len;
-    private int[] nums;
+public class LeetCode327 {
     SegementTree<Integer> tree;
 
     public LeetCode327(int[] nums) {
@@ -36,8 +31,7 @@ public class LeetCode327 {
             data[i] = nums[i];
         }
         tree = new SegementTree(data, merger);
-//        tree.printSegementTree();
-//        System.out.println("区间数量：" + tree.countRangeSum(1, 3));
+        tree.printSegementTree();
 
     }
 
@@ -114,16 +108,16 @@ public class LeetCode327 {
             int r = right;
 
             List<Integer> posList = new ArrayList<Integer>();
-            queryCount(0, 0, data.length - 1,l,r,posList);
+            queryCount(0, 0, data.length - 1, l, r, posList);
             return posList.size();
         }
 
-        public void queryCount(int treeIndex, int left, int right,int l,int r, List<Integer> posList) {
+        public void queryCount(int treeIndex, int left, int right, int l, int r, List<Integer> posList) {
             if (left == right) {
                 //如果left==right，证明递归结束，在对应的index设置data里left的值
-                System.out.println("size>>>>>" +  tree[treeIndex]);
+//                System.out.println("size>>>>>" + tree[treeIndex]);
                 tree[treeIndex] = data[left];
-                if((Integer)tree[treeIndex]>=l &&(Integer) tree[treeIndex]<=r) {
+                if ((Integer) tree[treeIndex] >= l && (Integer) tree[treeIndex] <= r) {
                     posList.add(treeIndex);
                 }
                 return;
@@ -133,14 +127,14 @@ public class LeetCode327 {
             int rightChildIndex = getRightChild(treeIndex);
             int mid = left + (right - left) / 2;//如果偶数左边右边一样多，如果是奇数，算到左边中
             //构造左右孩子节点
-            queryCount(leftChildIndex, left, mid,l,r,posList);
-            queryCount(rightChildIndex, mid + 1, right,l,r,posList);
+            queryCount(leftChildIndex, left, mid, l, r, posList);
+            queryCount(rightChildIndex, mid + 1, right, l, r, posList);
             //根据左右孩子的值，通过合成器，决定父节点的值
-            if((Integer)tree[treeIndex]>=l &&(Integer) tree[treeIndex]<=r) {
+            if ((Integer) tree[treeIndex] >= l && (Integer) tree[treeIndex] <= r) {
                 posList.add(treeIndex);
             }
             tree[treeIndex] = merger.merge(tree[leftChildIndex], tree[rightChildIndex]);
-            System.out.println("size>>" +  tree[treeIndex]);
+//            System.out.println("size>>" + tree[treeIndex]);
         }
 
     }
