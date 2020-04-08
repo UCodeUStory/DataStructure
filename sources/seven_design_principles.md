@@ -7,11 +7,72 @@
 
     核心思想：对扩展开放，对修改关闭。
     即在设计一个模块的时候，应当使这个模块可以在不被修改的前提下被扩展,这样兼容性更好
+    
+    书籍接口：
+    
+    public interface IBook{
+        public String getName();
+        public String getPrice();
+        public String getAuthor();
+    }
+    小说类书籍：
+    
+    public class NovelBook implements IBook{
+       private String name;
+        private int price;  
+        private String author;   
+        public NovelBook(String name,int price,String author){ 
+            this.name = name;     
+            this.price = price;     
+            this.author = author;
+       }   
+        public String getAutor(){     
+            return this.author;
+       }   
+            
+        public String getName(){
+            return this.name;
+       }  
+     
+       public int getPrice(){     
+            return this.price;
+       } 
+    }
+    Client类：
+    
+    public class Client{   
+        public static void main(Strings[] args){
+         IBook novel = new NovelBook("笑傲江湖",100,"金庸");
+         System.out.println(
+                "书籍名字："+novel.getName()+
+                "书籍作者："+novel.getAuthor()+
+                "书籍价格："+novel.getPrice()
+                );
+       }
+    }
+    项目投入使用后，书籍正常销售，但是我们经常因为各种原因，要打折来销售书籍，这是一个变化，我们要如何应对这样一个需求变化呢？
+    
+    我们有下面三种方法可以解决此问题：
+    
+    修改接口 
+    在IBook接口中，增加一个方法getOffPrice(),专门用于进行打折处理，所有的实现类实现此方法。但是对于这样的一个修改方式，首先，作为接口，IBook应该稳定且可靠，不应该经常发生改变，否则接口作为契约的作用就失去了。其次，并不是所有的书籍都需要打折销售，仅仅因为NovelBook打折销售就修改接口使所有书都必须实现打折销售的逻辑，显然与实际业务不符。因此，此方案否定。
+    
+    修改实现类 
+    修改NovelBook类的方法，直接在getPrice()方法中实现打折处理。此方法是有问题的，例如我们如果getPrice()方法中只需要读取书籍的打折前的价格呢？这不是有问题吗？当然我们也可以再增加getOffPrice()方法，这也是可以实现其需求，但是这就有二个读取价格的方法，因此，该方案也不是一个最优方案。
+    
+    通过扩展实现变化 
+    我们可以增加一个子类OffNovelBook（继承自NovelBook）,覆写getPrice()方法。此方法修改少，对现有的代码没有影响，风险少，是最好的办法，同时也符合开闭原则。
+    
+    下面是修改后的类图：
+    
+
       
 
 2、  里氏替换原则
 
     在任何父类出现的地方都可以用他的子类来替代（子类应当可以替换父类，并出现在父类能够出现的任何地方）
+    
+    只有当衍生类可以替换掉基类，软件单位的功能不受到影响时，基类才能真正被复用，而衍生类也能够在基类的基础上增加新的行为。
     
     
 3、  单一职责原则
