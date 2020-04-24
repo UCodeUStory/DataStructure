@@ -13,7 +13,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c36b3d7-82fb-4da1-98f5-8345655eb5e3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/algorithm/DynamicMatrixMinSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/algorithm/DynamicMoney.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/algorithm/DynamicRobert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codeview/codeview.iml" beforeDir="false" afterPath="$PROJECT_DIR$/codeview/codeview.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +31,7 @@
     <SUITE FILE_PATH="coverage/DataStructure$com_wangpos_datastructure_leetcode_LeetCode8Kt.ic" NAME="com.wangpos.datastructure.leetcode.LeetCode8Kt Coverage Results" MODIFIED="1578447703815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/DataStructure$com_wangpos_datastructure_leetcode_LeetCode7Kt.ic" NAME="com.wangpos.datastructure.leetcode.LeetCode7Kt Coverage Results" MODIFIED="1578392908668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="ba5c4f7b" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -111,7 +118,12 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sources" />
+      <recent name="$PROJECT_DIR$/app/src/main" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wangpos.datastructure.algorithm" />
       <recent name="com.wangpos.datastructure.leetcode" />
       <recent name="com.wangpos.datastructure.java" />
       <recent name="com.wangpos.datastructure.core" />
@@ -122,10 +134,6 @@
       <recent name="$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/algorithm" />
       <recent name="$PROJECT_DIR$/app/src/main/assets" />
       <recent name="$PROJECT_DIR$/app/src/assets" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/sources" />
-      <recent name="$PROJECT_DIR$/app/src/main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -140,7 +148,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CacheTest">
+  <component name="RunManager" selected="Application.DynamicMoney">
     <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -349,13 +357,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeetCode352" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wangpos.datastructure.leetcode2.LeetCode352" />
+    <configuration name="DynamicMatrixMinSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wangpos.datastructure.algorithm.DynamicMatrixMinSum" />
       <module name="app" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wangpos.datastructure.leetcode2.*" />
+          <option name="PATTERN" value="com.wangpos.datastructure.algorithm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -363,13 +371,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeetCode699" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wangpos.datastructure.leetcode2.LeetCode699" />
+    <configuration name="DynamicMoney" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wangpos.datastructure.algorithm.DynamicMoney" />
       <module name="app" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wangpos.datastructure.leetcode2.*" />
+          <option name="PATTERN" value="com.wangpos.datastructure.algorithm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -377,27 +385,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestReentranlock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wangpos.datastructure.leetcode2.TestReentranlock" />
+    <configuration name="DynamicRobert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wangpos.datastructure.algorithm.DynamicRobert" />
       <module name="app" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wangpos.datastructure.leetcode2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Trie" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wangpos.datastructure.leetcode2.Trie" />
-      <module name="app" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wangpos.datastructure.leetcode2.*" />
+          <option name="PATTERN" value="com.wangpos.datastructure.algorithm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -407,6 +401,19 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.wangpos.datastructure.leetcode.LeetCode230Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.wangpos.datastructure.leetcode.LeetCode230Kt" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -458,19 +465,19 @@
     </configuration>
     <list>
       <item itemvalue="Android App.app" />
-      <item itemvalue="Application.LeetCode352" />
-      <item itemvalue="Application.LeetCode699" />
-      <item itemvalue="Application.Trie" />
       <item itemvalue="Application.CacheTest" />
-      <item itemvalue="Application.TestReentranlock" />
+      <item itemvalue="Kotlin.com.wangpos.datastructure.leetcode.LeetCode230Kt" />
+      <item itemvalue="Application.DynamicMatrixMinSum" />
+      <item itemvalue="Application.DynamicMoney" />
+      <item itemvalue="Application.DynamicRobert" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DynamicMoney" />
+        <item itemvalue="Application.DynamicRobert" />
+        <item itemvalue="Application.DynamicMatrixMinSum" />
+        <item itemvalue="Kotlin.com.wangpos.datastructure.leetcode.LeetCode230Kt" />
         <item itemvalue="Application.CacheTest" />
-        <item itemvalue="Application.TestReentranlock" />
-        <item itemvalue="Application.Trie" />
-        <item itemvalue="Application.LeetCode699" />
-        <item itemvalue="Application.LeetCode352" />
       </list>
     </recent_temporary>
   </component>
@@ -518,15 +525,6 @@
     <history-entry file="TestCJList_testCJLinkList - 2018.06.20 at 11h 56m 19s.xml">
       <configuration name="TestCJList.testCJLinkList" configurationId="AndroidJUnit" />
     </history-entry>
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
@@ -1394,6 +1392,31 @@
           <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/leetcode2/Trie.java</url>
           <line>43</line>
           <option name="timeStamp" value="385" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/algorithm/DynamicMoney.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="394" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/algorithm/DynamicMoney.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="395" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/algorithm/DynamicMoney.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="397" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/algorithm/DynamicMoney.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="399" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/wangpos/datastructure/algorithm/DynamicMoney.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="400" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
