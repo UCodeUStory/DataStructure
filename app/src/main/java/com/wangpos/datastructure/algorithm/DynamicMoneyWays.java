@@ -85,7 +85,6 @@ public class DynamicMoneyWays {
         }
 
         printArray(dp);
-
         return dp[0][aim];
     }
 
