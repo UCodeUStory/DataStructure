@@ -172,9 +172,7 @@ public class MainActivity extends AppCompatActivity {
     private void onClickItem(DataBean data) {
         switch (data.type){
             case ToGitHub:
-                Intent toGitHubIntent = new Intent(this, WebViewActivity.class);
-                toGitHubIntent.putExtra(WebViewActivity.EXTRA_URL,"https://github.com/UCodeUStory");
-                startActivity(toGitHubIntent);
+                launchWebView("https://github.com/UCodeUStory");
                 break;
             case TimeComplexity:
                 startActivity(new Intent(this,TimeComplexityActivity.class));
@@ -242,30 +240,20 @@ public class MainActivity extends AppCompatActivity {
             case MaxDataSelectData:
                 startActivity(new Intent(this,MaxDataSelectDataActivity.class));
             case HashTable:
-                Intent hashIntent = new Intent(this, WebViewActivity.class);
-                hashIntent.putExtra(WebViewActivity.EXTRA_URL,"https://github.com/UCodeUStory/DataStructure/blob/master/hashtable.md");
-                startActivity(hashIntent);
+                launchWebView("https://github.com/UCodeUStory/DataStructure/blob/master/hashtable.md");
                 break;
             case binarySearchTree:
-                Intent binarySearchIntent = new Intent(this, WebViewActivity.class);
-                binarySearchIntent.putExtra(WebViewActivity.EXTRA_URL,"https://github.com/UCodeUStory/DataStructure/blob/master/sources/tree.md");
-                startActivity(binarySearchIntent);
+                launchWebView("https://github.com/UCodeUStory/DataStructure/blob/master/sources/tree.md");
                 break;
             case Singleton:
-                Intent singletonIntent = new Intent(this, WebViewActivity.class);
-                singletonIntent.putExtra(WebViewActivity.EXTRA_URL,"https://github.com/UCodeUStory/DataStructure/blob/master/sources/singleInstance.md");
-                startActivity(singletonIntent);
+                launchWebView("https://github.com/UCodeUStory/DataStructure/blob/master/sources/singleInstance.md");
                 break;
             case TU:
-                Intent tuIntent = new Intent(this, WebViewActivity.class);
-                tuIntent.putExtra(WebViewActivity.EXTRA_URL,"https://github.com/UCodeUStory/DataStructure/blob/master/sources/tu.md");
-                startActivity(tuIntent);
+                launchWebView("https://github.com/UCodeUStory/DataStructure/blob/master/sources/tu.md");
                 break;
 
             case JavaGC:
-                Intent javaGcIntent = new Intent(this, WebViewActivity.class);
-                javaGcIntent.putExtra(WebViewActivity.EXTRA_URL,"https://github.com/UCodeUStory/DataStructure/blob/master/sources/JavaGarbageCollection.md");
-                startActivity(javaGcIntent);
+                launchWebView("https://github.com/UCodeUStory/DataStructure/blob/master/sources/JavaGarbageCollection.md");
                 break;
             case MAXSubString:
                 startActivity(new Intent(this, MaxSubStringActivity.class));
@@ -300,6 +288,12 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
 
+    }
+
+    private void launchWebView(String s) {
+        Intent tuIntent = new Intent(this, WebViewActivity.class);
+        tuIntent.putExtra(WebViewActivity.EXTRA_URL, s);
+        startActivity(tuIntent);
     }
 
     private void initData(USList<DataBean> list) {
