@@ -6,24 +6,39 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.concurrent.LinkedBlockingQueue;
 
+/**
+ * 支持整数加减乘除公式
+ */
 public class StringFormulaCalculate {
 
     public static void main(String[] args) {
-        String formula = "1+2+3";
-//        String formula = "48*((70-65)-43)+8*1";
-//        String formula = "48*((70-65)-43)+8*1";
-//        String formula = "48*((70-65)-43)+8*1";
         /**
-         * 48
-         * *
-         * 8
-         * -
-         * 8
-         * *
-         * 1
-         *
+         * 加减法计算
          */
-        calculate(formula, 0);
+        String formula = "1+2-1+5-6";
+        /**
+         * 加减乘
+         */
+        String formula1 = "1+2*3"; //7
+        String formula2 = "1+2*3+4"; //11
+//        String formula3 = "1*2+3+4"; //9
+        String formula4 = "1-2+3*4+6/2";//14
+
+        String formula5 = "2*(4-2)+5";
+
+        String formula6 = "2*(4-2)";
+
+        String formula7 = "(4-2)*2";
+        String formula8 = "10*((5-2)-2)";
+        String formula9 = "48*((70-65)-43)+8*1";
+//        String formula = "48*((70-65)-43)+8*1";
+//        String formula = "48*((70-65)-43)+8*1";
+
+//        calculate(formula1, 0);
+//        calculate(formula2, 0);
+//        calculate(formula3, 0);
+//        calculate(formula4,0);
+        calculate(formula9, 0);
         Deque<String> queues2 = queues;
         System.out.println("结果" + queues);
     }
@@ -32,6 +47,22 @@ public class StringFormulaCalculate {
      * 存储 数字和运算符
      */
     private static Deque<String> queues = new LinkedList<>();
+
+    private static void addLastNum(Integer cur) {
+        String curNum = cur.toString();
+        if (queues.size() > 1) {
+            String sign = queues.removeLast();
+            String prev = queues.removeLast();
+            int result = calculateExpress(prev, curNum, sign);
+            queues.add(String.valueOf(result));
+        } else {
+            queues.add(curNum);
+        }
+        if (queues.size() > 1) {
+            String last = queues.removeLast();
+            addLastNum(Integer.valueOf(last));
+        }
+    }
 
     /**
      * 新加元素进行判断，如果前面是* / 直接运算，然后存入
@@ -59,16 +90,24 @@ public class StringFormulaCalculate {
      * @param sign
      */
     private static Integer addSign(char sign) {
-        if (sign == '+' || sign == '-') {
+        if (sign == '+' || sign == '-' || sign == '(') {
             String last = queues.peekLast();
             if ("(".equals(last) || queues.size() < 2) {
             } else if (queues.size() > 2) {
                 String prev1 = queues.removeLast();
                 String s = queues.removeLast();
                 String prev3 = queues.removeLast();
-                int result = calculateExpress(prev1, prev3, s);
-                queues.add(String.valueOf(result));
+                if ("(".equals(prev1)||"(".equals(s)||"(".equals(prev3)){
+                    queues.add(prev3);
+                    queues.add(s);
+                    queues.add(prev1);
+                }else {
+                    int result = calculateExpress(prev3, prev1, s);
+                    queues.add(String.valueOf(result));
+                }
             }
+            queues.add(String.valueOf(sign));
+        } else if (sign == '*' || sign == '/') {
             queues.add(String.valueOf(sign));
         }
 
@@ -76,7 +115,8 @@ public class StringFormulaCalculate {
             String prev1 = queues.removeLast();
             String s = queues.removeLast();
             String prev3 = queues.removeLast();
-            int result = calculateExpress(prev1, prev3, s);
+            int result = calculateExpress(prev3, prev1, s);
+            queues.removeLast();//移除左括号
             queues.add(String.valueOf(result));
             return result;
         }
@@ -102,13 +142,14 @@ public class StringFormulaCalculate {
 
             } else if (isSign(f[i])) {
                 // 运算符前一定有数字
-                addNum(s1);
-                s1 = 0;
+                if(s1>0) {
+                    addNum(s1);
+                    s1 = 0;
+                }
                 addSign(f[i]);
             } else if (f[i] == '(') {
                 addSign(f[i]);
                 int result[] = calculate(formula, i + 1);
-                addNum(result[0]);
                 i = result[1];
                 //记录回溯的位置，因为后面还可能有元素要处理
                 //比如  1 + 2  *（ 3 +  4 ）+ 5
@@ -116,9 +157,21 @@ public class StringFormulaCalculate {
                 addNum(s1);
                 int result = addSign(f[i]);
                 s1 = 0;
-                return new int[]{result, i + 1};
+                return new int[]{result, i};
             }
 
+        }
+        /**
+         * 综合计算
+         */
+        if (s1 != 0) {
+            addLastNum(s1);
+            s1 = 0;
+        }else{
+            if(queues.size()>1){
+                String last = queues.removeLast();
+                addLastNum(Integer.valueOf(last));
+            }
         }
 
         return new int[]{0, formula.length()};
