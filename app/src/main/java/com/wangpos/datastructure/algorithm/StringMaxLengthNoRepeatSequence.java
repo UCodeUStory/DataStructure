@@ -33,7 +33,8 @@ public class StringMaxLengthNoRepeatSequence {
         int pre = -1;//保存前一个位置
         int cur = 0;//保存当前位置到前一个重复位置的长度
         for (int i = 0; i != chas.length; i++) {
-            pre = Math.max(pre, map[chas[i]]);//重复字符串的头部，如果map[chas[i]]有值，证明就是重复的
+            //重复字符串的头部，如果map[chas[i]]有值，证明就是重复的
+            pre = Math.max(pre, map[chas[i]]);
             cur = i - pre;
             len = Math.max(len, cur);
             map[chas[i]] = i;
