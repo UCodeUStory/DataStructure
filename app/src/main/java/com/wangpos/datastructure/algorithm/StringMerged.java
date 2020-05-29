@@ -1,49 +1,29 @@
 package com.wangpos.datastructure.algorithm;
 
+import java.util.HashSet;
 import java.util.List;
 
 public class StringMerged {
 
-    public static int N = 16;//9个数据
-    public static String[] resultArray = new String[16];
-
-    public static int itemSize = 4;
-
-    public static void main(String[] args) {
-
-        String str = "ABC";
-
-        String str2 = "EFGH";
-        System.out.println("startTime " + System.currentTimeMillis());
-        findAllKindSplice(str);
-        System.out.println("endTime " + System.currentTimeMillis());
-//        findAllKindSplice(str2);
-//        findAllKindSplice(str3);
-//        findAllKindSplice(str4);
-        for (String s : resultArray) {
-            System.out.print(s + " ");
-        }
-//
-//        System.out.println(getCount(27, 0));
-//        System.out.println(getCount(27, 1));
-//        System.out.println(getCount(27, 2));
-
-    }
-
+    public static int N = 262144;//9组数据
+    private static String[] resultArray = new String[262144];
+    private static int itemSize = 4;//每次最大4个
     public static int index = 0;
+    private static HashSet<String> sets = new HashSet<>();
 
-    private static String[] findAllKindSplice(String str) {
+    public HashSet<String> findAllKindSplice(String str) {
+        sets.clear();//每次都清理掉集合
         char[] chas = new char[itemSize];
 
         char[] strArray = str.toCharArray();
         for (int i = 0; i < chas.length; i++) {
             chas[i] = ' ';
-            if (i < str.length() - 1) {
+            if (i < str.length()) {
                 chas[i] = strArray[i];
             }
         }
 
-        int length = str.length();
+        int length = itemSize;
         for (int i = 0; i < resultArray.length; i++) {
             char chasValue = ' ';
             if (index == 0) {
@@ -56,6 +36,8 @@ public class StringMerged {
                 } else if (i < N) {
                     if (chas[3] != ' ') {
                         chasValue = chas[3];
+                    } else {
+//                        chasValue = '*';
                     }
                 }
             } else {
@@ -72,15 +54,24 @@ public class StringMerged {
                 }
             }
 
-            if (resultArray[i] != null) {
+            if (resultArray[i] != null && chasValue != ' ') {
                 resultArray[i] = resultArray[i] + chasValue;
             } else {
-                resultArray[i] = "" + chasValue;
+                if (chasValue != ' ') {
+                    resultArray[i] = "" + chasValue;
+                } else {
+                    resultArray[i] = "";
+                }
+            }
+            //去掉多于元素，因为本次拼接长度一定比上次长
+            if (resultArray[i].length() > index) {
+                sets.add(resultArray[i]);
             }
         }
 
         index++;
-        return resultArray;
+//        return resultArray;
+        return sets;
     }
 
     private static int getCount(int n, int index) {
@@ -91,13 +82,7 @@ public class StringMerged {
         }
     }
 
-    /**
-     * 如果上一个结果为空
-     * 并且当前还是以上一个结果
-     */
-    public void search() {
 
-    }
 
 
 }
