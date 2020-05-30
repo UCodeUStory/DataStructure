@@ -3,6 +3,10 @@ package com.wangpos.datastructure.algorithm;
 import java.util.HashSet;
 import java.util.List;
 
+/**
+ * 两个集合映射组合算法
+ *
+ */
 public class StringMerged {
 
     public static int N = 262144;//9组数据
